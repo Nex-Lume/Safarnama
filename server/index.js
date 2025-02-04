@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(cors(
   {
-    origin : ["https://safarnama-backend-xi.vercel.app"],
+        origin: "https://luminous-valkyrie-e8ac18.netlify.app", // Replace with your frontend URL
     methods: ["POST","GET"],
     credentials: true
   }
