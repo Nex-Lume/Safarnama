@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Mumbai</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Maharashtra/mumbai5.jpg');">
+    <h1>Explore Mumbai Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Gateway of India & Marine Drive -->
+        <div class="package-card">
+            <img src="https://d1bb1mccaihlpl.cloudfront.net/variants/c8uwzsys2jniifec7bhyfxd3fnbs/5495488087431af32265aaaaa1b8a274541d70555aa4d7c01d8d0fed27e7c152" alt="Gateway of India & Marine Drive">
+            <h3>Gateway of India & Marine Drive</h3>
+            <p>Discover Mumbai's iconic landmarks, including the majestic Gateway of India and the serene Marine Drive, known as the Queen's Necklace.</p>
+            <a href="/east/Mumbai.html?category=MumbaiPackage1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Elephanta Caves & Heritage Tour -->
+        <div class="package-card">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/elephanta-caves-mumbai-maharashtra-10-musthead-hero?qlt=82&ts=1727355551693" alt="Elephanta Caves & Heritage Tour">
+            <h3>Elephanta Caves & Heritage Tour</h3>
+            <p>Step back in time and explore the UNESCO World Heritage Site of Elephanta Caves, filled with ancient art and culture.</p>
+            <a href="/east/Mumbai.html?category=MumbaiPackage2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Bollywood & Entertainment Excursion -->
+        <div class="package-card">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/36/8e/4f.jpg" alt="Bollywood & Entertainment Excursion">
+            <h3>Bollywood & Entertainment Excursion</h3>
+            <p>Experience the glamour of Bollywood with studio tours, celebrity spotting, and a glimpse into Mumbai's vibrant entertainment industry.</p>
+            <a href="/east/Mumbai.html?category=MumbaiPackage3" class="btn-view">View Details</a>
+        </div> 
+        <div class="hexagon-title">
+          <h4>Top 10 Places in Mumbai</h4>
+      </div>
+      <section class="hexagon-gallery">
+          <div class="hex">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg" alt="Gateway of India">
+              <h3>Gateway of India</h3>
+          </div>
+          <div class="hex">
+              <img src="https://static.wanderon.in/wp-content/uploads/2024/04/marine-drive-2.jpg" alt="Marine Drive">
+              <h3>Marine Drive</h3>
+          </div>
+          <div class="hex">
+              <img src="https://media1.thrillophilia.com/filestore/qj62nh68fativk30jny3i6osrzgw_1524229348_Elephanta_caves.jpg" alt="Elephanta Caves">
+              <h3>Elephanta Caves</h3>
+          </div>
+          <div class="hex">
+              <img src="https://swarajya.gumlet.io/swarajya%2F2020-08%2Fe4d979cb-b106-49bd-88d9-496176f335f8%2Funnamed.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100" alt="Chhatrapati Shivaji Terminus">
+              <h3>Chhatrapati Shivaji Maharaj Terminus</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.india.com/wp-content/uploads/2016/08/siddhivinayak-temple.jpg" alt="Siddhivinayak Temple">
+              <h3>Siddhivinayak Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.vedantu.com/seo/content-images/0b4be336-7329-4a55-ae33-b64b9f57d14e.jpg" alt="Haji Ali Dargah">
+              <h3>Chhatrapati Shivaji Maharaj</h3>
+          </div>
+          <div class="hex">
+              <img src="https://s7ap1.scene7.com/is/image/incredibleindia/juhu-beach-mumbai-maharashtra-1-musthead-hero?qlt=82&ts=1727355340209" alt="Juhu Beach">
+              <h3>Juhu Beach</h3>
+          </div>
+          <div class="hex">
+              <img src="https://eindiatourism.in/wp-content/uploads/2023/05/Bandra_Worli_Sea-Link_cropped.jpg" alt="Bandra-Worli Sea Link">
+              <h3>Bandra-Worli Sea Link</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.tripsavvy.com/thmb/tRX91BxGzb2qEi4XR4Jn8t2bZ9s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-654400557-58ae7ca13df78c345ba39c26.jpg" alt="Sanjay Gandhi National Park">
+              <h3>Sanjay Gandhi National Park</h3>
+          </div>
+          <div class="hex">
+              <img src="https://kevinstandagephotography.wordpress.com/wp-content/uploads/2018/05/kanheri-caves.jpg?w=890" alt="Kanheri Caves">
+              <h3>Kanheri Caves</h3>
+          </div>
+      </section>           
+    </div>
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="MumbaiPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Mumbai Highlights: 3-Day Urban Exploration and Heritage Tour</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://tds.indianeagle.com/wp-content/uploads/2023/06/Unveiling-A-Captivating-Mumbai-3-Day.png');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+            <p><strong>Type of Trip:</strong> Heritage and City Exploration</p>
+            <p><strong>Start City:</strong> Mumbai</p>
+            <p><strong>End City:</strong> Mumbai</p>
+        </div>
+    </div>
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/13/50/55/caption.jpg?w=1200&h=-1&s=1" alt="Day 1 - Gateway of India & Marine Drive">
+            <p><strong>Day 1:</strong> Arrive in Mumbai and check in to your hotel. Begin your day with a visit to the iconic Gateway of India, followed by a ferry ride to the historic Elephanta Caves. In the evening, take a leisurely walk along Marine Drive to enjoy the sunset. Overnight stay in Mumbai.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/1e/1e/5d/caption.jpg?w=1200&h=-1&s=1" alt="Day 2 - Heritage Tour">
+            <p><strong>Day 2:</strong> Dive into Mumbai's rich history with a visit to Chhatrapati Shivaji Terminus (CST) and the nearby BMC building. Explore the Hanging Gardens and Haji Ali Dargah. Spend the evening at Juhu Beach, enjoying street food and local vibes. Overnight stay in Mumbai.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://media.assettype.com/freepressjournal/2022-10/df94c627-5f06-4cc1-af76-9690f2086738/Basilica_of_Mount_Mary.png" alt="Day 3 - Bandra & Departure">
+            <p><strong>Day 3:</strong> Explore Bandra, starting with the Bandra-Worli Sea Link and Bandstand Promenade. Visit Mount Mary Church and the street art-filled bylanes of Bandra. Wrap up your Mumbai trip and proceed for departure with unforgettable memories.</p>
+        </div>
+    </div>
+
+      <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Mumbai Package</h3>
+  <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(55000, 'Mumbai')">Book Now</button>
+</div>
+</div>
+
+<div id="MumbaiPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Delhi to Mumbai: 3-Day Urban and Coastal Escape</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1268/mumbai-bridge.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> City Exploration, Heritage, and Relaxation</p>
+          <p><strong>Start City:</strong> Delhi</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://i.ytimg.com/vi/HHqE4G7pTmQ/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGE8gUyhlMA8=&rs=AOn4CLA7TKYvVsbjgsRbE3P2ufc3D0roAg" alt="Day 1 - Gateway of India & Marine Drive">
+          <p><strong>Day 1:</strong> Fly from Delhi to Mumbai. Upon arrival, check in to your hotel. Start your day with a visit to the iconic **Gateway of India**. Take a ferry ride to the historic **Elephanta Caves**. End the day with a leisurely walk along **Marine Drive**, enjoying the cool sea breeze. Overnight stay in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/chhatrapati-shivaji-maharaj-terminus-mumbai-maharashtra-1-attr-hero?qlt=82&ts=1727355305654" alt="Day 2 - Heritage & Beaches">
+          <p><strong>Day 2:</strong> Explore Mumbai’s rich heritage by visiting **Chhatrapati Shivaji Terminus (CST)**, a UNESCO World Heritage Site, and the **Hanging Gardens**. Enjoy some spiritual peace at **Haji Ali Dargah**, located on an islet in the Arabian Sea. Spend your evening at **Juhu Beach**, trying local street food like pav bhaji and vada pav. Overnight stay in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://tripxl.com/blog/wp-content/uploads/2024/09/Bandra-Worli-Sea-Link.jpg" alt="Day 3 - Bandra & Departure">
+          <p><strong>Day 3:</strong> Begin your day in **Bandra**, visiting the **Bandra-Worli Sea Link** and **Mount Mary Church**. Take a walk along **Bandra Bandstand Promenade** to see Bollywood celebrity homes and street art. Conclude your trip with shopping at **Colaba Causeway** before flying back to Delhi, carrying unforgettable memories of Mumbai.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Mumbai Package</h3>
+    <p><strong>Starting at:</strong> ₹25,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(25000, 'Mumbai')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="MumbaiPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Mumbai Getaway: 5-Day Urban and Coastal Adventure</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://www.india.com/wp-content/uploads/2014/09/Mumbai-Gateway-625x470.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Coastal, Culture, and Relaxation</p>
+          <p><strong>Start City:</strong> Mumbai</p>
+          <p><strong>End City:</strong> Mumbai</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/74/c8/3e.jpg" alt="Day 1 - Arrival and Gateway of India">
+          <p><strong>Day 1:</strong> Arrive in Mumbai and check-in to your hotel. Begin your exploration with a visit to the iconic **Gateway of India**. Enjoy a ferry ride to the **Elephanta Caves** and discover ancient rock-cut temples. In the evening, take a stroll along **Marine Drive** for a beautiful sunset. Overnight stay in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/97000/97469-Mumbai.jpg" alt="Day 2 - Beaches and Culture">
+          <p><strong>Day 2:</strong> Spend the day at **Juhu Beach** and relax by the seaside. Visit **ISKCON Temple** nearby, known for its vibrant energy and beautiful architecture. Later, explore **Bandra Bandstand** and enjoy dinner with views of the sea and the **Bandra-Worli Sea Link**. Overnight stay in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0c/42/80/museum-visit.jpg?w=900&h=500&s=1" alt="Day 3 - Heritage and Art">
+          <p><strong>Day 3:</strong> Visit the **Chhatrapati Shivaji Maharaj Vastu Sangrahalaya**, a historical museum with exhibits on Mumbai’s rich cultural heritage. Explore **Colaba Causeway** for shopping and street food. In the afternoon, visit **Kala Ghoda** for its art galleries, boutiques, and cafes. Overnight stay in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://blogs.tripzygo.in/wp-content/uploads/2024/07/haji-ali-dargah-in-mumbai-1.jpg" alt="Day 4 - Spiritual Sites and Shopping">
+          <p><strong>Day 4:</strong> Start your day with a visit to the **Haji Ali Dargah**, an iconic mosque located on a small islet in the sea. Head to **Crawford Market** for a vibrant shopping experience and local produce. In the evening, explore the artsy streets of **Colaba** and enjoy a dinner at one of the rooftop restaurants overlooking the city. Overnight stay in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://tripxl.com/blog/wp-content/uploads/2024/09/Mount-Mary-Basilica.jpg" alt="Day 5 - Bandra and Departure">
+          <p><strong>Day 5:</strong> Take a scenic drive through **Bandra**, visiting **Mount Mary Church** and **Bandra Fort**. Enjoy a relaxing walk along the **Bandra-Worli Sea Link**. Afterward, visit **Carter Road** and enjoy the local cafés. Depart from Mumbai with unforgettable memories of the city.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Mumbai Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Mumbai')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+    // Booking logic
+    function redirectToBooking(price, destination) {
+      const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+      window.location.href = url;
+  }
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+  </script>
+  
+ </body>
+ </html>
+ 

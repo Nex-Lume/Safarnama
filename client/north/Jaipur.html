@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Jaipur</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="/https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="/https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      width:100%;
+      height: 800px;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Banner/HMR.jpg');">
+    <h1>Explore Jaipur Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <div class="Goa-content">
+      <!-- Default Overview Section -->
+      <div id="overview" class="package-overview">
+          <!-- Customizable Escape -->
+          <div class="package-card">
+              <img src="https://s7ap1.scene7.com/is/image/incredibleindia/amber-fort-jaipur-rajasthan-1-attr-hero?qlt=82&ts=1726660248715" alt="Customizable Package">
+              <h3>Family Fun</h3>
+              <p>Plan your personalized Jaipur experience, from shopping in Johari Bazaar to savoring Rajasthani cuisine or visiting iconic landmarks like Hawa Mahal and City Palace.</p>
+              <a href="/north/Jaipur.html?category=jaipur-tour1" class="btn-view">View Details</a>
+          </div>
+          <!-- Romantic Getaway -->
+          <div class="package-card">
+              <img src="https://weddinghues.in/wp-content/uploads/2024/05/pre-wedding-in-jaipur-1024x683.jpeg" alt="Couples Package">
+              <h3>Romantic Couple Package</h3>
+              <p>Rekindle romance in Jaipur with candlelight dinners overlooking Amber Fort, serene boat rides on Man Sagar Lake, and luxurious stays in heritage hotels.</p>
+              <a href="/north/Jaipur.html?category=jaipur-tour2" class="btn-view">View Details</a>
+          </div>
+          <!-- Luxury Heritage Escape -->
+          <div class="package-card">
+              <img src="https://cdn.kiwicollection.com/media/property/PR240943/xl/240943-01-Poolside-at%20The%20Leela%20Palace%20Jaipur.jpg?cb=1715815272" alt="Luxury Package">
+              <h3>Luxury Heritage Package</h3>
+              <p>Experience the grandeur of Jaipur with stays in royal palaces, private tours of historical sites, and indulgent spa treatments with traditional Rajasthani charm.</p>
+              <a href="/north/Jaipur.html?category=jaipur-tour3" class="btn-view">View Details</a>
+          </div>
+  
+        <div class="hexagon-title">
+          <h4>Top 10 Jaipur Attractions</h4>
+      </div>
+      <section class="hexagon-gallery">
+          <div class="hex">
+              <img src="https://s7ap1.scene7.com/is/image/incredibleindia/amber-fort-jaipur-rajasthan-1-attr-hero?qlt=82&ts=1726660248715" alt="some">
+              <h3>Amber Fort</h3>
+          </div>
+          <div class="hex">
+              <img src="https://eastindiantraveller.com/wp-content/uploads/2020/09/hawa-mahal-out.jpg?w=1200" alt="some">
+              <h3>Hawa Mahal</h3>
+          </div>
+          <div class="hex">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Chandra_Mahal%2C_City_Palace%2C_Jaipur%2C_20191218_0951_9043.jpg" alt="some">
+              <h3>City Palace</h3>
+          </div>
+          <div class="hex">
+              <img src="https://i.ytimg.com/vi/1Y_FbgbEZBI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBi892pikisWhIaPMNyOLLCxZod4Q" alt="some">
+              <h3>Jantar Mantar</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.connectingtraveller.com/images/localtip/1632928672images%20-%202021-09-29T204635.579.jpeg" alt="some">
+              <h3>Jaipur Zoo</h3>
+          </div>
+          <div class="hex">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/c4/72/f6/jal-mahal-jaipur-tour.jpg?w=1200&h=-1&s=1" alt="some">
+              <h3>Jal Mahal</h3>
+          </div>
+          <div class="hex">
+              <img src="https://content-tourist.rajasthan.gov.in/uploads/albert_hall_museum_jaipur_entry_fee_timings_holidays_reviews_header_219f4b832f.jpg" alt="some">
+              <h3>Albert Hall Museum</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.theleela.com/prod/content/assets/styles/tl_1920_735/public/aio-banner/dekstop/Nahargarh-fort-in-Jaipur.jpg.webp?VersionId=SDftFO2IJNvtKivM6ly3IiFSk0AeS58g&itok=NzZx10TX" alt="some">
+              <h3>Nahargarh Fort</h3>
+          </div>
+          <div class="hex">
+              <img src="https://village.chokhidhani.in/images/villagejaipur.jpg" alt="some">
+              <h3>Chokhi Dhani</h3>
+          </div>
+          <div class="hex">
+              <img src="https://static.toiimg.com/photo/39669197/.jpg" alt="some">
+              <h3>Birla Mandir</h3>
+          </div>
+      </section>
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <!--family fun -->
+  <div id="jaipur-tour1" class="package-detail">
+    <div class="package-header">
+        <h2>Family Fun Jaipur Cultural Retreat</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/16/64/14/90/chokhi-dhani-resort.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+            <p><strong>Type of Trip:</strong> Family Adventure and Cultural Experience</p>
+            <p><strong>Start City:</strong> Jaipur</p>
+            <p><strong>End City:</strong> Jaipur</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://thewandertherapy.com/wp-content/uploads/2024/11/jaipur-places-to-visit_the-wander-therapy.jpg" alt="Day 1 - Explore Jaipur">
+            <p><strong>Day 1:</strong> Arrive in Jaipur and check in to a family-friendly heritage hotel. Visit Hawa Mahal and local markets for handicrafts.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://twinsontoes.com/wp-content/uploads/elephant-ride-at-amber-fort-1-1024x576.jpeg" alt="Day 2 - Amber Fort Adventure">
+            <p><strong>Day 2:</strong> Explore the Amber Fort, enjoy an elephant ride, and experience the light and sound show in the evening.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://travel-blog.happyeasygo.com/wp-content/uploads/2021/11/Nahargarh-Fort-in-Jaipur.jpg" alt="Day 3 - Heritage Walk">
+            <p><strong>Day 3:</strong> Visit Jaigarh and Nahargarh Forts. Enjoy a picnic with panoramic views of Jaipur.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://chokhidhani.com/welcome-indore/wp-content/uploads/2022/12/1-1-1024x768.jpg" alt="Day 4 - Jantar Mantar">
+            <p><strong>Day 4:</strong> Discover Jantar Mantar and City Palace, followed by a cultural evening with traditional Rajasthani performances.</p>
+        </div>
+    </div>
+
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+  
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Jaipur Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Jaipur')">Book Now</button>
+  </div>
+</div>
+
+<div id="jaipur-tour2" class="package-detail">
+  <div class="package-header">
+      <h2>Romantic Jaipur Escape</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://lh7-rt.googleusercontent.com/docsz/AD_4nXd6ZYtNvTWPKjXYGvRsnEZ8cIV_wryV_Zkv89R6e9WGbLhAPSu7ZUzJe7FBdAtnHAUfczyArWB20nq0k-bDMgSoc83zkTTrtJihFAW409niiQGUnJ31C5vZEIKSUtgUmvJvIY94a0CfDFwyhuung1-Mgw?key=IcCEFuDTxgfYpekiBIAd4Q');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+          <p><strong>Type of Trip:</strong> Honeymoon Special</p>
+          <p><strong>Start City:</strong> Jaipur</p>
+          <p><strong>End City:</strong> Jaipur</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://tripxl.com/blog/wp-content/uploads/2024/10/Shadow-Time-At-The-Hawa-Mahal.jpg" alt="Day 1 - Jaipur">
+          <p><strong>Day 1:</strong> Arrival in Jaipur. Visit Hawa Mahal, enjoy a romantic evening at Jal Mahal, and a traditional dinner at Chokhi Dhani.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/India_-_Jaipur2_-_013_-_Taking_an_elephant_up_to_the_Amber_Fort_(2179238124)_20180409150325.jpg" alt="Day 2 - Amber Fort">
+          <p><strong>Day 2:</strong> Explore Amber Fort with an elephant ride to the top. Visit Jaigarh Fort and the City Palace in the afternoon.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.rajasthantourplanner.com/blog/wp-content/uploads/2022/01/Jaipur-Sisodia-Rani.jpg" alt="Day 3 - Jantar Mantar">
+          <p><strong>Day 3:</strong> Tour Jantar Mantar, shop at Johari Bazaar for jewelry, and stroll through the lush gardens of Sisodia Rani Ka Bagh.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://cdn.getyourguide.com/img/location/5d4c3524a0db8-wide.jpeg/99.jpg" alt="Day 4 - Departure">
+          <p><strong>Day 4:</strong> Enjoy a leisurely breakfast and visit Albert Hall Museum before departing from Jaipur with wonderful memories.</p>
+      </div>
+  </div>
+
+  <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+
+<div class="package-price">
+  <h3>Jaipur Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Jaipur')">Book Now</button>
+</div>
+</div>
+
+
+
+<div id="jaipur-tour3" class="package-detail">
+  <div class="package-header">
+      <h2>Family Fun in Jaipur</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://travelynnfamily.com/wp-content/uploads/2017/11/dsc04182-1024x680.jpg.webp');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Family Adventure</p>
+          <p><strong>Start City:</strong> Jaipur</p>
+          <p><strong>End City:</strong> Jaipur</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+    <h3>Itinerary</h3>
+    <div class="itinerary-item">
+      <img src="https://cdn.rajasthanstudio.com/2024/04/jaipur-airport_95d37ba0-1086-11e7-9d5b-3c373065cf85_20171005162813.jpg" alt="Day 1 - Jaipur">
+      <p><strong>Day 1:</strong> Arrival in Jaipur. Visit Amber Fort and enjoy an evening at Chokhi Dhani.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://cdn.britannica.com/25/242225-050-72142DF7/Front-facade-of-Palace-of-the-Winds-Hawa-Mahal-Jaipur-Rajasthan-India.jpg" alt="Day 2 - Jaipur">
+      <p><strong>Day 2:</strong> Explore Hawa Mahal, City Palace, and Jantar Mantar. Enjoy shopping in the local markets.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Amber-fort-jaipur-Rajasthan-India.jpg" alt="Day 3 - Jaipur">
+      <p><strong>Day 3:</strong> Visit Nahargarh Fort and Jaigarh Fort. Enjoy a stunning sunset view of Jaipur city.</p>
+    </div>
+  </div>
+  
+  <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+  </div>
+  
+  <div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+  </div>
+  
+  <div class="package-price">
+    <h3>Jaipur Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Jaipur')">Book Now</button>
+  </div>
+  
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

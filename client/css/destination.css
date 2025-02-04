@@ -1,0 +1,548 @@
+/* Global Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #fff;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --font-family: 'Arial', sans-serif;
+  }
+  
+  .custom-video-slider {
+    position: relative;
+    max-width: 100%;
+    height: 90vh; /* Adjust the height to 70% of the viewport height */
+   
+    text-align: center;
+  }
+  
+  .custom-video-slider-wrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100%; /* Ensure the wrapper takes up the full height of the container */
+  }
+  
+  .custom-video-slide {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    height: 100%; /* Ensure the video takes up the full height of the slide */
+  }
+  
+  .custom-video-slide video {
+    width: 100%;
+    height: 100%; /* Fill the entire slide container */
+    object-fit: cover; /* Ensures the video covers the slide area */
+  }
+  .custom-video-slide video iframe {
+    object-fit: cover;
+
+  }
+  .custom-slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .custom-slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .custom-slider-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .custom-prev-btn {
+    left: 10px;
+  }
+  
+  .custom-next-btn {
+    right: 10px;
+  }
+  
+  .category-buttons {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    z-index: 10;
+  }
+  
+  .category-buttons button {
+    background-color: transparent; /* Make the background transparent */
+    color: #fff; /* Keep the text white */
+    border: none; /* Remove the border */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 16px;
+    text-transform: uppercase; /* Optional: makes the button text uppercase */
+    outline: none; /* Remove any outline when clicked */
+  }
+  
+  .category-buttons button:hover {
+    color: #007bff; /* Change the text color on hover */
+    border-bottom:3px solid rgb(242, 26, 26);
+  }
+    
+/* Section container styling */
+.frame-regions {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    max-width: 1300px;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.frame-regions h2{
+  font-size: 50px;
+  font-weight: 600;
+  text-align: start;
+}
+
+/* Navigation bar styling */
+.regions-nav {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    /* margin-bottom: 2rem; */
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #9c9c9c; /* Adds blue bottom border */
+}
+
+/* Navigation buttons styling */
+.regions-nav button {
+   background-color: #f7f7f7;
+    color: #343a40;
+    border: 2px solid transparent;
+    
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, border 0.3s ease;
+  
+}
+
+/* Hover effect with blue border */
+.regions-nav button:hover {
+   
+    transform: translateY(-2px);
+   
+    border-bottom: 4px solid #007bff; /* Adds blue bottom border */
+}
+
+/* Active button effect */
+.regions-nav button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Content area styling */
+#content {
+   background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 12px;
+  margin-bottom: -120px;
+    font-size: 1.2rem;
+    color: #343a40;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Content fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add responsive styling for mobile */
+@media (max-width: 600px) {
+    .regions-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .regions-nav button {
+        width: 100%;
+    }
+
+    .frame-regions {
+        padding: 1.5rem;
+    }
+
+    #content {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+}
+.image-collage {
+  display: flex;
+  gap: 10px; /* Space between left and right sections */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.left-image {
+  flex: 1.2; /* Keep the left image larger */
+  position: relative; /* For positioning the caption inside the image */
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%; /* Stretch the image to fill the height */
+  max-height: 500px; /* Adjust maximum height for mobile */
+  object-fit: cover; /* Ensure the image covers its container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.left-image p {
+  position: absolute; /* Position the caption inside the image */
+  bottom: 5px; /* Align caption to the bottom */
+  left: 0;
+  right: 0;
+  
+  background: rgba(0, 0, 0, 0.604); /* Add a semi-transparent background for readability */
+  color: #fff; /* Caption text color */
+  font-size: 18px; /* Adjust font size for mobile */
+  text-align: center;
+  padding: 8px; /* Padding inside the caption */
+  margin: 0; /* Remove default margin */
+  border-radius: 0 0 8px 8px; /* Rounded corners to match the image */
+}
+
+.right-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* Equal height rows */
+  gap: 10px; /* Reduce gap for mobile */
+  flex: 1.3; /* Keep the width of the grid proportional */
+}
+
+.small-image {
+  position: relative; /* For positioning the caption inside the image */
+}
+
+.small-image img {
+  width: 100%;
+  height: 100%; /* Fill the grid cell completely */
+  aspect-ratio: auto; /* Allow natural proportions of images */
+  object-fit: cover; /* Ensure the image covers its container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.small-image p {
+  position: absolute; /* Position the caption inside the image */
+  bottom: 5px; /* Align caption to the bottom */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.604); /* Add a semi-transparent background for readability */
+  color: #fff; /* Caption text color */
+  font-size: 16px; /* Smaller font size for mobile */
+  text-align: center;
+  padding: 6px; /* Reduce padding for mobile */
+  margin: 0; /* Remove default margin */
+  border-radius: 0 0 8px 8px; /* Rounded corners to match the image */
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 768px) {
+  .image-collage {
+    flex-direction: column; /* Stack images vertically on mobile */
+    gap: 20px; /* Increase space between sections */
+  }
+
+  .left-image img {
+    max-height: 300px; /* Smaller height for left image */
+  }
+
+  .right-grid {
+    grid-template-columns: 1fr; /* Single column for grid images */
+    grid-template-rows: auto; /* Adjust rows automatically */
+  }
+
+  .small-image img {
+    height: auto; /* Allow natural height for grid images */
+    max-height: 150px; /* Limit max height for mobile */
+  }
+
+  .small-image p {
+    font-size: 10px; /* Further reduce font size for captions */
+    padding: 4px; /* Smaller padding for captions */
+  }
+}
+
+
+
+/* Activities Section Styles */
+.activities {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.activities h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.activity-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.activity-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 5px solid #ff6f61;
+}
+
+.activity-item h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #ff6f61;
+}
+
+.activity-item p {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 15px 15px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .activity-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity-item {
+    width: 90%;
+  }
+}
+
+/* General styling for the section */
+.special-discounts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the discount banner container */
+.discount-banner {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for the discount banner */
+.discount-banner:hover {
+ 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the link inside the discount banner */
+.discount-banner a.DO {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.travel-blog {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.travel-blog h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.travel-blog p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-item h3 {
+  font-size: 1rem;
+  margin: 15px 0 10px;
+  color: #ff6f61;
+}
+
+.blog-item p {
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #e65b50;
+}
+
+/* Top Destinations Section */
+#top-destinations {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background for a clean look */
+  text-align: center;
+}
+
+#top-destinations h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#top-destinations p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid Styling */
+.destination-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between destination items */
+}
+
+/* Destination Item Styling */
+.destination-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+.destination-item:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.destination-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Destination Text Styling */
+.destination-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 15px 10px 5px;
+}
+
+.destination-item p {
+  font-size: 1em;
+  color: #666;
+  margin: 0 10px 15px;
+  line-height: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .destination-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-item {
+    max-width: 90%;
+  }
+}

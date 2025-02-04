@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Uttar-Pradesh</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Banner/PMVBanner.jpg');">
+    <h1>Explore Uttar Pradesh Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Spiritual and Cultural Uttar Pradesh Tour -->
+        <div class="package-card">
+            <img src="https://m.economictimes.com/thumb/msid-51288676,width-1200,height-900,resizemode-4,imgsize-567256/visit-the-splendour-of-uttar-pradesh-for-the-diverse-explorer-in-you.jpg" alt="Spiritual and Cultural Uttar Pradesh Tour">
+            <h3>Spiritual and Cultural Uttar Pradesh Tour</h3>
+            <p>Experience the spiritual heritage of Uttar Pradesh with visits to Varanasi, the holy city of temples, and Prayagraj, the sacred land of the Kumbh Mela.</p>
+            <a href="/north/Uttar-Pradesh.html?category=Package1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Taj Mahal and Agra Fort Tour -->
+        <div class="package-card">
+            <img src="https://www.civitatis.com/f/india/agra/tour-taj-mahal-fuerte-agra-589x392.jpg" alt="Taj Mahal and Agra Fort Tour">
+            <h3>Taj Mahal and Agra Fort Tour</h3>
+            <p>Marvel at the majestic Taj Mahal, visit the historic Agra Fort, and explore the Mughal heritage in Agra.</p>
+            <a href="/north/Uttar-Pradesh.html?category=Package2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Mathura and Vrindavan Tour -->
+        <div class="package-card">
+            <img src="https://devotionalpoint.com/wp-content/uploads/2024/02/14.jpg" alt="Mathura and Vrindavan Tour">
+            <h3>Mathura and Vrindavan Tour</h3>
+            <p>Discover the divine birthplace of Lord Krishna in Mathura and the sacred temples of Vrindavan, offering peace and spirituality.</p>
+            <a href="/north/Uttar-Pradesh.html?category=Package3" class="btn-view">View Details</a>
+        </div>
+    
+        <div class="hexagon-title">
+            <h4>Top 10 Places in Uttar Pradesh</h4>
+        </div>
+        <section class="hexagon-gallery">
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Kashi_Vishwanath.jpg" alt="Kashi Vishwanath Temple">
+                <h3>Kashi Vishwanath Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/640px-Taj_Mahal_%28Edited%29.jpeg" alt="Taj Mahal">
+                <h3>Taj Mahal</h3>
+            </div>
+            <div class="hex">
+                <img src="https://kevinstandagephotography.wordpress.com/wp-content/uploads/2019/05/cover-3.jpg" alt="Agra Fort">
+                <h3>Agra Fort</h3>
+            </div>
+            <div class="hex">
+                <img src="https://optimatravels.com/images/allahabad-images/triveni-sangam-prayagraj.webp" alt="Triveni Sangam">
+                <h3>Triveni Sangam</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Government_Museum_-_Mathura_2013-02-23_5014.JPG" alt="Mathura Museum">
+                <h3>Mathura Museum</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/1_20190522161646.jpg" alt="Vrindavan Temple">
+                <h3>Vrindavan Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/05/9e56c377aa26352344e38e65fca2a3fb_1000x1000.png" alt="Allahabad Fort">
+                <h3>Allahabad Fort</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg/1200px-Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg" alt="Ram Janmabhoomi">
+                <h3>Ram Janmabhoomi</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/J.K._Temple.jpg/640px-J.K._Temple.jpg" alt="Kanpur">
+                <h3>Kanpur</h3>
+            </div>
+            <div class="hex">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/b5/28/7c/chhota-imambara.jpg?w=600&h=500&s=1" alt="Lucknow">
+                <h3>Lucknow</h3>
+            </div>
+        </section>
+    </div>
+    
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="Package1" class="package-detail">
+    <div class="package-header">
+        <h2>Mathura and Vrindavan: 3-Day Spiritual Tour</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://vrindavanmathura.com/wp-content/uploads/elementor/thumbs/Prem-mandir-vrindavan-pw8h8pj9k1r146ww37ghutrvpj8it8diz7j82tpxto.webp');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+            <p><strong>Type of Trip:</strong> Spiritual and Cultural Exploration</p>
+            <p><strong>Start City:</strong> Delhi</p>
+            <p><strong>End City:</strong> Delhi</p>
+        </div>
+    </div>
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/05/c7e7783476873efde167e53e66412fd3_1000x1000.jpg" alt="Day 1 - Arrival in Mathura and Visit to Krishna Janmabhoomi">
+            <p><strong>Day 1:</strong> Arrive in Mathura from Delhi. Visit **Krishna Janmabhoomi**, the birthplace of Lord Krishna. Explore the **Dwarkadhish Temple** and the local ghats on the Yamuna River. Spend the evening at the **Vishram Ghat**, where Lord Krishna is believed to have rested. Overnight stay in Mathura.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://tripxl.com/blog/wp-content/uploads/2024/11/Prem-Mandir-1.jpg" alt="Day 2 - Vrindavan and Spiritual Sites">
+            <p><strong>Day 2:</strong> Early morning visit to **Vrindavan**, the land of Lord Krishna’s childhood. Visit the **Banke Bihari Temple**, one of the most famous temples in Vrindavan. Explore **Radha Raman Temple** and the serene **Seva Kunj**. Experience the evening **Holi festival rituals** at **Vrindavan’s temples**. Overnight stay in Vrindavan.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://travelophia.com/wp-content/uploads/2024/02/mathura-vrindavan-tour-banner.webp" alt="Day 3 - Vrindavan Exploration and Departure">
+            <p><strong>Day 3:</strong> Start your day with early morning **Radha Krishna Darshan** at the temples. Explore the peaceful **Prem Mandir** and enjoy the beautiful spiritual vibes. After lunch, return to Delhi, reflecting on the divine experiences and memories of Mathura and Vrindavan.</p>
+        </div>
+    </div>
+  
+      <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Uttar Pradesh Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Uttar Pradesh')">Book Now</button>
+</div>
+</div>
+
+<div id="Package3" class="package-detail">
+  <div class="package-header">
+      <h2>Banaras, Ayodhya, and Prayagraj: 3-Day Spiritual Temple Tour</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://www.holidaymonk.com/wp-content/uploads/2023/03/Varanasi-Tour-Packages.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Spiritual and Temple Exploration</p>
+          <p><strong>Start City:</strong> Any City in India</p>
+          <p><strong>End City:</strong> Any City in India</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://traveloceanindia.com/blogs/wp-content/uploads/2023/06/ganges-boat-ride-scaled.jpg" alt="Day 1 - Arrival in Varanasi">
+          <p><strong>Day 1:</strong> Arrive in Varanasi. Start your spiritual journey by visiting the world-famous **Kashi Vishwanath Temple**, dedicated to Lord Shiva. Take a boat ride on the Ganges River at sunrise, followed by visits to **Dashashwamedh Ghat** and the ancient **Sankat Mochan Hanuman Temple**. Explore the vibrant local markets and enjoy the city's spiritual atmosphere. Overnight stay in Varanasi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://ayodhyacity.co.in/wp-content/uploads/2024/01/Shree_Ram_Janmaboomi_Temple_in_Ayodhya.jpg" alt="Day 2 - Ayodhya and Temples">
+          <p><strong>Day 2:</strong> Travel to **Ayodhya**, the birthplace of Lord Rama. Visit **Ram Janmabhoomi**, **Hanuman Garhi**, and the ancient **Kanak Bhavan**. Immerse yourself in the rich history and spirituality of the city. In the afternoon, travel to **Prayagraj** (Allahabad). Upon arrival, visit the **Triveni Sangam** for a spiritual dip, and explore **Kumbh Mela Ghats** and **Anand Bhavan**. Overnight stay in Prayagraj.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://nextjs.thekumbhyatra.com/wp-content/uploads/2023/08/Prayagraj-Fort.jpg" alt="Day 3 - Prayagraj Exploration and Departure">
+          <p><strong>Day 3:</strong> Begin the day with an early visit to **Bharat Mata Mandir** and **Prayagraj Fort**. Explore the rich cultural heritage of the city and pay homage at the sacred **Sangam Ghat**. In the evening, return to your departure city, carrying divine blessings and cherished memories from your spiritual journey.</p>
+      </div>
+  </div>
+
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Uttar Pradesh Package</h3>
+    <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(45000, 'Uttar Pradesh')">Book Now</button>
+  </div>
+</div>
+
+<div id="Package2" class="package-detail">
+  <div class="package-header">
+      <h2>Lucknow and Varanasi: 3-Day Cultural and Spiritual Journey</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://cdn.getyourguide.com/img/tour/6e1356f4a44f68ccbee1d96d282bd482ec0ea35225997c382faab880146265aa.jpg/146.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Cultural, Spiritual, Heritage Exploration</p>
+          <p><strong>Start City:</strong> Lucknow</p>
+          <p><strong>End City:</strong> Varanasi</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://vacanzavoyages.com/wp-content/uploads/2023/12/lucknow-1-min.jpg" alt="Day 1 - Arrival in Lucknow and Exploration of City Landmarks">
+          <p><strong>Day 1:</strong> Arrive in Lucknow and begin your cultural exploration of the city, famous for its Mughal and Awadhi heritage. Visit **Bada Imambara**, **Chota Imambara**, and **Rumi Darwaza**, and indulge in authentic **Awadhi cuisine**. Overnight stay in Lucknow.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://cdn.getyourguide.com/img/tour/5d724feac1c78.jpeg/99.jpg" alt="Day 2 - Varanasi Journey and Spiritual Exploration">
+          <p><strong>Day 2:</strong> Early morning drive to Varanasi. Visit **Kashi Vishwanath Temple**, enjoy a **Ganga Aarti** at **Dashashwamedh Ghat**, and explore **Sarnath**. Experience a boat ride on the Ganges at sunrise. Overnight stay in Varanasi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://static.toiimg.com/thumb/msid-64111383,width=1200,height=900/64111383.jpg" alt="Day 3 - Varanasi Exploration and Departure">
+          <p><strong>Day 3:</strong> Visit **Banaras Hindu University**, **Kashi Vishwanath Corridor**, and **Tulsi Manas Mandir**. Shop at **Assi Ghat** before departing for your onward journey from Varanasi.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Uttar Pradesh Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Uttar Pradesh')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

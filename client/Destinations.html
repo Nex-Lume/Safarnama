@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama.com</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >  <link rel="stylesheet" href="css/Style.css">
+  <link rel="stylesheet" href="css/destination.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+       
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="Index.html">
+          <img src="Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Destinations.html"> Destinations</a></li>
+          <li><a href="Packages.html"> Packages</a></li>
+          <li>
+            <a href="Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="FestivalTour.html">Festival Tour</a></li>
+              <li><a href="HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html"> Contact</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- Header Section End  -->
+
+<!-- Hero Section Start -->
+<section id="video-slider" class="custom-video-slider">
+  <!-- Video Slider Wrapper -->
+  <div class="custom-video-slider-wrapper">
+    <div class="custom-video-slide">
+      <video src="video/v2.mp4" poster="Images/Banner/LadakhBanner.jpg" autoplay muted loop></video>
+        </div>
+    <div class="custom-video-slide">
+      <video src="video/v3.mp4" poster="Images/Banner/BBGBanner.jpg" autoplay muted loop></video>
+    </div>
+    <div class="custom-video-slide">
+      <video src="video/v4.mp4" poster="Images/Banner/EHTBanner.jpg" autoplay muted loop></video>
+    </div>
+    <div class="custom-video-slide">
+      <video src="video/v1 (1).mp4" poster="Images/Banner/HBCBanner.jpg" autoplay muted loop></video>
+    </div>
+    <!-- <div class="custom-video-slide">
+      <video src="video/packagevideo1.mp4" poster="Images/Banner/HPBanner.jpg" autoplay muted loop></video>
+    </div> -->
+  </div>
+
+  <!-- Slider Controls -->
+  <div class="custom-slider-controls">
+    <button class="custom-prev-btn" onclick="moveSlide('prev')">Prev</button>
+    <button class="custom-next-btn" onclick="moveSlide('next')">Next</button>
+  </div>
+
+  <!-- Category Buttons -->
+  <div class="category-buttons">
+    <button onclick="goToSlide(0)">Wildlife</button>
+    <button onclick="goToSlide(1)">Nature</button>
+    <button onclick="goToSlide(2)">Adventure</button>
+    <button onclick="goToSlide(3)">Spiritual</button>
+    <button onclick="goToSlide(4)">Culture</button>
+  </div>
+</section>
+<!-- Hero Section End -->
+
+
+  <section id="regions" class="frame-regions">
+    <h2>Explore Top Destinations by Region</h2>
+    <nav class="regions-nav">
+      <button onclick="showRegion('north')">North India</button>
+      <button onclick="showRegion('south')">South India</button>
+      <button onclick="showRegion('central')">Central India</button>
+      <button onclick="showRegion('west')">West India</button>
+      <button onclick="showRegion('east')">East India</button>
+    </nav>
+    <div id="content">
+      <p>Select a region to explore its top destinations.</p>
+      
+    </div>
+  </section>
+
+  <!-- Popular Activities Section -->
+<section id="activities" class="activities">
+  <h2>Top Activities to Try</h2>
+  <div class="activity-list">
+    <div class="activity-item">
+     <img src="Images/Activities/scubadiving.jpg" alt="Scuba Diving">
+      <h3>Scuba Diving</h3>
+      <p>Explore underwater life in the pristine waters of Andaman or Goa.</p>
+    </div>
+    <div class="activity-item">
+      <img src="Images/Activities/trakking.jpg" alt="Trekking">
+      <h3>Trekking</h3>
+      <p>Hike through the majestic Himalayas or Western Ghats.</p>
+    </div>
+    <div class="activity-item">
+      <img src="Images/Activities/culture.jpg" alt="Cultural Tours">
+      <h3>Cultural Tours</h3>
+      <p>Experience India's diverse traditions and vibrant festivals.</p>
+    </div>
+    <div class="activity-item">
+      <img src="Images/Activities/wildlifesafari.jpg" alt="Wildlife Safari">
+      <h3>Wildlife Safari</h3>
+      <p>Spot exotic animals in national parks like Ranthambore or Jim Corbett.</p>
+    </div>
+  </div>
+</section>
+  
+<section class="special-discounts" >
+  <div class="discount-banner" >
+    <a href="Packages.html" class="DO"><div class="discount-banner" style="background-image: url('/Images/Banner/SB.jpg');"></div></a>
+    </div>
+</section>
+
+
+<section id="travel-blog" class="travel-blog">
+  <h2>Travel Stories & Tips</h2>
+  <p>Get inspired by the latest travel blogs, tips, and guides written by seasoned travelers.</p>
+  <div class="blog-list">
+    <div class="blog-item">
+      <img src="Images/Goa/goa (3).jpg" alt="Beach Getaway">
+      <h3>Top 10 Beach Destinations in India</h3>
+      <p>Discover the most breathtaking beaches for your next sun-soaked escape.</p>
+      <a href="https://india-s-travel.com/blog/india-top-10-beaches:-a-paradise-for-beach-lovers/"  target="_blank" class="read-more">Read More</a>
+    </div>
+    <div class="blog-item">
+      <img src="Images/Activities/indian-delicious-food-flat-lay.jpg" alt="Food Tour">
+      <h3>A Guide to India’s Food Trails</h3>
+      <p>Explore the flavors of India, from street food to traditional delicacies.</p>
+      <a href="https://www.shikhar.com/blog/the-gastronomic-affair-food-trails-of-india/" target="_blank" class="read-more">Read More</a>
+    </div>
+    <div class="blog-item">
+      <img src="Images/UttraKhand/rishikesh7.jpg" alt="Adventure Activities">
+      <h3>Must-Try Adventure Sports in India</h3>
+      <p>From river rafting to paragliding, find out where to get your adrenaline fix.</p>
+      <a href="https://vagatrip.com/blogs/best-adventure-sports" target="_blank" class="read-more">Read More</a>
+    </div>
+  </div>
+</section>
+
+<section id="top-destinations" class="top-destinations">
+  <h2>Our Top-Rated Destinations</h2>
+  <p>Explore the most loved destinations by travelers around the globe.</p>
+  <div class="destination-grid">
+    <div class="destination-item">
+      <a href="/north/kashmir.html">
+      <img src="Images/Himachal/Himachal.jpg" alt="Kashmir">
+      </a>
+      <h3>Kashmir</h3>
+      <p>Known as 'Paradise on Earth', explore its lush valleys, serene lakes, and snowy mountains.</p>
+    </div>
+    <div class="destination-item">
+      <a href="/south/Kerala.html">
+      <img src="Images/Kerala/kerla.jpg" alt="Kerala">
+      </a>
+      <h3>Kerala</h3>
+      <p>Relax in houseboats along the backwaters and enjoy the vibrant culture of 'God's Own Country'.</p>
+    </div>
+    <div class="destination-item">
+      <a href="/north/Ladakh.html">
+      <img src="Images/Ladakh/ladakh10.jpg" alt="Leh-Ladakh">
+      </a>
+      <h3>Leh-Ladakh</h3>
+      <p>An adventure lover’s paradise, famous for its rugged mountains and pristine lakes.</p>
+    </div>
+    <div class="destination-item">
+      <a href="/north/Jaipur.html">
+      <img src="Images/Rajasthan/jaipur3.jpg" alt="Jaipur">
+      </a>
+      <h3>Jaipur</h3>
+      <p>Immerse yourself in the royal heritage of Rajasthan's 'Pink City'.</p>
+    </div>
+  </div>
+</section>
+
+
+ 
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="js/destination.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+ </body>
+ </html>
+ 

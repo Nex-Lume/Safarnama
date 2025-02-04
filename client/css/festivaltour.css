@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  background-color: #fff;
+  font-family: "Poppins", serif;
+  padding: 40px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.festivals {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.festival {
+  width: 30%;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.festival img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.festival-content {
+  padding: 20px;
+}
+
+.festival h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.festival p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.festival a {
+  text-decoration: none;
+  color: #ff6f61;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.festival a:hover {
+  text-decoration: underline;
+}
+
+/*  */
+.c-heroImageGrid {
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+  background: #fff;
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1300px; /* Set a max-width for the grid, you can adjust this value */
+  width: 100%; /* Adjust the width as needed */
+  margin-bottom: 60px;
+}
+
+
+.c-heroImageGrid .container {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	top: -20vw;
+	left: -8vw;
+	transform: rotateZ(45deg);
+	height: 100vw;
+	width: 107vw;
+}
+
+.c-heroImageGrid .container .column {
+	overflow: hidden;
+	position: relative;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1) {
+	border-right: 8px solid white;
+	width: 25%;
+	height: 66vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1):before {
+	position: absolute;
+	top: 8.4vw;
+	left: 8.1vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	width: 37vw;
+	height: 38vw;
+	background-image: url('../Images/Festivaltour/ganpati.jpg');
+}
+
+
+.c-heroImageGrid .container .column:nth-of-type(2) {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 75%;
+	height: 109.1vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row {
+	border-top: 8px solid #fff;
+}
+
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1) {
+	position: relative;
+	overflow: hidden;
+	height: 50vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):before {
+	position: absolute;
+	top: -10.1vw;
+	left: -14.3vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	width: 65vw;
+	height: 39vw;
+	background-image: url('../Images/Festivaltour/holi.jpg');
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
+	display: flex;
+	height: 40.5vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+	border-top: none;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) {
+	overflow: hidden;
+	width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../Images/Festivaltour/onam.jpg');
+
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	transform: rotateZ(-45deg);
+	position: relative;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text h6 {
+	position: absolute;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.35vw;
+	width: 20vw;
+	top: 16vw;
+	left: 7vw;
+	line-height: 1.55vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text p {
+	text-align: right;
+	position: absolute;
+	color: #fff;
+	font-size: 0.9vw;
+	width: 18vw;
+	top: 23.5vw;
+	left: -3.5vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2) {
+	position: relative;
+	width: 70%;
+	border-left: 8px solid white;
+	overflow: hidden;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):before {
+	position: absolute;
+	top: 0;
+	left: -40vw;
+	width: 110.1vw;
+	height: 110vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: rotateZ(-45deg);
+	content: "";
+	background-image: url('../Images/Festivaltour/diwali.jpg');
+  background-clip: calc();
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+	position: relative;
+	height: 18.6vw;
+	overflow: hidden;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):before {
+	position: absolute;
+	top: 7.5vw;
+	left: 25vw;
+	width: 33vw;
+	height: 27vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	background-image: url(https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+}
+
+
+.festival-section {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1200px;
+  font-family: "Poppins", serif;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.festival-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.festival-section p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.festival-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .festival-section {
+    padding: 20px;
+  }
+
+  .festival-section h2 {
+    font-size: 2em;
+  }
+
+  .festival-section p {
+    font-size: 1em;
+  }
+}
+
+/* General Styles for Intro Section */
+.intro-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro-section h2 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.intro-section p {
+  font-family: "Poppins", serif;
+  font-size: 1.1rem;
+  color: #252525;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Grid Layout for Festival Items */
+.festival-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 0 15px;
+  justify-content: center;
+  justify-self: center;
+  padding-bottom: 25px;
+}
+
+/* Styles for Each Festival Item */
+.festival-item {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.festival-item h3 {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.festival-item p {
+  font-size: 1.2rem;
+  color: #000000;
+
+}
+
+/* Styles for Festival Image */
+.festival-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .festivals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .festival {
+    width: 80%;
+  }
+}

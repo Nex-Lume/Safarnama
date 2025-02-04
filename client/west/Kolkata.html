@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SafarNama | Kolkata</title>
+    <link rel="icon" href="/Images/Logo/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/goa.css">
+    <link href="/https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="/https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .hero-goa{
+          background-size: cover;
+          height: 100vh;
+        }
+      </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="/Index.html">
+                    <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+                </a>
+            </h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="/Index.html">Home</a></li>
+                    <li><a href="/Destinations.html"> Destinations</a></li>
+                    <li><a href="/Packages.html"> Packages</a></li>
+                    <li>
+                        <a href="/Tours.html">Tours</a>
+                        <ul class="tour-list">
+                            <li><a href="/FestivalTour.html">Festival Tour</a></li>
+                            <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+                            <li><a href="/ReligionTour.html">Religious Tour</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/contact.html"> Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </nav>
+            <div class="search-container">
+
+                <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+                <i class="fas fa-search" id="search-icon"></i>
+                <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+                <div id="search-results" class="results-container"></div>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-goa" style="background-image: url('/Images/Banner/Kolkata-Tour-2.jpg');">
+        <h1>Explore Kolkata Packages</h1>
+    </div>
+    <!-- Content Section -->
+    <section>
+        <div class="Goa-content">
+            <!-- Default Overview Section -->
+            <div id="overview" class="package-overview">
+              <div id="overview" class="package-overview">
+
+                <!-- Thrill-Seeker's Adventure -->
+                <div class="package-card">
+                    <img src="https://tripxl.com/blog/wp-content/uploads/2024/12/Zip-Lining-At-Ranganatha-Temple.jpg" alt="Thrill-Seeker's Adventure">
+                    <h3>Thrill-Seeker's Adventure</h3>
+                    <p>Experience the excitement of exploring Kolkata's vibrant streets, historical sites, and adventure parks.</p>
+                    <a href="/Kolkata.html?category=kolkata-tour1" class="btn-view">View Details</a>
+                </div>
+            
+                <!-- Romantic Getaway -->
+                <div class="package-card">
+                    <img src="https://static-blog.treebo.com/blog/wp-content/uploads/2018/07/Millennium-Park.jpg" alt="Romantic Package">
+                    <h3>Romantic Getaway</h3>
+                    <p>Fall in love with Kolkata's sunset cruises along the Hooghly River, cozy dinners, and heritage hotels.</p>
+                    <a href="/Kolkata.html?category=kolkata-tour2" class="btn-view">View Details</a>
+                </div>
+            
+                <!-- Solo Traveler's Retreat -->
+                <div class="package-card">
+                    <img src="https://tripjive.com/wp-content/uploads/2024/01/Safety-precautions-for-solo-travelers-in-Kolkata-1024x585.jpg" alt="Solo Traveler Package">
+                    <h3>Solo Traveler's Retreat</h3>
+                    <p>Explore Kolkata's cultural heritage, peaceful parks, and soulful temples with a serene solo journey.</p>
+                    <a href="/Kolkata.html?category=kolkata-tour3" class="btn-view">View Details</a>
+                </div>
+                <div class="hexagon-title">
+                  <h4>Top 10 Kolkata Beaches</h4>
+              </div>
+              <section class="hexagon-gallery">
+                  <div class="hex">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/FALTA_-1_%28cropped%29.jpg" alt="Diamond Harbour">
+                      <h3>Diamond Harbour</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://www.exploreourindia.com/backend/web/images/post/big/3720_sagar%20beach%20kolkata.webp" alt="Sagar Island Beach">
+                      <h3>Sagar Island Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/05/16113231/digha1.jpg" alt="Digha Beach">
+                      <h3>Digha Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/16/1f/bb/photo0jpg.jpg" alt="Mandarmani Beach">
+                      <h3>Mandarmani Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://nomadicweekends.com/blog/wp-content/uploads/2019/03/Tajpur-Sea-Beach.jpg" alt="Tajpur Beach">
+                      <h3>Tajpur Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c2/47/25/shankarpur-beach.jpg?w=1200&h=-1&s=1" alt="Shankarpur Beach">
+                      <h3>Shankarpur Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/9c/6c/58/frazerganj-beach.jpg?w=1200&h=1200&s=1" alt="Fraserganj Beach">
+                      <h3>Fraserganj Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://static.toiimg.com/photo/71273337.cms" alt="Junput Beach">
+                      <h3>Junput Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/36/1c/74/chandipur-beach.jpg" alt="Chandipur Beach">
+                      <h3>Chandipur Beach</h3>
+                  </div>
+                  <div class="hex">
+                      <img src="https://content.jdmagicbox.com/comp/midnapore/y2/9999p3222.3222.181113223902.a3y2/catalogue/chandpur-beach-midnapore-tourist-attraction-1wmlgglonq.jpg" alt="Sonarpur Beach">
+                      <h3>Sonarpur Beach</h3>
+                  </div>
+              </section>
+                <section class="slide-packages">
+                    <h2>Explore Our Kerala Tour Packages</h2>
+                    <div class="package-gallery">
+                        <div class="package">
+                            <a href="/details/luxury-kovalam-package.html">
+                                <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/4f6955cd0f2cd264153bd35d3588a250995992ee-1280x1760.jpg?w=480&fm=webp&dpr=2" alt="Luxury Kovalam Package">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Luxury Kovalam Package</h3>
+                                <p>3 Nights / 4 Days - ₹18,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/adventure-wayanad-package.html">
+                                <img src="https://www.wayanadtourpackages.com/wp-content/uploads/2021/05/zipline-in-wayanad.jpg" alt="Adventure Wayanad Package">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Adventure Wayanad Package</h3>
+                                <p>4 Nights / 5 Days - ₹21,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/romantic-munnar-getaway.html">
+                                <img src="https://www.lelagoonholidays.com/assets/images/munnarvertical1.jpg" alt="Romantic Munnar Getaway">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Romantic Munnar Getaway</h3>
+                                <p>2 Nights / 3 Days - ₹15,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/serene-alleppey-retreat.html">
+                                <img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fvertical%2Fvembanad-lake-1720267811_e91ddf362d7423d2691d.webp&w=1080&q=75" alt="Serene Alleppey Retreat">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Serene Alleppey Retreat Package</h3>
+                                <p>5 Nights / 6 Days - ₹28,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Package Section view  -->
+
+        <!-- Content Section -->
+
+        <div class="Goa-content">
+            <!--family fun -->
+            <div id="kolkata-tour1" class="package-detail">
+              <div class="package-header">
+                  <h2>Heritage and Culture Kolkata Tour</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://static.toiimg.com/photo/54027628.cms');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+                      <p><strong>Type of Trip:</strong> Cultural and Heritage Tour</p>
+                      <p><strong>Start City:</strong> Kolkata</p>
+                      <p><strong>End City:</strong> Kolkata</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://www.trawell.in/admin/images/upload/555418532Victoria-Memorial-Kolkata.jpg" alt="Day 1 - Arrival and Sightseeing">
+                      <p><strong>Day 1:</strong> Arrive in Kolkata and check-in to your hotel. Visit iconic landmarks like Howrah Bridge and the Victoria Memorial.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1707287924_555418767kolkata_kalighat_temple_main.jpg.webp" alt="Day 2 - Explore Local Markets and Temples">
+                      <p><strong>Day 2:</strong> Visit the famous New Market, Kalighat Temple, and explore the vibrant street life of Kolkata.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://i0.wp.com/traveldreams.live/wp-content/uploads/2021/05/29.jpg" alt="Day 3 - Museum and Cultural Tour">
+                      <p><strong>Day 3:</strong> Spend the day at the Indian Museum and explore cultural experiences such as Bengali theater and local art galleries.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/73/9b.jpg" alt="Day 4 - Day Trip to Dakshineswar">
+                      <p><strong>Day 4:</strong> Take a day trip to Dakshineswar Kali Temple and explore the surrounding peaceful areas along the Hooghly River.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/75/ba/53.jpg" alt="Day 5 - Relax and Departure">
+                      <p><strong>Day 5:</strong> Relax at Eden Gardens or take a sunset boat ride on the Hooghly River before your departure.</p>
+                  </div>
+              </div>
+                <div class="additional-highlights">
+                  <h3>Additional Highlights</h3>
+                  <ul>
+                      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                  </ul>
+              </div>
+          
+              <div class="package-inclusions">
+                  <h3>Package Inclusions</h3>
+                  <ul>
+                      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                  </ul>
+              </div>
+              <div class="package-price">
+                <h3>Kolkata Package</h3>
+                <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(35000, 'Kolkata')">Book Now</button>
+              </div>
+          </div>
+            </div>
+
+
+            <!--solo -->
+            <div id="kolkata-tour2" class="package-detail">
+              <div class="package-header">
+                  <h2>Mumbai to Kolkata Heritage Tour</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://cdn.getyourguide.com/img/tour/6fb00597821704ff.jpeg/146.jpg');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+                      <p><strong>Type of Trip:</strong> Cultural and Heritage Exploration</p>
+                      <p><strong>Start City:</strong> Mumbai</p>
+                      <p><strong>End City:</strong> Kolkata</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://www.mysoultravels.com/wp-content/uploads/2019/07/victoria-memorial-2394784_1920.jpg" alt="Day 1 - Arrival in Kolkata">
+                      <p><strong>Day 1:</strong> Arrive in Kolkata from Mumbai, check-in to your hotel, and begin your cultural exploration. Visit Howrah Bridge and the iconic Victoria Memorial.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://indianmuseumkolkata.org/wp-content/uploads/2022/04/banner2.jpg" alt="Day 2 - Museum and Cultural Tour">
+                      <p><strong>Day 2:</strong> Visit the Indian Museum, one of the largest and oldest museums in India, and then explore the vibrant streets of New Market and College Street.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://tripxl.com/blog/wp-content/uploads/2024/12/Explore-The-Historic-Marble-Palace-Mansion.jpg" alt="Day 3 - Visit to Historical Sites">
+                      <p><strong>Day 3:</strong> Explore Marble Palace, take a boat ride on the Hooghly River, and enjoy a Bengali dinner at a traditional restaurant. Conclude your trip and depart for Mumbai.</p>
+                  </div>
+              </div>
+                <div class="additional-highlights">
+                  <h3>Additional Highlights</h3>
+                  <ul>
+                      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                  </ul>
+              </div>
+          
+              <div class="package-inclusions">
+                  <h3>Package Inclusions</h3>
+                  <ul>
+                      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                  </ul>
+              </div>
+              <div class="package-price">
+                <h3>Kolkata Package</h3>
+                <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(45000, 'Kolkata')">Book Now</button>
+              </div>
+          </div>
+            </div>
+
+            <!--romantic-->
+            <div id="kolkata-tour3" class="package-detail">
+              <div class="package-header">
+                  <h2>Romantic Kolkata Escape</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://nearbylocation.in/wp-content/uploads/2017/07/top-romantic-place-in-kolkata.jpg');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+                      <p><strong>Type of Trip:</strong> Romantic Getaway and Cultural Exploration</p>
+                      <p><strong>Start City:</strong> Kolkata</p>
+                      <p><strong>End City:</strong> Kolkata</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/c7/28/e0/caption.jpg" alt="Day 1 - Cultural Introduction">
+                      <p><strong>Day 1:</strong> Arrive in Kolkata and check-in to your romantic hotel. Start your adventure by visiting the iconic Victoria Memorial and explore its beautiful gardens. Enjoy a romantic sunset boat ride on the Hooghly River, gazing at Howrah Bridge.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://kolkatatourism.travel/images/places-to-visit/headers/marble-palace-mansion-kolkata-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Day 2 - Romantic Day Out">
+                      <p><strong>Day 2:</strong> Explore the hidden gems of Kolkata with a private tour of Marble Palace, an architectural beauty. Later, enjoy a romantic walk through College Street and have lunch at a cozy Bengali café. In the evening, enjoy a candlelight dinner at one of Kolkata's renowned rooftop restaurants, offering stunning views of the city.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://tripxl.com/blog/wp-content/uploads/2024/11/Nature-Park-Kolkata-Cover-Photo-840x425.jpg" alt="Day 3 - Tranquil Moments">
+                      <p><strong>Day 3:</strong> Spend the day relaxing in the lush greenery of Eden Gardens, with a peaceful picnic in the park. Afterward, visit the charming South Park Street Cemetery for a quiet and intimate experience. Conclude your romantic Kolkata journey with a farewell dinner at an elegant riverside restaurant, watching the lights shimmer on the Hooghly.</p>
+                  </div>
+              </div>          
+
+                <div class="additional-highlights">
+                  <h3>Additional Highlights</h3>
+                  <ul>
+                      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                  </ul>
+              </div>
+          
+              <div class="package-inclusions">
+                  <h3>Package Inclusions</h3>
+                  <ul>
+                      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                  </ul>
+              </div>
+              <div class="package-price">
+                <h3>Kolkata Package</h3>
+                <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(55000, 'Kolkata')">Book Now</button>
+              </div>
+          </div>
+            </div>
+
+    </section>
+
+
+    <!-- footer section  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+                <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+                <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+            </div>
+
+            <div class="box">
+                <h3>Legal Policy</h3>
+                <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+                <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+                <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+                <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+                <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+                <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+            </div>
+        </div>
+        <div class="credit"> © 2024 Created by <span>NexLume</span> | All Rights Reserved. </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Function to get the query parameter value
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Handle page content display
+        document.addEventListener("DOMContentLoaded", () => {
+            const category = getQueryParam('category');
+            const overviewSection = document.getElementById('overview');
+            const packageDetailSections = document.querySelectorAll('.package-detail');
+
+            if (category) {
+                // Hide overview and show the selected package detail
+                overviewSection.style.display = 'none';
+                const packageElement = document.getElementById(category);
+                if (packageElement) {
+                    packageElement.style.display = 'block';
+                } else {
+                    document.body.innerHTML += '<p>Invalid category selected.</p>';
+                }
+            } else {
+                // Show the overview section
+                overviewSection.style.display = 'flex';
+            }
+        });
+
+
+        // JavaScript for horizontal scroll using mouse wheel
+        const packageGallery = document.querySelector('.package-gallery');
+
+        packageGallery.addEventListener('wheel', (e) => {
+            if (e.deltaY !== 0) {
+                e.preventDefault(); // Prevent default vertical scroll behavior
+                packageGallery.scrollBy({
+                    left: e.deltaY > 0 ? 100 : -100, // Adjust horizontal scroll speed
+                    behavior: 'smooth', // Smooth scroll behavior
+                });
+            }
+        });
+
+
+        // Booking logic
+    function redirectToBooking(price, destination) {
+        const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+        window.location.href = url;
+    }
+    </script>
+
+</body>
+
+</html>

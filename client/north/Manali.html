@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Manali</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+    .package-price {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+  }
+  .book-now-btn {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .book-now-btn:hover {
+      background-color: #218838;
+  }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('https://sarangglobaltours.com/wp-content/uploads/2019/01/manali-solang-valley-banner.jpg');">
+    <h1>Explore Manali Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Manali Adventure & Solang Valley -->
+        <div class="package-card">
+            <img src="https://brozaadventures.com/soft/file_store/highlight/483333166CJ.jpg" alt="Manali Adventure & Solang Valley">
+            <h3>Manali Adventure & Solang Valley</h3>
+            <p>Experience adventure at its peak with activities like paragliding and skiing at Solang Valley, combined with scenic views of Manali.</p>
+            <a href="/north/Manali.html?category=ManaliPackage1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Rohtang Pass Snow Paradise -->
+        <div class="package-card">
+            <img src="https://manalitourplanner.com/wp-content/uploads/2024/01/Best-Things-to-do-in-Rohtang-Pass-1024x576.jpg" alt="Rohtang Pass Snow Paradise">
+            <h3>Rohtang Pass Snow Paradise</h3>
+            <p>Embark on a breathtaking journey to Rohtang Pass, a snow-laden wonderland offering mesmerizing views and thrilling adventures.</p>
+            <a href="/north/Manali.html?category=ManaliPackage2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Serenity & Culture of Old Manali -->
+        <div class="package-card">
+            <img src="https://www.india.com/wp-content/uploads/2024/05/Old-Manali.jpg" alt="Serenity & Culture of Old Manali">
+            <h3>Serenity & Culture of Old Manali</h3>
+            <p>Explore the charm of Old Manali with its cozy cafes, cultural landmarks, and the peaceful vibes of the Beas River.</p>
+            <a href="/north/Manali.html?category=ManaliPackage3" class="btn-view">View Details</a>
+        </div>
+    
+        <div class="hexagon-title">
+          <h4>Top 10 Places in Manali</h4>
+      </div>
+      <section class="hexagon-gallery">
+          <div class="hex">
+              <img src="https://s7ap1.scene7.com/is/image/incredibleindia/hidimba-temple-manali-himachal-pradesh-1-musthead-hero?qlt=82&ts=1726730732148" alt="Hadimba Devi Temple">
+              <h3>Hadimba Devi Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih_EOaS-smfhxbnwN27Lzotb-GzwJfzhp1PVPT_0sRzA5t-isSHQeTUk4SsmCGmoSzuQW3fmV87J1pxWwmHoLjWKVb0kCY6YMkNjuWnZwSLEe4TzJidSjp0h_ysLu_kXsizJkMN8Q6kuo/s1600/Vashisht+Hot+Springs+Kullu+Manali+Himachal+Pradesh+India.png" alt="Vashisht Hot Springs">
+              <h3>Vashisht Hot Springs</h3>
+          </div>
+          <div class="hex">
+              <img src="https://himachaltourstravel.com/wp-content/uploads/2023/01/solang-valley-1.jpg" alt="Solang Valley">
+              <h3>Solang Valley</h3>
+          </div>
+          <div class="hex">
+              <img src="https://media1.thrillophilia.com/filestore/4016azmjxihdjzufjc1yoqqtmke8_manali-rohtang-pass-147612479498-orijgp.jpg?w=400&dpr=2" alt="Rohtang Pass">
+              <h3>Rohtang Pass</h3>
+          </div>
+          <div class="hex">
+              <img src="https://sandrp.in/wp-content/uploads/2013/06/beas-river.jpg?w=800" alt="Beas River">
+              <h3>Beas River</h3>
+          </div>
+          <div class="hex">
+              <img src="https://static.toiimg.com/thumb/114052833/Mall-Road.jpg?width=636&height=358&resize=4" alt="Mall Road">
+              <h3>Mall Road</h3>
+          </div>
+          <div class="hex">
+              <img src="https://media1.thrillophilia.com/filestore/9x6dej7caqosc132iet35vvezj5r_Kullu-tour-packages-delhi-etaxigo.jpg?w=400&dpr=2" alt="Old Manali">
+              <h3>Old Manali</h3>
+          </div>
+          <div class="hex">
+              <img src="https://ascentdescentadventures.com/wp-content/uploads/2024/04/Jogini-Waterfall.jpg" alt="Jogini Waterfalls">
+              <h3>Jogini Waterfalls</h3>
+          </div>
+          <div class="hex">
+              <img src="https://media1.thrillophilia.com/filestore/uvmu66pijbizlfd9xn2bt78wgfdi_1577359509_shutterstock_1382576963.jpg" alt="Manu Temple">
+              <h3>Manu Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://static.wanderon.in/wp-content/uploads/2024/05/nehru-kund-manali.jpeg" alt="Nehru Kund">
+              <h3>Nehru Kund</h3>
+          </div>
+      </section>
+                  
+    </div>
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+<!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+ 
+<div id="ManaliPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Mumbai to Manali: 5-Day Himalayan Escape</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://t.eucdn.in/tourism/lg-jpg/445-9810404.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Adventure, Nature, and Relaxation</p>
+          <p><strong>Start City:</strong> Mumbai</p>
+          <p><strong>End City:</strong> Mumbai</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/jet-541175_960_720_20200227122219.jpg" alt="Day 1 - Arrival in Manali">
+          <p><strong>Day 1:</strong> Depart from Mumbai by flight/train to Delhi. On arrival, take a scenic overnight bus or private car journey to Manali. Check in to your hotel upon arrival and enjoy a leisurely day exploring **Mall Road** and nearby attractions. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://discoverkullumanali.in/wp-content/uploads/2015/07/Hidimba-Devi-Temple-Manali.jpg" alt="Day 2 - Local Sightseeing in Manali">
+          <p><strong>Day 2:</strong> Begin your day by visiting **Hadimba Temple**, an ancient wooden temple surrounded by deodar trees. Explore **Manu Temple** and relax at **Vashisht Hot Springs**. Spend the evening in Old Manali, known for its cafes and vibrant atmosphere. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://wandersky.in/wp-content/uploads/2024/12/solang-valley.jpg" alt="Day 3 - Solang Valley Adventure">
+          <p><strong>Day 3:</strong> Head to **Solang Valley**, known for its adventure activities. Enjoy paragliding, zorbing, and cable car rides. In winter, indulge in skiing and snow activities. Return to Manali and enjoy free time to shop for souvenirs. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.himalayanhikers.in/wp-content/uploads/2019/11/Rohtang-Pass-Trek.jpg" alt="Day 4 - Rohtang Pass Excursion">
+          <p><strong>Day 4:</strong> Visit the breathtaking **Rohtang Pass** (subject to permit availability) for panoramic views of the Himalayas and snow-covered landscapes. If the pass is inaccessible, visit **Gulaba** or **Kothi Village** as alternative scenic spots. Return to Manali for an overnight stay.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media.easemytrip.com/media/Blog/Travel/638564682227616247/638564682227616247TChRlU.jpg" alt="Day 5 - Departure">
+          <p><strong>Day 5:</strong> Check out from your hotel and begin your journey back to Delhi. From Delhi, catch a flight/train to Mumbai, marking the end of your memorable trip.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Manali Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Manali')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="ManaliPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Manali Adventure and Serenity: 5-Day Mountain Getaway</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://whitestoneresorts.com/blogs/wp-content/uploads/2024/07/zipline.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Adventure, Nature, and Relaxation</p>
+          <p><strong>Start City:</strong> Delhi</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://kanushiholidays.com/wp-content/uploads/2019/04/2kg2nsfznterfp07m787dfbmg2vx_2560px-Mall_Road_2C_Manali.webp" alt="Day 1 - Arrival in Manali and Mall Road">
+          <p><strong>Day 1:</strong> Arrive in Manali after an overnight journey from Delhi. Check into your hotel and enjoy a relaxing day. Visit the bustling **Mall Road**, shop for local handicrafts, and explore cozy cafes. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/hidimba-temple-manali-himachal-pradesh-5-musthead-hero?qlt=82&ts=1726730757462" alt="Day 2 - Manali Local Sightseeing">
+          <p><strong>Day 2:</strong> Explore Manali’s key attractions. Visit the ancient **Hadimba Devi Temple**, **Manu Temple**, and **Vashisht Village** with its famous hot springs. Spend the evening enjoying Old Manali’s unique vibe with live music and riverside cafes. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2F5.jpg%2F5-1679655851027.jpg&w=2048&q=75" alt="Day 3 - Solang Valley Adventures">
+          <p><strong>Day 3:</strong> Spend the day in **Solang Valley**, known for thrilling adventure activities. Experience paragliding, zip-lining, and quad biking. During winters, enjoy skiing and other snow activities. Return to your hotel for a cozy evening. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://discoverkullumanali.in/wp-content/uploads/2019/10/Tourists-enjoy-snow-at-Rohtang-pass-6.jpg" alt="Day 4 - Rohtang Pass Excursion">
+          <p><strong>Day 4:</strong> Embark on a scenic drive to **Rohtang Pass** (subject to permit availability). Admire the snow-covered peaks and enjoy activities like snowboarding and sledging. Alternatively, visit **Atal Tunnel** for a unique experience. Return to Manali for an overnight stay.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://viacation.com/wp-content/uploads/2024/12/7xm943506-1.jpg" alt="Day 5 - Departure">
+          <p><strong>Day 5:</strong> Spend your final morning by the **Beas River**, enjoying its serene beauty. Check out from your hotel and begin your journey back to Delhi, taking with you unforgettable memories of Manali.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Manali Package</h3>
+    <p><strong>Starting at:</strong> ₹50,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(50000, 'Manali')">Book Now</button>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+// Booking logic
+    function redirectToBooking(price, destination) {
+      const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+      window.location.href = url;
+  }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+  </script>
+  
+ </body>
+ </html>
+ 

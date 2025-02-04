@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SafarNama | Amritsar</title>
+    <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/goa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .hero-goa{
+          background-size: cover;
+          height: 100vh;
+        }
+      </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="/Index.html">
+                    <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+                </a>
+            </h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="/Index.html">Home</a></li>
+                    <li><a href="/Destinations.html"> Destinations</a></li>
+                    <li><a href="/Packages.html"> Packages</a></li>
+                    <li>
+                        <a href="/Tours.html">Tours</a>
+                        <ul class="tour-list">
+                            <li><a href="/FestivalTour.html">Festival Tour</a></li>
+                            <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+                            <li><a href="/ReligionTour.html">Religious Tour</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/contact.html"> Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </nav>
+            <div class="search-container">
+
+                <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+                <i class="fas fa-search" id="search-icon"></i>
+                <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+                <div id="search-results" class="results-container"></div>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-goa" style="background-image: url('../Images/Amritsar/amritsar9.jpg');">
+        <h1>Explore Amritsar Packages</h1>
+    </div>
+    <!-- Content Section -->
+    <section>
+        <div class="Goa-content">
+          <div id="overview" class="package-overview">
+            <!-- Thrill-Seeker's Adventure -->
+            <div class="package-card">
+              <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6f/12/29.jpg" alt="Golden Temple Tour">
+              <h3>Golden Temple Tour</h3>
+              <p>Immerse yourself in spirituality with a visit to the iconic Golden Temple and experience the serene charm of Amritsar's most sacred site.</p>
+              <a href="/north/Amritsar.html?category=amritsar-tour1" class="btn-view">View Details</a>
+          </div>
+          
+          <!-- Cultural Getaway -->
+          <div class="package-card">
+              <img src="https://s7ap1.scene7.com/is/image/incredibleindia/jallianwala-bagh-amritsar-punjab-1-attr-hero?qlt=82&ts=1726662275638" alt="Cultural Package">
+              <h3>Cultural Getaway</h3>
+              <p>Explore the rich history and culture of Amritsar with visits to Jallianwala Bagh, Partition Museum, and local food trails.</p>
+              <a href="/north/Amritsar.html?category=amritsar-tour2" class="btn-view">View Details</a>
+          </div>
+          
+          <!-- Heritage and Food Retreat -->
+          <div class="package-card">
+              <img src="https://www.itmenaanlodges.com/wp-content/uploads/2019/02/Punjabi-cuisine-served-at-Punjabiyat.jpeg" alt="Heritage and Food">
+              <h3>Heritage & Food Retreat</h3>
+              <p>Savor Amritsar's world-famous kulchas, lassi, and street food while visiting historic sites like Gobindgarh Fort and Durgiana Temple.</p>
+              <a href="/north/Amritsar.html?category=amritsar-tour3" class="btn-view">View Details</a>
+          </div>
+        
+        <div class="hexagon-title">
+            <h4>Top 10 Places to Visit in Amritsar</h4>
+        </div>
+        <section class="hexagon-gallery">
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1200px-The_Golden_Temple_of_Amrithsar_7.jpg" alt="Golden Temple">
+                <h3>Golden Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/800px-Jallianwala_Bagh%2C_Amritsar_01.jpg" alt="Jallianwala Bagh">
+                <h3>Jallianwala Bagh</h3>
+            </div>
+            <div class="hex">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/3-partition-museum-amritsar-punjab-attr-hero?qlt=82&ts=1726661909120" alt="Partition Museum">
+                <h3>Partition Museum</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.livemint.com/lm-img/img/2023/08/15/optimize/INDIA-PAKISTAN-BORDER-0_1692107859802_1692107861878.jpg" alt="Wagah Border">
+                <h3>Wagah Border</h3>
+            </div>
+            <div class="hex">
+                <img src="https://amritsartourism.org.in/images/places-to-visit/headers/gobindgarh-fort-amritsar-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Gobindgarh Fort">
+                <h3>Gobindgarh Fort</h3>
+            </div>
+            <div class="hex">
+                <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/98000/98349-Durgiana-Temple.jpg" alt="Durgiana Temple">
+                <h3>Durgiana Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://cdn.britannica.com/20/124420-050-03955034/Akal-Takht-Amritsar-seat-Sikhism-India-Punjab.jpg" alt="Akal Takht">
+                <h3>Akal Takht</h3>
+            </div>
+            <div class="hex">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/40/e6/e9/lal-mata-mandir-little.jpg?w=1200&h=-1&s=1" alt="Mata Lal Devi Temple">
+                <h3>Lal Devi Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/ram-tirath-temple-amritsar-punjab-1-attr-hero?qlt=82&ts=1726662143888" alt="Ram Tirath">
+                <h3>Ram Tirath</h3>
+            </div>
+            <div class="hex">
+                <img src="https://thrillingtravel.in/wp-content/uploads/2019/03/Saadat-Ali-Khan-ka-Maqbara_Kaiserbagh_Lucknow-1024x683.jpg" alt="Kaiser Bagh">
+                <h3>Kaiser Bagh</h3>
+            </div>
+        </section>
+
+                <section class="slide-packages">
+                    <h2>Explore Our India Tour Packages</h2>
+                    <div class="package-gallery">
+                        <div class="package">
+                            <a href="/details/luxury-kovalam-package.html">
+                                <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/4f6955cd0f2cd264153bd35d3588a250995992ee-1280x1760.jpg?w=480&fm=webp&dpr=2" alt="Luxury Kovalam Package">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Luxury Kovalam Package</h3>
+                                <p>3 Nights / 4 Days - ₹18,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/adventure-wayanad-package.html">
+                                <img src="https://www.wayanadtourpackages.com/wp-content/uploads/2021/05/zipline-in-wayanad.jpg" alt="Adventure Wayanad Package">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Adventure Wayanad Package</h3>
+                                <p>4 Nights / 5 Days - ₹21,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/romantic-munnar-getaway.html">
+                                <img src="https://www.lelagoonholidays.com/assets/images/munnarvertical1.jpg" alt="Romantic Munnar Getaway">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Romantic Munnar Getaway</h3>
+                                <p>2 Nights / 3 Days - ₹15,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/serene-alleppey-retreat.html">
+                                <img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fvertical%2Fvembanad-lake-1720267811_e91ddf362d7423d2691d.webp&w=1080&q=75" alt="Serene Alleppey Retreat">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Serene Alleppey Retreat Package</h3>
+                                <p>5 Nights / 6 Days - ₹28,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Package Section view  -->
+
+        <!-- Content Section -->
+
+        <div class="Goa-content">
+            <!--family fun -->
+            <div id="amritsar-tour1" class="package-detail">
+              <div class="package-header">
+                  <h2>Golden City Amritsar Heritage Tour</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/46/0a/1d/the-golden-temple-where.jpg');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+                      <p><strong>Type of Trip:</strong> Heritage and Cultural Immersion</p>
+                      <p><strong>Start City:</strong> Amritsar</p>
+                      <p><strong>End City:</strong> Amritsar</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/12/56/fd/26.jpg" alt="Day 1 - Arrival and Golden Temple">
+                      <p><strong>Day 1:</strong> Arrive in Amritsar and check into your hotel. Visit the iconic Golden Temple and participate in the evening prayer ceremony.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://indiator.com/tourist-places/wp-content/uploads/2016/12/amr8.jpg" alt="Day 2 - Historical Sites">
+                      <p><strong>Day 2:</strong> Explore Jallianwala Bagh and learn about its historical significance. In the evening, visit the Wagah Border to witness the Beating Retreat Ceremony.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://i0.wp.com/iamfab.us/wp-content/uploads/the-partition-museum.jpg" alt="Day 3 - Culinary and Cultural Delights">
+                      <p><strong>Day 3:</strong> Enjoy a food trail sampling Amritsari Kulchas and lassi. Visit Partition Museum and local bazaars for authentic handicrafts.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/49/d0/b5/sri-ram-tirath-temple.jpg" alt="Day 4 - Spiritual and Departure">
+                      <p><strong>Day 4:</strong> Visit Ram Tirath Temple for a serene spiritual experience. Depart with unforgettable memories of Amritsar.</p>
+                  </div>
+              </div>
+                <div class="additional-highlights">
+                  <h3>Additional Highlights</h3>
+                  <ul>
+                      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                  </ul>
+              </div>
+          
+              <div class="package-inclusions">
+                  <h3>Package Inclusions</h3>
+                  <ul>
+                      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                  </ul>
+              </div>
+              <div class="package-price">
+                <h3>Amritsar Package</h3>
+                <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(45000, 'Amritsar')">Book Now</button>
+              </div>
+          </div>
+            </div>
+
+
+            <!--solo -->
+            <div id="amritsar-tour2" class="package-detail">
+              <div class="package-header">
+                  <h2>Amritsar Spiritual and Culinary Delight</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://www.alphonsostories.com/AlphonSoStoriesImages/BlogImage/big609a87071c49c.jpg');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+                      <p><strong>Type of Trip:</strong> Solo Spiritual Journey with Culinary Adventures</p>
+                      <p><strong>Start City:</strong> Amritsar</p>
+                      <p><strong>End City:</strong> Amritsar</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://cdn1.cityonpedals.com/content/uploads/2019/09/1-1024x682.jpg" alt="Day 1 - Golden Temple Serenity">
+                      <p><strong>Day 1:</strong> Arrive in Amritsar and settle into a peaceful boutique hotel. Visit the Golden Temple for a serene evening prayer and experience the Langar community meal.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://i0.wp.com/www.cityamritsar.com/wp-content/uploads/2023/08/Sub-Banner-Architectural-Marvels-1.jpg" alt="Day 2 - Heritage Walk and Local Cuisine">
+                      <p><strong>Day 2:</strong> Embark on a guided heritage walk through the old city, discovering historic sites and bustling bazaars. Savor local dishes like Amritsari fish and kulchas.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://static.theprint.in/wp-content/uploads/2023/05/Veer-Munshi-horse-696x392.jpg" alt="Day 3 - Partition Museum and Art Exploration">
+                      <p><strong>Day 3:</strong> Visit the Partition Museum to learn about the region’s history. In the evening, explore local artisan workshops and try your hand at Phulkari embroidery.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://amritsartourism.org.in/images/places-to-visit/headers/wagah-border-amritsar-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Day 4 - Wagah Border and Nature">
+                      <p><strong>Day 4:</strong> Take a day trip to the Wagah Border for the Beating Retreat Ceremony. End the day with a visit to Harike Wetlands for bird watching and tranquility.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-01/BeFunky-collage%20%2840%29.jpg" alt="Day 5 - Food Trail and Departure">
+                      <p><strong>Day 5:</strong> Conclude with a food trail exploring street delicacies. Take home spices and local sweets before departing with cherished memories.</p>
+                  </div>
+              </div>
+                <div class="additional-highlights">
+                  <h3>Additional Highlights</h3>
+                  <ul>
+                      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                  </ul>
+              </div>
+          
+              <div class="package-inclusions">
+                  <h3>Package Inclusions</h3>
+                  <ul>
+                      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                  </ul>
+              </div>
+              <div class="package-price">
+                <h3>Amritsar Package</h3>
+                <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(45000, 'Amritsar')">Book Now</button>
+              </div>
+          </div>
+            </div>
+
+            <!--romantic-->
+            <div id="amritsar-tour3" class="package-detail">
+              <div class="package-header">
+                  <h2>Romantic Amritsar Getaway</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://www.india.com/wp-content/uploads/2024/07/The-Golden-Temple-Sri-Harmandir-Sahib-2.jpg');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+                      <p><strong>Type of Trip:</strong> Romantic Escape with Heritage and Serenity</p>
+                      <p><strong>Start City:</strong> Amritsar</p>
+                      <p><strong>End City:</strong> Amritsar</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/6b/92/ef/caption.jpg" alt="Day 1 - Golden Temple by Night">
+                      <p><strong>Day 1:</strong> Arrive in Amritsar and check into a luxurious boutique hotel. In the evening, visit the Golden Temple for a mesmerizing night view and experience the Langar together.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6e/b3/cb.jpg" alt="Day 2 - Heritage and Culinary Tour">
+                      <p><strong>Day 2:</strong> Explore Amritsar's heritage sites, including Jallianwala Bagh. In the afternoon, enjoy a private food tour with street snacks and a romantic dinner at a rooftop restaurant overlooking the city.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/10/07/3d/55.jpg" alt="Day 3 - Wagah Border and Local Art">
+                      <p><strong>Day 3:</strong> Visit the Wagah Border for a patriotic evening ceremony. Later, enjoy a couple’s pottery or painting class at a local art studio.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://amritsartourism.org.in/images/places-to-visit/headers/harike-wetland-and-bird-sanctuary-amritsar-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Day 4 - Harike Wetlands and Farewell">
+                      <p><strong>Day 4:</strong> Take a serene boat ride in the Harike Wetlands, surrounded by lush greenery and exotic birds. End the day with a spa session before departure.</p>
+                  </div>
+              </div>
+                <div class="additional-highlights">
+                  <h3>Additional Highlights</h3>
+                  <ul>
+                      <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                      <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                      <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                      <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                  </ul>
+              </div>
+          
+              <div class="package-inclusions">
+                  <h3>Package Inclusions</h3>
+                  <ul>
+                      <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                      <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                      <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                      <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                      <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                  </ul>
+              </div>
+              <div class="package-price">
+                <h3>Amritsar Package</h3>
+                <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(55000, 'Amritsar')">Book Now</button>
+              </div>
+          </div>
+            </div>
+
+    </section>
+
+
+    <!-- footer section  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+                <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+                <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+            </div>
+
+            <div class="box">
+                <h3>Legal Policy</h3>
+                <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+                <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+                <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+                <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+                <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+                <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+            </div>
+        </div>
+        <div class="credit"> © 2024 Created by <span>NexLume</span> | All Rights Reserved. </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Function to get the query parameter value
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Booking logic
+    function redirectToBooking(price, destination) {
+        const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+        window.location.href = url;
+    }
+
+        // Handle page content display
+        document.addEventListener("DOMContentLoaded", () => {
+            const category = getQueryParam('category');
+            const overviewSection = document.getElementById('overview');
+            const packageDetailSections = document.querySelectorAll('.package-detail');
+
+            if (category) {
+                // Hide overview and show the selected package detail
+                overviewSection.style.display = 'none';
+                const packageElement = document.getElementById(category);
+                if (packageElement) {
+                    packageElement.style.display = 'block';
+                } else {
+                    document.body.innerHTML += '<p>Invalid category selected.</p>';
+                }
+            } else {
+                // Show the overview section
+                overviewSection.style.display = 'flex';
+            }
+        });
+
+
+        // JavaScript for horizontal scroll using mouse wheel
+        const packageGallery = document.querySelector('.package-gallery');
+
+        packageGallery.addEventListener('wheel', (e) => {
+            if (e.deltaY !== 0) {
+                e.preventDefault(); // Prevent default vertical scroll behavior
+                packageGallery.scrollBy({
+                    left: e.deltaY > 0 ? 100 : -100, // Adjust horizontal scroll speed
+                    behavior: 'smooth', // Smooth scroll behavior
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

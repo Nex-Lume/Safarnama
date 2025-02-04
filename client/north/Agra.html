@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Agra</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Agra/agra.jpg');">
+    <h1>Explore Agra Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <!-- Heritage Explorer -->
+      <div class="package-card">
+          <img src="https://boutindia.s3.us-east-2.amazonaws.com/images/blog/images/2023-07-21-13-58-37-64ba41b586366-Agra-The-Glimpse-of-Mughal-Kingdom.jpg" alt="Heritage Package">
+          <h3>Heritage Explorer</h3>
+          <p>Discover Agra’s rich history with visits to the Taj Mahal, Agra Fort, and Fatehpur Sikri, curated for heritage enthusiasts.</p>
+          <a href="/north/Agra.html?category=AgraPackage1" class="btn-view">View Details</a>
+      </div>
+    
+        <!-- Customizable Escape -->
+        <div class="package-card">
+          <img src="https://foodandtravel.com/assets/img/content/48hours/_800x418_crop_center-center_82_none/Ministry-of-Tourism-Govt-of-India-595161_Taj-Mahal-Uttar-Pradesh-Aerial.jpg?mtime=1572885946" alt="Customizable Package">
+          <h3>Family Fun</h3>
+          <p>Create your ideal Agra experience! From historical tours to culinary delights, design a trip that’s uniquely yours.</p>
+          <a href="/north/Agra.html?category=AgraPackage2" class="btn-view">View Details</a>
+      </div>
+    
+        <!-- Romantic Getaway -->
+        <div class="package-card">
+          <img src="https://www.india.com/wp-content/uploads/2024/03/Taj-romance.jpg" alt="Romantic Package">
+          <h3>Romantic Retreat</h3>
+          <p>Experience the romance of Agra with sunset views of the Taj Mahal, serene gardens, and intimate dinner settings.</p>
+          <a href="/north/Agra.html?category=AgraPackage3" class="btn-view">View Details</a>
+      </div>
+  
+        <!-- <div class="hexagon-title">
+            <h4>Top 10 Kashmir Places</h4>
+        </div>
+        <section class="hexagon-gallery">
+            <div class="hex">
+                <img src="https://vargiskhan.com/log/wp-content/uploads/2022/03/places-to-visit-in-gulmarg-1.jpg" alt="some">
+                <h3>Gulmarg</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Pahalgam_views_13.JPG" alt="some">
+                <h3>Pahalgam</h3>
+            </div>
+            <div class="hex">
+                <img src="https://tripxl.com/blog/wp-content/uploads/2024/07/View-Of-The-Snowy-Landscape-Of-Sonmarg-Cover-Photo-840x425.jpg" alt="some">
+                <h3>Sonmarg</h3>
+            </div>
+            <div class="hex">
+                <img src="https://static.toiimg.com/thumb/113548438/Srinagar.jpg?width=1200&height=900" alt="some">
+                <h3>Srinagar</h3>
+            </div>
+            <div class="hex">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/71/3f/53/betaab-valley.jpg?w=1200&h=-1&s=1" alt="some">
+                <h3>Betaab Valley</h3>
+            </div>
+            <div class="hex">
+                <img src="https://roadsndreams.com/wp-content/uploads/2020/09/img_3465.jpg?w=1200" alt="some">
+                <h3>Aru Valley</h3>
+            </div>
+            <div class="hex">
+                <img src="https://gulmargriders.com/wp-content/uploads/2020/11/Doodhpathri.jpg" alt="some">
+                <h3>Doodhpathri</h3>
+            </div>
+            <div class="hex">
+                <img src="https://theroamingshoes.com/wp-content/uploads/2023/08/DSC_0631.jpg" alt="some">
+                <h3>Yusmarg</h3>
+            </div>
+            <div class="hex">
+                <img src="https://plus.unsplash.com/premium_photo-1671974489983-083171c0215e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHVsaXAlMjBnYXJkZW58ZW58MHx8MHx8fDA%3D" alt="some">
+                <h3>Tulip Garden</h3>
+            </div>
+            <div class="hex">
+                <img src="https://static.wanderon.in/wp-content/uploads/2024/03/shankaracharya-temple.jpg" alt="some">
+                <h3>Shankaracharya Temple</h3>
+            </div>
+        </section> -->
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+<!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="AgraPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Enchanting Agra Getaway</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://res.cloudinary.com/enchanting/image/upload/v1/artemis-mdm/bd1d5eb2-245a-4f0b-9920-8af804a5c36d.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+            <p><strong>Type of Trip:</strong> Heritage and Culture</p>
+            <p><strong>Start City:</strong> Delhi</p>
+            <p><strong>End City:</strong> Delhi</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://media.rezgo.com/16473/106320/134184.jpg" alt="Day 1 - Agra Arrival">
+            <p><strong>Day 1:</strong> Arrival in Agra. Visit the iconic Taj Mahal at sunset. Overnight stay in Agra.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.tajmahalinagra.com/wp-content/uploads/2024/09/one-day-agra-tour-from-delhi-1024x684.jpg" alt="Day 2 - Agra Fort & Fatehpur Sikri">
+            <p><strong>Day 2:</strong> Explore Agra Fort and take a day trip to Fatehpur Sikri. Return to Agra for the night.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://delhiagratourpackages.com/wp-content/uploads/2024/12/Baby-Taj.jpg" alt="Day 3 - Itmad-ud-Daulah & Local Markets">
+            <p><strong>Day 3:</strong> Visit the Itmad-ud-Daulah Tomb and enjoy shopping for marble crafts and souvenirs in the local markets. Overnight stay in Agra.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/13/d1/8a/55.jpg" alt="Day 4 - Departure">
+            <p><strong>Day 4:</strong> Morning at leisure. Depart for Delhi via Yamuna Expressway with beautiful memories.</p>
+        </div>
+    </div>
+<div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Agra Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Agra')">Book Now</button>
+</div>
+</div>
+
+<div id="AgraPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Romantic Agra Escape</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://cdn.prod.website-files.com/6364d88dd010ce5c6f8aa8fc/66d7dbe708609ae018b47217_668d0f423c74047201dbcb91_3.%2520Romantic%2520Boat%2520Ride%2520on%2520Yamuna%2520River.webp');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+          <p><strong>Type of Trip:</strong> Honeymoon Special</p>
+          <p><strong>Start City:</strong> Delhi</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0e/8f/87/f0.jpg" alt="Day 1 - Agra Arrival">
+          <p><strong>Day 1:</strong> Arrival in Agra. Visit the Taj Mahal during sunset and enjoy a romantic dinner overlooking the monument. Overnight stay in Agra.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://usercontent.one/wp/www.sunshineseeker.com/wp-content/uploads/2018/10/Mehtab-Bagh-Moonlight-Garden-Best-View-Taj-Mahal.jpg" alt="Day 2 - Agra Fort & Mehtab Bagh">
+          <p><strong>Day 2:</strong> Morning visit to Agra Fort. Spend the afternoon at Mehtab Bagh, enjoying a scenic view of the Taj Mahal. Dinner at a fine-dining restaurant.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.tajmahalinagra.com/wp-content/uploads/2024/09/one-day-agra-tour-couple-1024x684.jpg" alt="Day 3 - Fatehpur Sikri">
+          <p><strong>Day 3:</strong> Take a romantic excursion to Fatehpur Sikri. Explore the city and enjoy a couple's spa session at the resort. Overnight stay in Agra.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://nomadish.in/wp-content/uploads/2024/11/Places-to-Visit-in-Delhi-for-Couples.webp" alt="Day 4 - Departure">
+          <p><strong>Day 4:</strong> Leisurely morning. Depart for Delhi with beautiful memories of your romantic escape.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Agra Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Agra')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="AgraPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Family Fun in Agra</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://i0.wp.com/tajmahalcabs.com/wp-content/uploads/trip-to-mathura-vrindavan-and-agra-picture.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Family Adventure</p>
+          <p><strong>Start City:</strong> Delhi</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.magadhluxury.com/images/india/experience/h-500x500.jpg" alt="Day 1 - Arrival in Agra">
+          <p><strong>Day 1:</strong> Arrival in Agra. Visit the Taj Mahal and enjoy a light-and-sound show at Agra Fort. Overnight stay in Agra.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://cdn.getyourguide.com/img/tour/62b662f6519c827ffa6dd1fb886654844ffcdefb192f500c41362bf2329c1ffa.jpg/98.jpg" alt="Day 2 - Agra Fort & Mehtab Bagh">
+          <p><strong>Day 2:</strong> Explore Agra Fort and Mehtab Bagh. Spend time at a family-friendly park or enjoy a pottery workshop.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://tripxl.com/blog/wp-content/uploads/2024/11/Buland-Darwaza.jpg" alt="Day 3 - Fatehpur Sikri">
+          <p><strong>Day 3:</strong> Visit Fatehpur Sikri for an educational experience. Kids will love exploring Buland Darwaza and the ancient city ruins.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://s3.us-east-2.amazonaws.com/wanderingjane/gallery/1701951766iu2.jpg.jpg" alt="Day 4 - Itmad-ud-Daulah & Local Markets">
+          <p><strong>Day 4:</strong> Discover the Itmad-ud-Daulah Tomb, also known as the "Baby Taj," and shop for souvenirs in local markets.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://i.ndtvimg.com/mt/2012-08/Yamuna_Expressway_600.jpg" alt="Day 5 - Departure">
+          <p><strong>Day 5:</strong> Relax in the morning. Depart for Delhi via the Yamuna Expressway with lovely family memories.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Agra Package</h3>
+    <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(40000, 'Agra')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Booking logic
+    function redirectToBooking(price, destination) {
+      const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+      window.location.href = url;
+  }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+  </script>
+  
+ </body>
+ </html>
+ 

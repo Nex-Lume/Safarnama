@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <title>SafarNama | Packages</title>
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  
+
+ <link rel="stylesheet" href="/css/pacakage.css">            
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+  
+  <section class="section-package-filters">
+  <div class="container-filters">
+    <!-- Filters Section -->
+    <div class="filters">
+      <h3>Filters</h3>
+      <!-- Destination Filter -->
+      <div class="filter-group">
+        <h4>Destinations</h4>
+        <label><input type="checkbox" class="destination" value="Goa"> Goa <span class="count" id="count-Goa"></span></label>
+        <label><input type="checkbox" class="destination" value="Kerala"> Kerala <span class="count" id="count-Kerala"></span></label>
+        <label><input type="checkbox" class="destination" value="Manali"> Manali <span class="count" id="count-Manali"></span></label>
+        <label><input type="checkbox" class="destination" value="Shimla"> Shimla <span class="count" id="count-Shimla"></span></label>
+        <label><input type="checkbox" class="destination" value="Mumbai"> Mumbai <span class="count" id="count-Mumbai"></span></label>
+        <div class="hidden-destinations" >
+          <label><input type="checkbox" class="destination" value="Jaipur"> Jaipur <span class="count" id="count-Jaipur"></span></label>
+          <label><input type="checkbox" class="destination" value="Kashmir"> Kashmir <span class="count" id="count-Kashmir"></span></label>
+          <label><input type="checkbox" class="destination" value="Himachal"> Himachal <span class="count" id="count-Himachal"></span></label>
+          <label><input type="checkbox" class="destination" value="Agra"> Agra <span class="count" id="count-Agra"></span></label>
+          <label><input type="checkbox" class="destination" value="Darjeeling"> Darjeeling <span class="count" id="count-Darjeeling"></span></label>
+          <label><input type="checkbox" class="destination" value="Ladakh"> Ladakh <span class="count" id="count-Ladakh"></span></label>
+          <label><input type="checkbox" class="destination" value="Varanasi"> Varanasi <span class="count" id="count-Varanasi"></span></label>
+        </div>
+        <button id="toggle-more" type="button">See More</button>
+      </div>
+      
+      <!-- Package Type Filter -->
+      <div class="filter-group">
+        <h4>Package Type</h4>
+        <label><input type="checkbox" class="package-type" value="Customizable"> Customizable</label>
+        <label><input type="checkbox" class="package-type" value="Group Package"> Group Package</label>
+        <label><input type="checkbox" class="package-type" value="Couple Package"> Couple Package</label>
+      </div>
+
+      <!-- Transport Filter -->
+      <div class="filter-group">
+        <h4>Transport</h4>
+        <label><input type="checkbox" class="transport" value="Flight"> Flight</label>
+        <label><input type="checkbox" class="transport" value="Train"> Train</label>
+        <label><input type="checkbox" class="transport" value="Bus"> Bus</label>
+        <label><input type="checkbox" class="transport" value="Car"> Car</label>
+      </div>
+
+      <!-- Price Range Filter -->
+      <div class="filter-group">
+        <h4>Price Range</h4>
+        <input type="range" id="priceRange" min="1000" max="80000" step="1000" value="80000">
+        <span id="priceValue">Up to ₹80,000</span>
+      </div>
+
+      <!-- Duration Filter -->
+      <div class="filter-group">
+        <h4>Duration (Days)</h4>
+        <input type="range" id="durationRange" min="1" max="30" step="1" value="15">
+        <span id="durationValue">Up to 15 Days</span>
+      </div>
+    </div>
+
+    
+   <!-- Packages Section -->
+<div class="packages">
+  <h3>Available Packages</h3>
+  <div class="package-grid">
+    <!-- Kashmir Beach Tour -->
+    <div class="package-item" data-destination="Kashmir" data-price="21409" data-type="Customizable" data-transport="Bus" data-duration="5">
+      <a href="/north/kashmir.html?category=KashmirPackage1">
+        <img src="Images/Kashmir/gulmarg4.jpg" alt="New Year Kashmir Package">
+      </a>
+      <div class="package-content">
+        <h4>Unforgettable Kashmir Holiday with Gulmarg </h4>
+        <p>1N Srinagar>1N Pahalgam>2N Srinagar</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8.8/10 Excellent (53)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-bus"> </i>  Srinagar - Pahalgam </span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">21%off</div>
+          <div class="current-price">₹21,409</div>
+          <div class="original-price">₹27,065</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="package-item" data-destination="Kashmir" data-price="27871" data-type="Customizable" data-transport="Flight" data-duration="3">
+      <a href="/north/kashmir.html?category=KashmirPackage2">
+        <img src="Images/Kashmir/gulmarg (1).jpg" alt="New Year Kashmir Package">
+      </a>
+      <div class="package-content">
+        <h4>Short Retreat in Kashmir with Gulmarg Excursion</h4>
+        <p>2N Srinagar</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8.8/10 Excellent (53)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"> </i> Neh Delhi - Srinagar </span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24%off</div>
+          <div class="current-price">₹27,871</div>
+          <div class="original-price">₹36,458</div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="package-item" data-destination="Kashmir" data-price="37871" data-type="Customizable" data-transport="Flight" data-duration="5">
+      <a href="/north/kashmir.html?category=KashmirPackage3" target="_blank">
+        <img src="Images/Kashmir/gulmarg (3).jpg" alt="New Year Kashmir Package">
+      </a>
+      <div class="package-content">
+        <h4>Peaceful Kashmir Holiday</h4>
+        <p>1N Gulmarg> 2N Pahalgam > 1N Srinagar</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8.3/10 Excellent (44)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"> </i> Mumbai - Srinagar </span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24%off</div>
+          <div class="current-price">₹37,781</div>
+          <div class="original-price">₹49,478</div>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Kerala Backwaters -->
+    <div class="package-item" data-destination="Kerala" data-price="26513" data-type="Customizable" data-transport="Train" data-duration="6">
+      <a href="/south/Kerala.html?category=kerala-tour2" target="_self">
+        <img src="Images/Kerala/Kerala (2).jpg" alt="New Year Kerala Package">
+      </a>
+      <div class="package-content">
+        <h4>Magical Kerala Holiday</h4>
+        <p>2N Munnar>1N Alleppey>2N Kovalam and Poovar
+        </p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 9.3/10 Excellent (88)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-Train"></i> Bengaluru  - Kochi</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24% off</div>
+          <div class="current-price">₹26,513</div>
+          <div class="original-price">₹34,675</div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="package-item" data-destination="Kerala" data-price="27948" data-type="Customizable" data-transport="Bus" data-duration="4">
+      <a href="/south/kerala.html?category=kerala-tour3" target="_self">
+        <img src="Images/Kerala/Kerala (5).jpg" alt="New Year Kerala Package">
+      </a>
+      <div class="package-content">
+        <h4>Family Holiday to Munnar & Alleppey</h4>
+        <p>2N Munnar>1N Alleppey</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 9.3/10 Excellent (88)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-bus"></i> Mumbai  - Munnar</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">21% off</div>
+          <div class="current-price">₹27,948</div>
+          <div class="original-price">₹37,916</div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="package-item" data-destination="Kerala" data-price="52465" data-type="Couple Package" data-transport="Flight" data-duration="7">
+      <a href="/south/Kerala.html?category=kerala-tour1" target="_self">
+        <img src="Images/Kerala/kerla2r.jpg" alt="New Year Kerala Package">
+      </a>
+      <div class="package-content">
+        <h4>Week-long Romantic Kerala Getaway</h4>
+        <p>2N Munnar>1N Thekkady>1N Alleppey>2N Kovalam and Poovar</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 9.3/10 Excellent (88)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Mumbai  - Munnar</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24% off</div>
+          <div class="current-price">₹52,465</div>
+          <div class="original-price">₹68,617</div>
+        </div>
+       
+      </div>
+    </div>
+    
+
+    <!--  Goa Package Adventure -->
+    <div class="package-item" data-destination="Goa" data-price="30521" data-type="Customizable" data-transport="Flight" data-duration="4">
+      <a href="/east/Goa.html" target="_blank">
+        <img src="Images/Goa/goa (3).jpg" alt="New Year Goa Package">
+        
+      </a>
+      <div class="package-content">
+        <h4>Most Wanted Goa Package</h4>
+        <p>Goa </p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3.5 stars - 8.6/10 Excellent (343)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"> </i> New Delhi (BOM) - Goa(SXR)</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24% off</div>
+          <div class="current-price">₹20,353</div>
+          <div class="original-price">₹26,735</div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="package-item" data-destination="Goa" data-price="30653" data-type="Customizable" data-transport="Flight" data-duration="5">
+      <a href="/east/Goa.html?category=mumbai-goa" target="_blank">
+        <img src="Images/Goa/goa6.jpg" alt="New Year Goa Package">
+      </a>
+      <div class="package-content">
+        <h4>Your Dream Goa Getaway - Best Price Guaranteed!</h4>
+        <p>Goa </p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4.5 stars - 8.6/10 Excellent (343)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"> </i> Mumabi - Goa</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24% off</div>
+          <div class="current-price">₹30,653</div>
+          <div class="original-price">₹38,136</div>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="package-item" data-destination="Goa" data-price="10597" data-type="Couple Package" data-transport="Train" data-duration="4">
+      <a href="/east/Goa.html" target="_blank">
+        <img src="Images/Goa/goar.jpg" alt="New Year Goa Package">
+      </a>
+      <div class="package-content">
+        <h4>Couples Choice - Goa</h4>
+        <p>Goa</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3.5 stars - 8.6/10 Excellent (343)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"> </i> New Delhi (BOM) - Goa(SXR)</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24% off</div>
+          <div class="current-price">₹10,597</div>
+          <div class="original-price">₹13,695</div>
+        </div>
+       
+      </div>
+    </div>
+    
+
+    <!-- Himachal Hills Tour -->
+    <div class="package-item" data-destination="Himachal" data-price="27461" data-type="Customizable" data-transport="Flight" data-duration="10">
+      <a href="/north/Manali.html" target="_blank">
+        <img src="Images/Himachal/manali2.jpg" alt="New Year Himachal Package">
+      </a>
+      <div class="package-content">
+        <h4>Week-Long  Himachal Trip</h4>
+        <p>2N Shimla>3N Manali>2N Dharamshala>2N Dalhousie</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3.5 stars - 7.8/10 Excellent (59)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Jaipur  - Chandigarh </span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">26% off</div>
+          <div class="current-price">₹27,421</div>
+          <div class="original-price">₹36,000</div>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="package-item" data-destination="Shimla" data-price="32461" data-type="Customizable" data-transport="Train" data-duration="10">
+      <a href="/north/Manali.html" target="_blank">
+        <img src="Images/Himachal/manali5.jpg" alt="New Year Manali Package">
+      </a>
+      <div class="package-content">
+        <h4> Holiday in Shimla</h4>
+        <p>2N Shimla>3N Manali>2N Dharamshala>2N Dalhousie</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 9/10 Excellent (59)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Chennai - Chandigarh</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">21% off</div>
+          <div class="current-price">₹32,461</div>
+          <div class="original-price">₹36,000</div>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="package-item" data-destination="Mumbai" data-price="27999" data-type="Customizable" data-transport="Flight" data-duration="7">
+      <a href="/east/Goa.html" target="_blank">
+        <img src="Images/Goa/goa (2).jpg" alt="Mumbai & Goa Tour">
+      </a>
+      <div class="package-content">
+        <h4>Mumbai & Goa Getaway</h4>
+        <p>3N Mumbai > 4N Goa</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8/10 Very Good (112)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Delhi - Mumbai</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">15% off</div>
+          <div class="current-price">₹27,999</div>
+          <div class="original-price">₹32,999</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Agra" data-price="21499" data-type="Customizable" data-transport="Train" data-duration="6">
+      <a href="/north/Jaipur.html" target="_blank">
+        <img src="Images/Rajasthan/jaipur2.jpg" alt="Agra & Jaipur Tour">
+      </a>
+      <div class="package-content">
+        <h4>Explore Agra & Jaipur</h4>
+        <p>2N Agra > 4N Jaipur</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 7.5/10 Good (94)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-train"></i> Delhi - Agra</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">10% off</div>
+          <div class="current-price">₹21,499</div>
+          <div class="original-price">₹23,999</div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="package-item" data-destination="Ladakh" data-price="42999" data-type="Adventure" data-transport="Flight" data-duration="8">
+      <a href="/north/Ladakh.html" target="_blank">
+        <img src="Images/Ladakh/ladakh4.jpg" alt="Ladakh Adventure Tour">
+      </a>
+      <div class="package-content">
+        <h4>Ladakh Adventure</h4>
+        <p>4N Leh > 2N Nubra Valley > 2N Pangong Lake</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 9/10 Excellent (67)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Delhi - Leh</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">25% off</div>
+          <div class="current-price">₹42,999</div>
+          <div class="original-price">₹57,999</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Varanasi" data-price="21999" data-type="Cultural" data-transport="Flight" data-duration="5">
+      <a href="/north/Uttar-Pradesh.html" target="_blank">
+        <img src="Images/UP/varansi (1).jpg" alt="Varanasi & Khajuraho Tour">
+      </a>
+      <div class="package-content">
+        <h4>Varanasi & Khajuraho</h4>
+        <p>2N Varanasi > 3N Khajuraho</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 8.5/10 Very Good (80)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Mumbai - Varanasi</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">18% off</div>
+          <div class="current-price">₹21,999</div>
+          <div class="original-price">₹26,999</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Delhi" data-price="19999" data-type="Heritage" data-transport="Flight" data-duration="5">
+      <a href="/north/Agra.html" target="_blank">
+        <img src="Images/Agra/agra.jpg" alt="Delhi & Agra Heritage Tour">
+      </a>
+      <div class="package-content">
+        <h4>Explore Delhi & Agra</h4>
+        <p>2N Delhi > 2N Agra > 1N Mathura</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 8/10 Very Good (75)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Mumbai - Delhi</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">20% off</div>
+          <div class="current-price">₹19,999</div>
+          <div class="original-price">₹24,999</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Mumbai" data-price="25999" data-type="Beach" data-transport="Flight" data-duration="6">
+      <a href="/east/Goa.html" target="_blank">
+        <img src="Images/Maharashtra/mumbai.jpg" alt="Mumbai & Goa Beach Tour">
+      </a>
+      <div class="package-content">
+        <h4>Mumbai & Goa</h4>
+        <p>3N Mumbai > 3N Goa</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8.5/10 Very Good (112)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Delhi - Mumbai</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">15% off</div>
+          <div class="current-price">₹25,999</div>
+          <div class="original-price">₹30,999</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Kolkata" data-price="23999" data-type="Cultural" data-transport="Train" data-duration="6">
+      <a href="/west/Kolkata.html" target="_blank">
+        <img src="Images/Westbengal/wb (1).jpg" alt="Kolkata & Sundarbans Tour">
+      </a>
+      <div class="package-content">
+        <h4>Kolkata & Sundarbans</h4>
+        <p>3N Kolkata > 3N Sundarbans</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 8/10 Excellent (65)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-train"></i> Kolkata - Sundarbans</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">12% off</div>
+          <div class="current-price">₹23,999</div>
+          <div class="original-price">₹27,299</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Jaipur" data-price="29999" data-type="Royal" data-transport="Bus" data-duration="7">
+      <a href="/north/Jaipur.html" target="_blank">
+        <img src="Images/Rajasthan/jaipur4.jpg" alt="Jaipur & Udaipur Rajasthan Tour">
+      </a>
+      <div class="package-content">
+        <h4>Jaipur & Udaipur</h4>
+        <p>4N Jaipur > 3N Udaipur</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8.5/10 Very Good (88)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-bus"></i> Jaipur to Udaipur</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">18% off</div>
+          <div class="current-price">₹29,999</div>
+          <div class="original-price">₹36,500</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Tamil Nadu" data-price="23999" data-type="Cultural" data-transport="Train" data-duration="6">
+      <a href="/south/Tamilnadu.html" target="_blank">
+        <img src="Images/Tamilnadu/Dhanushkodi  (1).jpg" alt="Tamil Nadu Heritage Tour">
+      </a>
+      <div class="package-content">
+        <h4>Tamil Nadu Heritage Tour</h4>
+        <p>2N Chennai > 2N Pondicherry > 2N Madurai</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 9/10 Excellent (101)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-train"></i> Chennai - Madurai</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">22% off</div>
+          <div class="current-price">₹23,999</div>
+          <div class="original-price">₹30,799</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Karnataka" data-price="26999" data-type="Nature" data-transport="Car" data-duration="6">
+      <a href="/south/Kerala.html" target="_blank">
+        <img src="Images/Kerala/WhatsApp Image 2024-12-21 at 18.44.49_f9db5aa2.jpg" alt="Coorg & Chikmagalur Tour">
+      </a>
+      <div class="package-content">
+        <h4>Coorg & Chikmagalur</h4>
+        <p>3N Coorg > 3N Chikmagalur</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 8/10 Very Good (82)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-car"></i> Bangalore to Coorg</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">16% off</div>
+          <div class="current-price">₹26,999</div>
+          <div class="original-price">₹32,000</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="package-item" data-destination="Assam" data-price="28999" data-type="Wildlife" data-transport="Flight" data-duration="7">
+      <a href="/west/Assam.html" target="_blank">
+        <img src="Images/Assam/assam2.jpg" alt="Assam & Kaziranga Wildlife Tour">
+      </a>
+      <div class="package-content">
+        <h4>Assam & Kaziranga National Park</h4>
+        <p>3N Guwahati > 3N Kaziranga > 1N Majuli Island</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 4 stars - 9/10 Excellent (78)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"></i> Delhi - Guwahati</span>
+        </div>
+        <div class="price-section">
+          <div class="discount">20% off</div>
+          <div class="current-price">₹28,999</div>
+          <div class="original-price">₹36,000</div>
+        </div>
+        
+      </div>
+    </div>
+                                
+    
+    <div class="package-item" data-destination="Himachal" data-price="27461" data-type="Customizable" data-transport="Train" data-duration="10">
+      <a href="/north/Manali.html" target="_blank">
+        <img src="Images/Himachal/manali8.jpg" alt="New Year Kashmir Package">
+      </a>
+      <div class="package-content">
+        <h4>Relaxing Holiday in Himachal</h4>
+        <p>2N Shimla>3N Manali>2N Dharamshala>2N Dalhousie</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 9/10 Excellent (59)</span>
+        </div>
+        <div class="icon-text">
+          <span>✈️ Arrival in Chandigarh (BOM) - Srinagar (SXR)</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">26% off</div>
+          <div class="current-price">₹27,421</div>
+          <div class="original-price">₹36,000</div>
+        </div>
+       
+      </div>
+    </div>
+    
+  
+    
+    
+
+    <!-- Jaipur Royal Heritage -->
+    <div class="package-item" data-destination="Jaipur" data-price="54232" data-type="Customizable" data-transport="Flight" data-duration="9">
+      <a href="/north/Jaipur.html" target="_blank">
+        <img src="Images/Rajasthan/jaipur7.jpg" alt="New Year Jaipur Package">
+      </a>
+      <div class="package-content">
+        <h4>Grand Tour of Rajasthan</h4>
+        <p>2N Jaipur>1N Bikaner>2N Jaisalmer>1N Jodhpur>2N Udaipur</p>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-hotel"></i> 3 stars - 8.6/10 Excellent (43)</span>
+        </div>
+        <div class="icon-text">
+          <span><i class="fa-solid fa-plane"> </i>  Mumbai (BOM) - Jaipur (SXR)</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">24%off</div>
+          <div class="current-price">₹54,232</div>
+          <div class="original-price">₹70,811</div>
+        </div>
+      </div>
+    </div>
+
+ 
+    
+
+    <!-- Manali Paradise -->
+    <div class="package-item" data-destination="Manali" data-price="30521" data-type="Customizable" data-transport="Flight" data-duration="5">
+      <a href="north/kashmir.html" target="_blank">
+        <img src="Images/Kashmir/srinagar (1).jpg" alt="New Year Kashmir Package">
+      </a>
+      <div class="package-content">
+        <h4>4 Nights / 5 Days New Year Kashmir Package</h4>
+        <p>Srinagar (4N)</p>
+        <div class="icon-text">
+          <span>⭐ 3 stars - 8.6/10 Excellent (43)</span>
+        </div>
+        <div class="icon-text">
+          <span>✈️ Mumbai (BOM) - Srinagar (SXR)</span> 
+        </div>
+        <div class="price-section">
+          <div class="discount">₹14,864 off</div>
+          <div class="current-price">₹30,521</div>
+          <div class="original-price">₹45,385</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="js/Package.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+ </body>
+ </html>
+ 

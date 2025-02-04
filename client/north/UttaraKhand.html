@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | UttaraKhand</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Banner/KUbanner.jpg');">
+    <h1>Explore UttaraKhand Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Spiritual & Adventure Combo -->
+        <div class="package-card">
+          <img src="https://www.captureatrip.com/_next/image?url=https%3A%2F%2Fcaptureatrip-cms-storage.s3.ap-south-1.amazonaws.com%2FBest_Place_to_Stay_in_Haridwar3_88e480429a.jpg&w=3840&q=50" alt="Spiritual & Adventure Combo">
+          <h3>Spiritual & Adventure Combo</h3>
+          <p>Explore the perfect blend of spirituality and adventure with visits to Haridwar and Rishikesh, including rafting and temple tours.</p>
+          <a href="/north/UttaraKhand.html?category=UKPackage1" class="btn-view">View Details</a>
+        </div>
+        <!-- Kedarnath, Haridwar & Rishikesh Pilgrimage -->
+        <div class="package-card">
+          <img src="https://www.trekupindia.com/tour/wp-content/uploads/2024/03/Kedarnath-Temple-Ek-Dham-Yatra-scaled.jpg" alt="Kedarnath, Haridwar & Rishikesh Pilgrimage">
+          <h3>Kedarnath, Haridwar & Rishikesh Pilgrimage</h3>
+          <p>Embark on a spiritual journey to Kedarnath, experience the divine Ganga Aarti at Har Ki Pauri, and explore the serenity of Rishikesh.</p>
+          <a href="/north/UttaraKhand.html?category=UKPackage2" class="btn-view">View Details</a>
+        </div>
+        
+        <!-- Chota Chaar Dham Yatra -->
+        <div class="package-card">
+          <img src="https://www.shrineyatra.in/wp-content/uploads/2024/05/chardham-yatra-package.webp" alt="Chota Chaar Dham Yatra">
+          <h3>Chota Chaar Dham Yatra</h3>
+          <p>Undertake the sacred journey to the Chota Chaar Dham of Uttarakhand: Yamunotri, Gangotri, Kedarnath, and Badrinath.</p>
+          <a href="/north/UttaraKhand.html?category=UKPackage3" class="btn-view">View Details</a>
+        </div>
+        <div class="hexagon-title">
+          <h4>Top 10 Places in Haridwar & Rishikesh</h4>
+        </div>
+        <section class="hexagon-gallery">
+          <div class="hex">
+              <img src="https://www.captureatrip.com/_next/image?url=https%3A%2F%2Fcaptureatrip-cms-storage.s3.ap-south-1.amazonaws.com%2FBest_Place_to_Stay_in_Haridwar3_88e480429a.jpg&w=3840&q=50" alt="Har Ki Pauri">
+              <h3>Har Ki Pauri</h3>
+          </div>
+          <div class="hex">
+              <img src="https://wandersky.in/wp-content/uploads/2023/03/laxman-jhula-rishikesh.jpg" alt="Lakshman Jhula">
+              <h3>Lakshman Jhula</h3>
+          </div>
+          <div class="hex">
+              <img src="https://wandersky.in/wp-content/uploads/2023/03/parmath-niketan-rishikesh.jpg" alt="Parmarth Niketan">
+              <h3>Parmarth Niketan</h3>
+          </div>
+          <div class="hex">
+              <img src="https://media1.thrillophilia.com/filestore/hnttf0iqtmioi4bbfmcwwbpzbehf_1587022695_shutterstock_1005613216.jpg" alt="Triveni Ghat">
+              <h3>Triveni Ghat</h3>
+          </div>
+          <div class="hex">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/91/ea/50/temple.jpg?w=900&h=500&s=1" alt="Mansa Devi Temple">
+              <h3>Mansa Devi Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://media2.thrillophilia.com/images/photos/000/036/640/original/1583607619_corbett-national-park.jpg?" alt="Rajaji National Park">
+              <h3>Rajaji National Park</h3>
+          </div>
+          <div class="hex">
+              <img src="https://i0.wp.com/uttarakhandtrips.com/blogs/wp-content/uploads/2024/01/Untitled-design-53.jpg" alt="Yamunotri Temple">
+              <h3>Yamunotri Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.chardham-pilgrimage-tour.com/assets/images/chardham-banner4.webp" alt="Gangotri Temple">
+              <h3>Gangotri Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.chardhamhotel.in/blog/wp-content/uploads/2024/09/Kedarnath-Temple.jpg" alt="Kedarnath Temple">
+              <h3>Kedarnath Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://majesticjourney.in/wp-content/uploads/2020/05/badrinath-temple.jpg" alt="Badrinath Temple">
+              <h3>Badrinath Temple</h3>
+          </div>
+        </section>        
+    </div>
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="UKPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Rishikesh: 3-Day Spiritual and Adventure Experience</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/15/2b/07.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+            <p><strong>Type of Trip:</strong> Spiritual and Adventure Exploration</p>
+            <p><strong>Start City:</strong> Rishikesh</p>
+            <p><strong>End City:</strong> Rishikesh</p>
+        </div>
+    </div>
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://www.chardhamtour.in/wp-content/uploads/2022/03/culture-of-uttarakhand-1.jpg" alt="Day 1 - Arrival in Rishikesh">
+            <p><strong>Day 1:</strong> Arrive in Rishikesh, enjoy a tranquil yoga session, and explore Laxman Jhula and Triveni Ghat. Evening Ganga Aarti. Overnight stay in Rishikesh.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://tripxl.com/blog/wp-content/uploads/2024/11/Try-Adventure-Sports-In-Rishikesh.jpg" alt="Day 2 - Adventure Activities">
+            <p><strong>Day 2:</strong> Go white-water rafting on the Ganges, followed by an afternoon of trekking or exploring the Beatles Ashram. Overnight stay in Rishikesh.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://templeyatri.in/wp-content/uploads/2024/07/2-1.webp" alt="Day 3 - Visit Neelkanth Mahadev Temple">
+            <p><strong>Day 3:</strong> Visit the Neelkanth Mahadev Temple nestled in the mountains, and return to Rishikesh for your departure.</p>
+        </div>
+    </div>
+
+      <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Uttar Khand Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Uttar Khand')">Book Now</button>
+</div>
+</div>
+
+<div id="UKPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Haridwar to Rishikesh and Kedarnath: 5-Day Spiritual Expedition</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzu2ictJRmSUj1ZR7v_44Dsz6NoxqBcPx5Vw&s');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Spiritual, Cultural, and Adventure Exploration</p>
+          <p><strong>Start City:</strong> Haridwar</p>
+          <p><strong>End City:</strong> Haridwar</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://travel-buddies.com/wp-content/uploads/2024/12/overnight-haridwar-rishikesh-ganges-tour-2.jpg" alt="Day 1 - Arrival in Haridwar">
+          <p><strong>Day 1:</strong> Arrive in Haridwar. Visit Har Ki Pauri and witness the Ganga Aarti. Explore Mansa Devi Temple. Overnight stay in Haridwar.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/7d/75/63.jpg" alt="Day 2 - Haridwar to Rishikesh">
+          <p><strong>Day 2:</strong> Travel to Rishikesh. Visit Laxman Jhula and Ram Jhula. Participate in yoga or Ganga Aarti at Triveni Ghat. Overnight stay in Rishikesh.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.arihanthelicopterservice.com/images/services/lg6.jpg" alt="Day 3 - Rishikesh to Kedarnath">
+          <p><strong>Day 3:</strong> Travel to Kedarnath (via helicopter or trekking). Visit Kedarnath Temple and explore the area. Overnight stay in Kedarnath.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_254,w_1600,h_904,r_0/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/aloha-on-the-ganges-rishikesh/View_of_Patio_from_Main_Wing_qpnk7u" alt="Day 4 - Kedarnath to Rishikesh">
+          <p><strong>Day 4:</strong> Return to Rishikesh. Relax by the Ganges or indulge in a spa session. Overnight stay in Rishikesh.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://tripxl.com/blog/wp-content/uploads/2024/12/Rishikesh-Temples-cp.jpg" alt="Day 5 - Rishikesh to Haridwar and Departure">
+          <p><strong>Day 5:</strong> Explore Rishikesh's ashrams and temples before returning to Haridwar for departure. Visit Bharat Mata Temple before leaving for your onward journey.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Uttar Khand Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Uttar Khand')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="UKPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Rishikesh to Haridwar: 3-Day Spiritual and Cultural Expedition</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://devotionalpoint.com/wp-content/uploads/2024/08/13-1.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Spiritual, Cultural, and Nature Exploration</p>
+          <p><strong>Start City:</strong> Rishikesh</p>
+          <p><strong>End City:</strong> Haridwar</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Frishikesh%20cover.jpg%2Frishikesh%20cover-1724218092758.jpg&w=2048&q=75" alt="Day 1 - Arrival in Rishikesh">
+          <p><strong>Day 1:</strong> Arrive in Rishikesh. Visit Lakshman Jhula and Ram Jhula. Enjoy Triveni Ghat and Ganga Aarti. Evening relaxation. Overnight stay in Rishikesh.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://devotionalpoint.com/wp-content/uploads/2024/06/Couples-Groups-Honeymoon-Tour-Packag-8.jpg" alt="Day 2 - Spiritual Retreat and Adventure Activities">
+          <p><strong>Day 2:</strong> Yoga and meditation session. Rafting on the Ganges. Visit Beatles Ashram. Overnight stay in Rishikesh.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://t.eucdn.in/tourism/lg/haridwar-5689689.webp" alt="Day 3 - Rishikesh to Haridwar">
+          <p><strong>Day 3:</strong> Drive to Haridwar. Visit Har Ki Pauri, Ganga Aarti, Mansa Devi Temple, and Chandi Devi Temple. Departure from Haridwar.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Uttar Khand Package</h3>
+    <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(45000, 'Uttar Khand')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

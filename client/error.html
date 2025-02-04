@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("error-details").innerHTML = `
+                <p><strong>Name:</strong> ${params.get("name")}</p>
+                <p><strong>Email:</strong> ${params.get("email")}</p>
+                <p><strong>Phone:</strong> ${params.get("phone")}</p>
+                <p><strong>Dates:</strong> ${params.get("dates")}</p>
+                <p><strong>Price:</strong> ${params.get("price")}</p>
+                <p><strong>Destination:</strong> ${params.get("destination")}</p>
+                <p><strong>Country:</strong> ${params.get("country")}</p>
+                <p><strong>City:</strong> ${params.get("city")}</p>
+                <p><strong>Adults:</strong> ${params.get("num_adults")}</p>
+                <p><strong>Kids:</strong> ${params.get("num_kids")}</p>
+                <p><strong>Message:</strong> ${params.get("message")}</p>
+            `;
+        }
+    </script>
+</head>
+<body onload="getQueryParams()">
+    <h1>Error Occurred</h1>
+    <p>There was an issue with your request. Here are the details:</p>
+    <div id="error-details"></div>
+    <a href="index.html">Go Back</a>
+</body>
+</html> -->

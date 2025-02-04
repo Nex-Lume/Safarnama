@@ -1,0 +1,62 @@
+/* Privacy Page Styling */
+
+body{
+    
+    background-image: url('../Images/Hero/DesertSafaris.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.privacy-header {
+    background-color: #619bf9;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    
+    
+  }
+  
+  .privacy-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .privacy-header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+  }
+  
+  .privacy-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .privacy-section {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-heading {
+    color: #0048ba;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .privacy-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .privacy-list {
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .privacy-list-item {
+    margin-bottom: 5px;
+  }
+  

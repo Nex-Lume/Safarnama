@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SafarNama | Darjeeling</title>
+    <link rel="icon" href="/Images/Logo/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/goa.css">
+    <link href="/https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="/https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .hero-goa{
+          background-size: cover;
+          height: 100vh;
+        }
+      </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="/Index.html">
+                    <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+                </a>
+            </h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="/Index.html">Home</a></li>
+                    <li><a href="/Destinations.html"> Destinations</a></li>
+                    <li><a href="/Packages.html"> Packages</a></li>
+                    <li>
+                        <a href="/Tours.html">Tours</a>
+                        <ul class="tour-list">
+                            <li><a href="/FestivalTour.html">Festival Tour</a></li>
+                            <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+                            <li><a href="/ReligionTour.html">Religious Tour</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/contact.html"> Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </nav>
+            <div class="search-container">
+
+                <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+                <i class="fas fa-search" id="search-icon"></i>
+                <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+                <div id="search-results" class="results-container"></div>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-goa" style="background-image: url('https://www.krazytrip.co.in/images/destination/30937darjeeling-banner.jpg');">
+        <h1>Explore Darjeeling Packages</h1>
+    </div>
+    <!-- Content Section -->
+    <section>
+        <div class="Goa-content">
+          <div id="overview" class="package-overview">
+            <!-- Thrill-Seeker's Adventure -->
+            <div class="package-card">
+                <img src="https://www.nomadicweekends.com/wp-content/uploads/2019/02/sandakphu_dawn.jpg" alt="Adventure Package">
+                <h3>Thrill-Seeker's Adventure</h3>
+                <p>Feel the adrenaline rush with trekking to Sandakphu, paragliding, and mountain biking through Darjeeling's rugged terrain.</p>
+                <a href="/west/darjeeling.html?category=DarjeelingPackage1" class="btn-view">View Details</a>
+            </div>
+        
+            <!-- Customizable Escape -->
+            <div class="package-card">
+                <img src="https://www.packthebagtours.com/uploads/1/2/7/3/127357647/darjeeling-tour-packages_orig.jpg" alt="Customizable Package">
+                <h3>Customizable Escape</h3>
+                <p>Tailor your trip with personalized itineraries, including tea estate tours, heritage walks, and cultural experiences.</p>
+                <a href="/west/darjeeling.html?category=DarjeelingPackage2" class="btn-view">View Details</a>
+            </div>
+        
+            <!-- Serene Mountain Retreat -->
+            <div class="package-card">
+                <img src="https://www.insidenyungwenationalpark.com/wp-content/uploads/2020/09/tea-experience-nyungwe.jpg" alt="Couples Package">
+                <h3>Serene Mountain Retreat</h3>
+                <p>Romantic experiences await with peaceful walks through tea gardens, sunrise views at Tiger Hill, and cozy stays in the hills.</p>
+                <a href="/west/darjeeling.html?category=DarjeelingPackage3" class="btn-view">View Details</a>
+            </div>
+        
+            <div class="hexagon-title">
+                <h4>Top 10 Darjeeling Places</h4>
+            </div>
+            <section class="hexagon-gallery">
+                <div class="hex">
+                    <img src="https://media1.thrillophilia.com/filestore/ip6n6ylfinwpjvv0baug675or88a_1586457243_shutterstock_1246431202.jpg" alt="Tiger Hill">
+                    <h3>Tiger Hill</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://www.iilsindia.com/blogs/wp-content/uploads/2019/05/Tourism.png" alt="Toy Train">
+                    <h3>Darjeeling Toy Train</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://bpu-images-v1.s3.eu-north-1.amazonaws.com/uploads/1721797714408_BATASIA_LOOP.jpg" alt="Batasia Loop">
+                    <h3>Batasia Loop</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/0f/b2.jpg" alt="Himalayan Mountaineering Institute">
+                    <h3>Himalayan Mountaineering Institute</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/d0/2f/02/padmaja-naidu-himalayan.jpg?w=1200&h=-1&s=1" alt="Darjeeling Zoo">
+                    <h3>Padmaja Naidu Zoo</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://static.toiimg.com/thumb/94376402/Glenarys-in-Darjeeling.jpg?width=1200&height=900" alt="Glenary's Bakery">
+                    <h3>Glenary's Bakery</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Shanti_Stupa.jpg" alt="Peace Pagoda">
+                    <h3>Peace Pagoda</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/aa/0e/6e/img-20160616-122950-largejpg.jpg?w=1200&h=-1&s=1" alt="Tea Gardens">
+                    <h3>Happy Valley Tea Estate</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://northbengaltourism.com/images/darjeeling/rock_garden_780.jpg" alt="Rock Garden">
+                    <h3>Rock Garden</h3>
+                </div>
+                <div class="hex">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Yiga_Choeling_Monastery%2C_Ghum_02.jpg" alt="Ghoom Monastery">
+                    <h3>Ghoom Monastery</h3>
+                </div>
+            </section>
+        </div>
+
+                <section class="slide-packages">
+                    <h2>Explore Our India Tour Packages</h2>
+                    <div class="package-gallery">
+                        <div class="package">
+                            <a href="/details/luxury-kovalam-package.html">
+                                <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/4f6955cd0f2cd264153bd35d3588a250995992ee-1280x1760.jpg?w=480&fm=webp&dpr=2" alt="Luxury Kovalam Package">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Luxury Kovalam Package</h3>
+                                <p>3 Nights / 4 Days - ₹18,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/adventure-wayanad-package.html">
+                                <img src="https://www.wayanadtourpackages.com/wp-content/uploads/2021/05/zipline-in-wayanad.jpg" alt="Adventure Wayanad Package">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Adventure Wayanad Package</h3>
+                                <p>4 Nights / 5 Days - ₹21,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/romantic-munnar-getaway.html">
+                                <img src="https://www.lelagoonholidays.com/assets/images/munnarvertical1.jpg" alt="Romantic Munnar Getaway">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Romantic Munnar Getaway</h3>
+                                <p>2 Nights / 3 Days - ₹15,999</p>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <a href="/details/serene-alleppey-retreat.html">
+                                <img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fvertical%2Fvembanad-lake-1720267811_e91ddf362d7423d2691d.webp&w=1080&q=75" alt="Serene Alleppey Retreat">
+                            </a>
+                            <div class="package-info-slider">
+                                <h3>Serene Alleppey Retreat Package</h3>
+                                <p>5 Nights / 6 Days - ₹28,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Package Section view  -->
+
+        <!-- Content Section -->
+
+        <div class="Goa-content">
+            <!--family fun -->
+            <div id="DarjeelingPackage1" class="package-detail">
+              <div class="package-header">
+                  <h2>Darjeeling Heritage and Adventure Tour</h2>
+              </div>
+              <div class="package-info" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Darjeeling_Station.jpg');">
+                  <div class="info-box">
+                      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+                      <p><strong>Type of Trip:</strong> Scenic, Cultural, and Adventure</p>
+                      <p><strong>Start City:</strong> Mumbai</p>
+                      <p><strong>End City:</strong> Mumbai</p>
+                  </div>
+              </div>
+          
+              <div class="itinerary">
+                  <h3>Itinerary</h3>
+                  <div class="itinerary-item">
+                      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/7d/da/26/caption.jpg" alt="Day 1 - Arrival in Darjeeling">
+                      <p><strong>Day 1:</strong> Fly from Mumbai to Bagdogra. Drive to Darjeeling (approx. 3 hours). Evening visit to **Peace Pagoda** and **Japanese Temple**. Explore **Mall Road** and enjoy local cuisine. Overnight stay in Darjeeling.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://www.trawell.in/admin/images/upload/64690286Darjeeling_Tiger_Hill_Main.jpg" alt="Day 2 - Sunrise and Darjeeling Exploration">
+                      <p><strong>Day 2:</strong> Early morning visit to **Tiger Hill** for a breathtaking sunrise view of **Kangchenjunga**. Visit **Ghoom Monastery** and the **Batasia Loop**. Enjoy a scenic **Toy Train Ride**. Overnight stay in Darjeeling.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://www.naturediary.in/wp-content/uploads/2022/04/Padmaja-Naidu-Himalayan-Zoological-Park-Darjeeling-Zoo.jpg" alt="Day 3 - Darjeeling Adventure">
+                      <p><strong>Day 3:</strong> Visit the **Himalayan Mountaineering Institute**, **Padmaja Naidu Himalayan Zoological Park**, and **Lloyd Botanical Garden**. Spend the evening exploring **Darjeeling’s local markets**. Overnight stay in Darjeeling.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://stampedmoments.com/wp-content/uploads/2024/05/darjeeling-tea-gardens.jpg" alt="Day 4 - Tea Gardens and Culture">
+                      <p><strong>Day 4:</strong> Visit the **Darjeeling Tea Gardens** and learn about the tea cultivation process. Explore the **Tibetan Refugee Self-Help Centre** for a cultural experience. Free time for shopping or enjoying scenic views. Overnight stay in Darjeeling.</p>
+                  </div>
+                  <div class="itinerary-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/f1/f3/42.jpg" alt="Day 5 - Departure from Darjeeling">
+                      <p><strong>Day 5:</strong> Explore **Mahakal Temple** and **Rock Garden**. In the afternoon, drive back to Bagdogra. Fly from Bagdogra to Mumbai, carrying home unforgettable memories of Darjeeling.</p>
+                  </div>
+              </div>
+          <div class="additional-highlights">
+              <h3>Additional Highlights</h3>
+              <ul>
+                  <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                  <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                  <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                  <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+              </ul>
+          </div>
+          
+          <div class="package-inclusions">
+              <h3>Package Inclusions</h3>
+              <ul>
+                  <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                  <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                  <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                  <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                  <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+              </ul>
+          </div>
+          <div class="package-price">
+            <h3>Darjeeling Package</h3>
+            <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+            <button class="book-now-btn" onclick="redirectToBooking(35000, 'Darjeeling')">Book Now</button>
+          </div>
+          </div>
+          <div id="DarjeelingPackage2" class="package-detail">
+            <div class="package-header">
+                <h2>Darjeeling from Gujarat</h2>
+            </div>
+            <div class="package-info" style="background-image: url('https://www.getwayindiaholidays.com/images/gangtok.jpg');">
+                <div class="info-box">
+                    <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+                    <p><strong>Type of Trip:</strong> Scenic, Adventure, and Cultural Exploration</p>
+                    <p><strong>Start City:</strong> Ahmedabad (Gujarat)</p>
+                    <p><strong>End City:</strong> Ahmedabad (Gujarat)</p>
+                </div>
+            </div>
+          
+            <div class="itinerary">
+                <h3>Itinerary</h3>
+                <div class="itinerary-item">
+                    <img src="https://assets.airtrfx.com/media-em/ai/cities/IXB-Bagdogra.jpg" alt="Day 1 - Travel from Ahmedabad to Darjeeling">
+                    <p><strong>Day 1:</strong> Fly from Ahmedabad to Bagdogra (nearest airport). Drive to Darjeeling (approx. 3 hours). Visit the **Peace Pagoda** and **Japanese Temple**. Evening at leisure on **Mall Road**. Overnight stay in Darjeeling.</p>
+                </div>
+                <div class="itinerary-item">
+                    <img src="https://www.elginhotels.com/wp-content/uploads/2020/03/tiger-hill-01.png" alt="Day 2 - Darjeeling Exploration">
+                    <p><strong>Day 2:</strong> Early morning visit to **Tiger Hill** for a stunning sunrise view of **Kangchenjunga**. Visit **Ghoom Monastery**, **Batasia Loop**, and enjoy a **Toy Train ride** on the **Darjeeling Himalayan Railway**. Overnight stay in Darjeeling.</p>
+                </div>
+                <div class="itinerary-item">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024,h_576/https://darjeelingdays.com/wp-content/uploads/2021/09/Himalayan-Zoological-Park-4-1024x576.jpg" alt="Day 3 - Darjeeling Adventure">
+                    <p><strong>Day 3:</strong> Visit the **Himalayan Mountaineering Institute**, explore the **Padmaja Naidu Himalayan Zoological Park**, and enjoy the serenity of **Lloyd Botanical Garden**. Free time for shopping and exploring the local markets. Overnight stay in Darjeeling.</p>
+                </div>
+                <div class="itinerary-item">
+                    <img src="https://lp-cms-production.imgix.net/2019-06/7ee76927787b1ac3605d0ef0aa4c71dd-makaibari.jpg" alt="Day 4 - Tea Gardens and Local Culture">
+                    <p><strong>Day 4:</strong> Visit the **Darjeeling Tea Gardens** and learn about tea cultivation and processing. Explore **Tibetan Refugee Self-Help Centre** to experience Tibetan culture. Enjoy a relaxing evening at **Neora Valley National Park**. Overnight stay in Darjeeling.</p>
+                </div>
+                <div class="itinerary-item">
+                    <img src="https://www.honeymoonbug.com/blog/wp-content/uploads/2022/10/Mahakal-Temple-Darjeeling.jpg" alt="Day 5 - Departure from Darjeeling">
+                    <p><strong>Day 5:</strong> Enjoy the day visiting **Mahakal Temple**, **Rock Garden**, and other local landmarks. In the evening, drive back to Bagdogra for your return flight to Ahmedabad with unforgettable memories.</p>
+                </div>
+            </div>
+          
+              <div class="additional-highlights">
+                <h3>Additional Highlights</h3>
+                <ul>
+                    <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                    <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                    <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                    <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                </ul>
+            </div>
+          
+            <div class="package-inclusions">
+                <h3>Package Inclusions</h3>
+                <ul>
+                    <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                    <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                    <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                    <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                    <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                </ul>
+            </div>
+            <div class="package-price">
+                <h3>Darjeeling Package</h3>
+                <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(45000, 'Darjeeling')">Book Now</button>
+              </div>
+          </div>
+          
+          
+          <div id="DarjeelingPackage3" class="package-detail">
+            <div class="package-header">
+                <h2>Quick Darjeeling Escape</h2>
+            </div>
+            <div class="package-info" style="background-image: url('https://images.moneycontrol.com/static-mcnews/2024/12/20241211110732_2-darjeeling-travel.jpg');">
+                <div class="info-box">
+                    <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+                    <p><strong>Type of Trip:</strong> Scenic, Culture & Adventure</p>
+                    <p><strong>Start City:</strong> Delhi</p>
+                    <p><strong>End City:</strong> Delhi</p>
+                </div>
+            </div>
+          
+            <div class="itinerary">
+                <h3>Itinerary</h3>
+                <div class="itinerary-item">
+                    <img src="https://www.iilsindia.com/blogs/wp-content/uploads/2019/05/Tourism.png" alt="Day 1 - Arrival in Darjeeling">
+                    <p><strong>Day 1:</strong> Fly from Delhi to Bagdogra (nearest airport to Darjeeling). Drive to Darjeeling (approx. 3 hours). Visit the **Peace Pagoda**, **Japanese Temple**, and enjoy a stroll on **Mall Road**. Overnight stay in Darjeeling.</p>
+                </div>
+                <div class="itinerary-item">
+                    <img src="https://media1.thrillophilia.com/filestore/ip6n6ylfinwpjvv0baug675or88a_1586457243_shutterstock_1246431202.jpg" alt="Day 2 - Darjeeling Sightseeing">
+                    <p><strong>Day 2:</strong> Early morning visit to **Tiger Hill** for a stunning sunrise view of **Kangchenjunga**. Afterward, visit the **Batasia Loop**, **Ghoom Monastery**, and the famous **Darjeeling Himalayan Railway** (Toy Train ride). Evening leisure time for shopping and relaxing. Overnight stay in Darjeeling.</p>
+                </div>
+                <div class="itinerary-item">
+                    <img src="https://kanchenjungaholidays.com/images/destination/darjeeling/park-main/park1.jpg" alt="Day 3 - Departure from Darjeeling">
+                    <p><strong>Day 3:</strong> Visit the **Himalayan Mountaineering Institute**, **Padmaja Naidu Himalayan Zoological Park**, and take a walk through the **Lloyd Botanical Garden**. In the afternoon, drive back to Bagdogra to catch a flight back to Delhi.</p>
+                </div>
+            </div>
+          
+              <div class="additional-highlights">
+                <h3>Additional Highlights</h3>
+                <ul>
+                    <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+                    <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+                    <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+                    <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+                </ul>
+            </div>
+          
+            <div class="package-inclusions">
+                <h3>Package Inclusions</h3>
+                <ul>
+                    <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+                    <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+                    <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+                    <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+                    <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+                </ul>
+            </div>
+            <div class="package-price">
+                <h3>Darjeeling Package</h3>
+                <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+                <button class="book-now-btn" onclick="redirectToBooking(55000, 'Darjeeling')">Book Now</button>
+              </div>
+            </div>
+
+    </section>
+
+
+    <!-- footer section  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+                <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+                <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+            </div>
+
+            <div class="box">
+                <h3>Legal Policy</h3>
+                <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+                <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+                <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+                <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+                <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+                <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+            </div>
+        </div>
+        <div class="credit"> © 2024 Created by <span>NexLume</span> | All Rights Reserved. </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Function to get the query parameter value
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Handle page content display
+        document.addEventListener("DOMContentLoaded", () => {
+            const category = getQueryParam('category');
+            const overviewSection = document.getElementById('overview');
+            const packageDetailSections = document.querySelectorAll('.package-detail');
+
+            if (category) {
+                // Hide overview and show the selected package detail
+                overviewSection.style.display = 'none';
+                const packageElement = document.getElementById(category);
+                if (packageElement) {
+                    packageElement.style.display = 'block';
+                } else {
+                    document.body.innerHTML += '<p>Invalid category selected.</p>';
+                }
+            } else {
+                // Show the overview section
+                overviewSection.style.display = 'flex';
+            }
+        });
+
+
+        // JavaScript for horizontal scroll using mouse wheel
+        const packageGallery = document.querySelector('.package-gallery');
+
+        packageGallery.addEventListener('wheel', (e) => {
+            if (e.deltaY !== 0) {
+                e.preventDefault(); // Prevent default vertical scroll behavior
+                packageGallery.scrollBy({
+                    left: e.deltaY > 0 ? 100 : -100, // Adjust horizontal scroll speed
+                    behavior: 'smooth', // Smooth scroll behavior
+                });
+            }
+        });
+
+
+        // Booking logic
+    function redirectToBooking(price, destination) {
+        const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+        window.location.href = url;
+    }
+    </script>
+
+</body>
+
+</html>

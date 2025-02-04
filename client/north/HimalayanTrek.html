@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | HimalayanTrek</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Banner/EHTBanner.jpg');">
+    <h1>Explore HimalayanTrek Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Everest Base Camp Trek -->
+        <div class="package-card">
+            <img src="https://lp-cms-production.imgix.net/2024-08/shutterstockRF273953330.jpg" alt="Everest Base Camp Trek">
+            <h3>Everest Base Camp Trek</h3>
+            <p>Embark on a journey of a lifetime as you trek to the base of the world's tallest mountain, experiencing breathtaking views and Sherpa culture.</p>
+            <a href="/north/HimalayanTrek.html?category=HimalayanPackage1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Annapurna Circuit Trek -->
+        <div class="package-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Under_stars_and_snows.jpg" alt="Annapurna Circuit Trek">
+            <h3>Annapurna Circuit Trek</h3>
+            <p>Explore the diverse landscapes of the Annapurna region, from lush forests to arid high-altitude terrain, on this iconic trek.</p>
+            <a href="/north/HimalayanTrek.html?category=HimalayanPackage2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Valley of Flowers Trek -->
+        <div class="package-card">
+            <img src="https://trekthehimalayas.com/images/ValleyofFlowersTrek/Slider/b3d630fb-3f9a-4cc6-9fef-1be72e135695_VOF.jpg" alt="Valley of Flowers Trek">
+            <h3>Valley of Flowers Trek</h3>
+            <p>Witness the stunning beauty of the Valley of Flowers, a UNESCO World Heritage site, with vibrant meadows and majestic Himalayan peaks.</p>
+            <a href="/north/HimalayanTrek.html?category=HimalayanPackage3" class="btn-view">View Details</a>
+        </div>
+    
+    
+        <div class="hexagon-title">
+          <h4>Top 10 Himalayan Trekking Places</h4>
+      </div>
+      <section class="hexagon-gallery">
+          <div class="hex">
+              <img src="https://i.natgeofe.com/n/2dc54f0a-0786-4593-86b3-fd06a50d1851/everest-basecamp-life-er-camp.jpg?w=2520&h=1890" alt="Everest Base Camp">
+              <h3>Everest Base Camp</h3>
+          </div>
+          <div class="hex">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Under_stars_and_snows.jpg" alt="Annapurna Circuit">
+              <h3>Annapurna Circuit</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.trekupindia.com/wp-content/uploads/2024/05/uttrakhand-valley-of-flowers-trek.webp" alt="Valley of Flowers">
+              <h3>Valley of Flowers</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.trekupindia.com/wp-content/uploads/2024/06/markha-valley-and-kang-yatse-min.jpg" alt="Markha Valley">
+              <h3>Markha Valley</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.adventurenation.com/blog/wp-content/uploads/2016/08/Roopkund-1140x530.jpg" alt="Roopkund Trek">
+              <h3>Roopkund Trek</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.ladakh-tourism.net/wp-content/uploads/2021/04/Chadar-trek-1.png" alt="Chadar Trek">
+              <h3>Chadar Trek</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-kedarkantha-trek2102-Bikat-Adventures.jpg" alt="Kedarkantha Trek">
+              <h3>Kedarkantha Trek</h3>
+          </div>
+          <div class="hex">
+              <img src="https://trekthehimalayas.com/images/HamptaPassTrek/GalleryDesktop/Monsoon/1109727a-023c-4b8b-9120-ab6d5f01cc65_Hampta-Pass-9.webp" alt="Hampta Pass Trek">
+              <h3>Hampta Pass Trek</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.trekupindia.com/wp-content/uploads/1715/90/Sabargram-trek-sandakphu.jpg" alt="Sandakphu Trek">
+              <h3>Sandakphu Trek</h3>
+          </div>
+          <div class="hex">
+              <img src="https://cdn.bookatrekking.com/data/images/2019/11/poon-hill-trek-long-read-everything-you-need-to-know.jpg" alt="Poon Hill Trek">
+              <h3>Poon Hill Trek</h3>
+          </div>
+      </section>
+      
+    </div>
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+ <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="HimalayanPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Himalayan Trekking Adventure: Annapurna Circuit</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://www.himalayanwonders.com/siteblog/wp-content/uploads/2014/02/Trekking-around-the-Annapurna-region.-Himalayas-Nepal.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 13 Nights / 14 Days</p>
+            <p><strong>Type of Trip:</strong> Trekking and Adventure</p>
+            <p><strong>Start City:</strong> Kathmandu</p>
+            <p><strong>End City:</strong> Kathmandu</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://himalayantrekkers.com/_next/image?url=https%3A%2F%2Fserver-production-fefe.up.railway.app%2Fapi%2Ffile-upload%2Fposts%252FApril2022%252FUnesco-Heritage-Sites-in-Kathmandu.jpg&w=3840&q=75" alt="Day 1 - Arrival in Kathmandu">
+            <p><strong>Day 1:</strong> Arrive in Kathmandu. Explore UNESCO World Heritage sites and prepare for the trek. Overnight stay in Kathmandu.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1609232292287-QE2NFXW09JXV5UU525G5/annapurna-circuit-trek-guide-besisahar-chame.jpg" alt="Day 2 - Drive to Besisahar">
+            <p><strong>Day 2:</strong> Drive to Besisahar, the starting point of the Annapurna Circuit. Enjoy the scenic ride and overnight stay in Besisahar.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://wandersky.in/wp-content/uploads/2023/08/Untitled-design-63.png" alt="Day 3 - Trek to Tal">
+            <p><strong>Day 3:</strong> Begin trekking through lush valleys and riverside trails to reach Tal, a serene village. Overnight stay in Tal.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://abovethehimalaya.com/wp-content/uploads/2019/11/manang.jpg" alt="Day 4 - Reach Manang">
+            <p><strong>Days 4-7:</strong> Trek through Chame, Pisang, and reach Manang. Acclimatize to the altitude and explore the picturesque village of Manang.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.nepaltrekhub.com/wp-content/uploads/2023/07/thorong-la-pass-trek.jpg" alt="Day 8 - Cross Thorong La Pass">
+            <p><strong>Day 8:</strong> Cross Thorong La Pass (5,416m), the highest point of the trek. Enjoy breathtaking views of the Annapurna range. Overnight stay in Muktinath.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.tthimalaya.com/wp-content/uploads/2023/05/muktinath-ga580aaf51_1280.jpg" alt="Day 9 - Jomsom and Marpha">
+            <p><strong>Days 9-10:</strong> Descend to Jomsom and Marpha, known for its charming apple orchards and local culture. Overnight stays en route.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://media.nepaltrekadventures.com/uploads/img/tatopani-travel-guide-b.webp" alt="Day 11 - Hot Springs at Tatopani">
+            <p><strong>Day 11:</strong> Reach Tatopani and relax in the natural hot springs. Overnight stay in Tatopani.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.orbitalpineadventure.com/uploads/img/poon-hill-trek.JPG" alt="Day 12 - Trek to Ghorepani">
+            <p><strong>Day 12:</strong> Trek through scenic trails to Ghorepani, a popular stopover for panoramic Himalayan views. Overnight stay in Ghorepani.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/1f/a8/97.jpg" alt="Day 13 - Sunrise at Poon Hill">
+            <p><strong>Day 13:</strong> Early morning trek to Poon Hill for a stunning sunrise over the Himalayas. Return to Pokhara for an evening of relaxation.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.india-tours.com/blog/wp-content/uploads/2021/06/shopping-in-kathmandu.jpg" alt="Day 14 - Return to Kathmandu">
+            <p><strong>Day 14:</strong> Drive back to Kathmandu. Shop for souvenirs and enjoy a farewell dinner. Overnight stay in Kathmandu.</p>
+        </div>
+    </div>
+<div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Himalayan Package</h3>
+  <p><strong>Starting at:</strong> ₹75,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(75000, 'Himalayan')">Book Now</button>
+</div>
+</div>
+<div id="HimalayanPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Mumbai to Himalayan Trekking Adventure: Everest Base Camp</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://imgcld.yatra.com/ytimages/image/upload/v1586499688/AdvNation/ANN_TRP237/shutterstock_667066843_ebc_BWKI6F.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 13 Nights / 14 Days</p>
+          <p><strong>Type of Trip:</strong> Adventure, Trekking</p>
+          <p><strong>Start City:</strong> Mumbai</p>
+          <p><strong>End City:</strong> Mumbai</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.flydubai.com/en/media/kathmandu-temple-on-the-square-806x400_tcm8-136852_w806.jpg" alt="Day 1 - Arrival in Kathmandu">
+          <p><strong>Day 1:</strong> Fly from Mumbai to Kathmandu. Check into your hotel and enjoy a guided tour of Kathmandu’s UNESCO World Heritage sites, including Durbar Square and Swayambhunath Stupa. Overnight stay in Kathmandu.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://myeveresttrip.com/wp-content/uploads/2023/01/ff058bd1-5915-46be-a68c-a0a128a18055-e1709283914527.jpeg" alt="Day 2 - Fly to Lukla and Trek to Phakding">
+          <p><strong>Day 2:</strong> Take a scenic flight to Lukla (2,800m), the gateway to Everest. Begin your trek to Phakding (2,652m), passing through lush green valleys. Overnight stay in Phakding.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/ed/ec/8f/namche-bazaar.jpg" alt="Day 3 - Trek to Namche Bazaar">
+          <p><strong>Day 3:</strong> Trek to Namche Bazaar (3,440m), a vibrant Sherpa town and the main trading hub in the Everest region. Acclimatize here with stunning views of the Himalayas. Overnight stay in Namche.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt5-dMMOEnf0uoL__goiGmO8SQVijWPbfM-g&s" alt="Day 4 - Acclimatization Day at Namche">
+          <p><strong>Day 4:</strong> Spend the day acclimatizing in Namche. Visit the Sherpa Museum and enjoy short hikes to nearby viewpoints. Overnight stay in Namche.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.thirdrockadventures.com/assets-back/images/trip/view-from-tengboche-monastery.jpg8HS.jpg" alt="Day 5 - Trek to Tengboche">
+          <p><strong>Day 5:</strong> Trek to Tengboche (3,860m), home to the famous Tengboche Monastery. Enjoy panoramic views of Mt. Everest, Ama Dablam, and other peaks. Overnight stay in Tengboche.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://cdn.getyourguide.com/img/tour/e6f6a19409ee901d67d65ff0ae668fdd86aff2cd42fd1c04170140ce0398003a.jpeg/68.jpg" alt="Day 6 - Trek to Dingboche">
+          <p><strong>Day 6:</strong> Continue trekking to Dingboche (4,410m), a quaint village surrounded by majestic peaks. Overnight stay in Dingboche.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media.nepalhighlandtreks.com/uploads/fullbanner/lobuche-peak-climbing-banner.webp" alt="Day 7 - Trek to Lobuche">
+          <p><strong>Day 7:</strong> Trek to Lobuche (4,940m), passing through Khumbu Glacier and memorial sites dedicated to climbers. Overnight stay in Lobuche.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media.nepaltrekadventures.com/uploads/img/ebc-trek.webp" alt="Day 8 - Trek to Everest Base Camp">
+          <p><strong>Day 8:</strong> Reach Everest Base Camp (5,364m), the ultimate goal of the trek. Witness the incredible Khumbu Icefall and enjoy breathtaking surroundings. Return to Gorakshep for an overnight stay.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/20/1f/a8.jpg" alt="Day 9 - Hike to Kala Patthar and Descend">
+          <p><strong>Day 9:</strong> Hike to Kala Patthar (5,545m) for a stunning sunrise view of Everest. Begin the descent back to Pheriche (4,280m). Overnight stay in Pheriche.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.himalayanglacier.com/wp-content/uploads/2023/03/Namche-Bazaar-along-the-trekking-trail-to-Everest-following-the-Guide-to-Everest-Base-Camp-Elevation-and-Altitude-Gain.jpg" alt="Days 10-12 - Return to Lukla">
+          <p><strong>Days 10-12:</strong> Trek back to Lukla via Namche Bazaar, retracing your steps through picturesque villages. Celebrate the completion of the trek. Overnight stays en route.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://tourtripx.com/storage/tour-packages/669e2b11b360a3449-20240722151905.webp" alt="Day 13 - Fly to Kathmandu">
+          <p><strong>Day 13:</strong> Fly back to Kathmandu. Spend the day exploring the city or shopping for souvenirs. Overnight stay in Kathmandu.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://nomadbikers.com/wp-content/uploads/2023/12/1-A.webp" alt="Day 14 - Return to Mumbai">
+          <p><strong>Day 14:</strong> Fly back to Mumbai with unforgettable memories of your Himalayan adventure.</p>
+      </div>
+  </div>
+
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Himalayan Package</h3>
+    <p><strong>Starting at:</strong> ₹65,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(65000, 'Himalayan')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="HimalayanPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Himalayan Basics: Short Trekking Adventure</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://moxtain.s3.ap-south-1.amazonaws.com/trekking/rupin-pass/rupin-pass-trek-14.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+          <p><strong>Type of Trip:</strong> Adventure and Nature Exploration</p>
+          <p><strong>Start City:</strong> Dehradun</p>
+          <p><strong>End City:</strong> Dehradun</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://devotionalpoint.com/wp-content/uploads/2024/08/7-4.jpg" alt="Day 1 - Arrival in Dehradun">
+          <p><strong>Day 1:</strong> Arrive in Dehradun by flight or train. Meet your guide and transfer to the hill station of Mussoorie (1.5 hours). Relax and explore Mall Road. Overnight stay in Mussoorie.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAoDBxjcpDjz_7oRktzcriAR0VT_55XsBOIA&s" alt="Day 2 - Trek to Nag Tibba Base Camp">
+          <p><strong>Day 2:</strong> Drive to Pantwari village (3 hours). Begin your trek to Nag Tibba Base Camp (2,600m), passing through forests and scenic meadows. Overnight camping under the stars.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://himalayashelter.com/wp-content/uploads/2021/08/nag-tibba-ridge.jpg" alt="Day 3 - Nag Tibba Summit">
+          <p><strong>Day 3:</strong> Trek to the summit of Nag Tibba (3,022m) for panoramic views of the Himalayan ranges. Descend to Pantwari and drive back to Mussoorie. Overnight stay in Mussoorie.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.trawell.in/admin/images/upload/291549837Dhanaulti_Eco_Park_Main.jpg" alt="Day 4 - Dhanaulti and Eco Park">
+          <p><strong>Day 4:</strong> Visit **Dhanaulti Eco Park**, a serene forested area known for its tranquility. Enjoy short nature walks and return to Mussoorie. Overnight stay in Mussoorie.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.river-rafting-rishikesh.in/wp-content/uploads/2021/12/river-rafting-rishikesh.jpg" alt="Day 5 - Rishikesh Adventure">
+          <p><strong>Day 5:</strong> Travel to Rishikesh (2.5 hours). Enjoy white-water rafting on the Ganges and visit iconic spots like **Lakshman Jhula** and **Parmarth Niketan Ashram**. Overnight stay in Rishikesh.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://naturewalkers.in/wp-content/uploads/2019/06/1568010034288-harKiDunNovemberBanBanjara.jpg" alt="Day 6 - Departure">
+          <p><strong>Day 6:</strong> Drive back to Dehradun (1.5 hours) and depart for your onward journey with cherished memories of the Himalayas.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Himalayan Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Himalayan')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

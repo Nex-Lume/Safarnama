@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Sikkim</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Sikkim/sikkim.jpg');">
+    <h1>Explore Sikkim Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Mesmerizing Gangtok Getaway -->
+        <div class="package-card">
+            <img src="https://curlytales.com/wp-content/uploads/2019/06/east-sikkim-gangtok-147791514406-orijgp.jpg" alt="Mesmerizing Gangtok Getaway">
+            <h3>Mesmerizing Gangtok Getaway</h3>
+            <p>Discover the charm of Gangtok, with its stunning monasteries, bustling markets, and breathtaking views of the Himalayas.</p>
+            <a href="/west/Sikkim.html?category=Package1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Magical Tsomgo Lake & Nathula Pass -->
+        <div class="package-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg" alt="Magical Tsomgo Lake & Nathula Pass">
+            <h3>Magical Tsomgo Lake & Nathula Pass</h3>
+            <p>Witness the beauty of the frozen Tsomgo Lake and visit the historic Nathula Pass along the Indo-China border.</p>
+            <a href="/west/Sikkim.html?category=Package2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Spiritual Sojourn in Sikkim -->
+        <div class="package-card">
+            <img src="https://static.wixstatic.com/media/nsplsh_c86979bc2dd3494a9e5f62a67d117966~mv2.jpg/v1/fill/w_980,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_c86979bc2dd3494a9e5f62a67d117966~mv2.jpg" alt="Spiritual Sojourn in Sikkim">
+            <h3>Spiritual Sojourn in Sikkim</h3>
+            <p>Embark on a spiritual journey visiting Rumtek Monastery, Pemayangtse Monastery, and immerse in Sikkim’s serene culture.</p>
+            <a href="/west/Sikkim.html?category=Package3" class="btn-view">View Details</a>
+        </div>
+    
+        <div class="hexagon-title">
+            <h4>Top 10 Places in Sikkim</h4>
+        </div>
+        <section class="hexagon-gallery">
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg" alt="Tsomgo Lake">
+                <h3>Tsomgo Lake</h3>
+            </div>
+            <div class="hex">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/12/96/88/photo0jpg.jpg?w=1200&h=-1&s=1" alt="Yumthang Valley">
+                <h3>Yumthang Valley</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.insidesikkim.com/wp-content/uploads/2023/05/Gangtok.webp" alt="Gangtok">
+                <h3>Gangtok</h3>
+            </div>
+            <div class="hex">
+                <img src="https://static.india.com/wp-content/uploads/2018/08/Gurudongmar-Lake-photo-1.jpg?impolicy=Medium_Resize&w=1200&h=800" alt="Gurudongmar Lake">
+                <h3>Gurudongmar Lake</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.karmapa.org/wp-content/uploads/Rumtek_Monastery_-_Inside_Close_View-1400px-cropped.jpg" alt="Rumtek Monastery">
+                <h3>Rumtek Monastery</h3>
+            </div>
+            <div class="hex">
+                <img src="https://nomadicweekends.com/blog/wp-content/uploads/2019/03/Nathula-Pass.jpg" alt="Nathula Pass">
+                <h3>Nathula Pass</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.kiomoi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fkmadmin%2Fimage%2Fupload%2Fv1726815209%2Fkiomoi%2FPemayangtse_Monastery_5141.jpg&w=3840&q=75" alt="Pemayangtse Monastery">
+                <h3>Pemayangtse Monastery</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Cherry_Resort_inside_Temi_Tea_Garden%2C_Namchi%2C_Sikkim.jpg" alt="Sikkim Tea Gardens">
+                <h3>Sikkim Tea Gardens</h3>
+            </div>
+            <div class="hex">
+                <img src="https://sikkimtourism.gov.in/Content/Pics/megaMenu/PlacesToGomap/Buddha-park-Ravangla.jpg" alt="Ravangla Buddha Park">
+                <h3>Ravangla Buddha Park</h3>
+            </div>
+            <div class="hex">
+                <img src="https://tripsaround.in/wp-content/uploads/2014/04/Zuluk-1.jpg" alt="Zuluk">
+                <h3>Zuluk</h3>
+            </div>
+        </section>
+    </div>
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="Package1" class="package-detail">
+    <div class="package-header">
+        <h2>Mumbai to Sikkim: 5-Day Himalayan Spiritual & Adventure Tour</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://www.indiantempletour.com/wp-content/uploads/2022/08/Sikkim-Tour-Packages-from-Mumbai.webp');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+            <p><strong>Type of Trip:</strong> Spiritual, Adventure, and Nature Exploration</p>
+            <p><strong>Start City:</strong> Mumbai</p>
+            <p><strong>End City:</strong> Mumbai</p>
+        </div>
+    </div>
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://www.tusktravel.com/blog/wp-content/uploads/2023/05/Rumtek-Monastery-Gangtok-Sikkim.jpg" alt="Day 1 - Arrival in Gangtok">
+            <p><strong>Day 1:</strong> Arrive in Gangtok from Mumbai. Begin your spiritual journey by visiting the Rumtek Monastery, one of the most significant monasteries in Sikkim. Later, relax at Tsomgo Lake and enjoy the stunning views. Evening at leisure for shopping and local exploration. Overnight stay in Gangtok.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://nomadicweekends.com/blog/wp-content/uploads/2019/03/Nathula-Pass.jpg" alt="Day 2 - Nathula Pass and Baba Mandir">
+            <p><strong>Day 2:</strong> Early morning drive to Nathula Pass (Indo-China border) to witness breathtaking snow-capped views. Visit the sacred Baba Mandir, dedicated to an Indian soldier. In the evening, return to Gangtok and indulge in local cuisine. Overnight stay in Gangtok.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.shutterstock.com/image-photo/majestic-view-mt-kanchenjunga-viewpoint-260nw-2478961893.jpg" alt="Day 3 - Kanchenjunga Viewpoint and Local Exploration">
+            <p><strong>Day 3:</strong> Wake up early to catch a glimpse of the majestic Kanchenjunga, the world’s third-highest peak, from a viewpoint. Spend the day exploring the local villages, culture, and craft markets. You’ll also visit the Enchey Monastery, a major Buddhist site. Overnight stay in Gangtok.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/dubdi-monastery-pelling-sikkim-1-attr-hero?qlt=82&ts=1726656017578" alt="Day 4 - Yuksom and Buddhist Monasteries">
+            <p><strong>Day 4:</strong> Drive to Yuksom, the gateway to trekking in Sikkim. Visit the Dubdi Monastery, the first Buddhist monastery in Sikkim, and soak in the spiritual atmosphere. Explore the surrounding landscapes and enjoy the tranquility of nature. Overnight stay in Yuksom.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.trawell.in/admin/images/upload/14877682Ravangla_Temi_Tea_Garden_Main.jpg" alt="Day 5 - Temi Tea Estate and Return to Gangtok">
+            <p><strong>Day 5:</strong> Visit the Temi Tea Estate, known for its world-class tea and scenic beauty. Enjoy a tea-tasting session and explore the lush tea gardens. Afterward, return to Gangtok for your departure, bringing with you memories of a spiritual and adventure-filled journey in the Himalayas.</p>
+        </div>
+    </div>
+
+      <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Sikkim Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Sikkim')">Book Now</button>
+</div>
+</div>
+
+<div id="Package2" class="package-detail">
+  <div class="package-header">
+      <h2>Mumbai to Sikkim: 5-Day Spiritual and Himalayan Adventure</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://www.tripplannersindia.com/assets/images/page/sikkim_new2.webp');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Spiritual, Adventure, and Nature Exploration</p>
+          <p><strong>Start City:</strong> Mumbai</p>
+          <p><strong>End City:</strong> Mumbai</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.tripplannersindia.com/assets/images/page/sikkim_3.webp" alt="Day 1 - Arrival in Gangtok">
+          <p><strong>Day 1:</strong> Arrive in Gangtok from Mumbai. Explore the Rumtek Monastery and enjoy panoramic views from the Tsomgo Lake. Evening at leisure to explore the local markets. Overnight stay in Gangtok.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1697717746/bbj/vcnfotgye0retqz1zfrz.jpg" alt="Day 2 - Nathula Pass and Baba Mandir">
+          <p><strong>Day 2:</strong> Early morning drive to Nathula Pass (Indo-China border) and visit the Baba Mandir. Enjoy the breathtaking views of the snow-capped mountains. In the evening, relax and enjoy local Sikkimese food. Overnight stay in Gangtok.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://i0.wp.com/www.singhontrek.in/wp-content/uploads/2020/09/Samiti-lake.jpg?fit=640%2C427&ssl=1" alt="Day 3 - Visit Kanchenjunga and Explore Local Villages">
+          <p><strong>Day 3:</strong> Morning visit to the Kanchenjunga viewpoint to admire the world's third-highest peak. Visit local villages around Gangtok for a cultural experience. Overnight stay in Gangtok.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://static.toiimg.com/photo/91382791.cms" alt="Day 4 - Yuksom and Buddhist Monasteries">
+          <p><strong>Day 4:</strong> Drive to Yuksom, the starting point for trekking in Sikkim. Explore the local monasteries and soak in the serene environment. Visit the Dubdi Monastery and enjoy the peaceful ambiance. Overnight stay in Yuksom.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.tourmyindia.com/states/sikkim/images/temi-tea-estate1.jpg" alt="Day 5 - Explore Temi Tea Estate and Return to Gangtok">
+          <p><strong>Day 5:</strong> Visit the Temi Tea Estate, one of the finest tea estates in India. Enjoy a tea-tasting session. Return to Gangtok and depart for your flight back to Mumbai with memories of a wonderful trip.</p>
+      </div>
+  </div>
+
+
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Sikkim Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Sikkim')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="Package3" class="package-detail">
+  <div class="package-header">
+      <h2>Sikkim: 3-Day Spiritual and Himalayan Exploration</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://www.sikkimtourismindia.com/uploads/sikkim-trip.JPG');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Spiritual, Adventure, and Cultural Exploration</p>
+          <p><strong>Start City:</strong> Gangtok</p>
+          <p><strong>End City:</strong> Gangtok</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.trawell.in/admin/images/upload/723415296Gangtok_Rumtek_Monastery_Main.jpg" alt="Day 1 - Arrival in Gangtok">
+          <p><strong>Day 1:</strong> Arrive in Gangtok, the capital city of Sikkim. Visit the Rumtek Monastery, one of the largest and most important Buddhist monasteries in Sikkim. Explore the local markets and enjoy a peaceful evening by the Tsomgo Lake. Overnight stay in Gangtok.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250110-1408937814-1736512473.jpg" alt="Day 2 - Nathula Pass and Baba Mandir">
+          <p><strong>Day 2:</strong> Early morning drive to Nathula Pass, a high-altitude pass on the Indo-China border. Visit Baba Mandir, a shrine dedicated to an Indian soldier, and enjoy breathtaking views of the snow-capped mountains. In the evening, relax and enjoy local Sikkimese cuisine. Overnight stay in Gangtok.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://assets.zeezest.com/blogs/PROD_Kanchenjunga%20banner_1687672795844_thumb_1200.png" alt="Day 3 - Explore Kanchenjunga Viewpoint and Departure">
+          <p><strong>Day 3:</strong> Early morning visit to the Kanchenjunga viewpoint for a stunning view of the world's third-highest peak. Enjoy a short trek around the local villages. Return to Gangtok for departure.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Sikkim Package</h3>
+    <p><strong>Starting at:</strong> ₹25,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(25000, 'Sikkim')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <title> SafarNama | Tours</title>
+  <link rel="icon" href="Images/titlelogo.png" type="image/png" >
+  <link rel="stylesheet" href="css/Style.css">
+  <link rel="stylesheet" href="css/Tours.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="Index.html">
+          <img src="Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Destinations.html"> Destinations</a></li>
+          <li><a href="Packages.html"> Packages</a></li>
+          <li>
+            <a href="Tour.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="FestivalTour.html">Festival Tour</a></li>
+              <li><a href="north/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+
+  
+ <!-- Festival Tour Section -->
+<section class="tour-section-banner" id="festival-tour">
+    <div class="section-title">
+      <h2>Festival Tour</h2>
+    </div>
+    <div class="banner-container">
+      <div class="banner" id="festival-tour-banner">
+        <a href="FestivalTour.html">
+          <img src="Images/Festivaltour/Festbanner.png" alt="Festival Tour">
+          <div class="banner-text">Festival Tour</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Himalayan Trek Section -->
+  <section class="tour-section-banner" id="himalayan-trek">
+    <div class="section-title">
+      <h2>Himalayan Trek</h2>
+    </div>
+    <div class="banner-container">
+      <div class="banner" id="himalayan-trek-banner">
+        <a href="north/HimalayanTrek.html">
+          <img src="Images/Banner/EHTBanner.jpg" alt="Himalayan Trek">
+          <div class="banner-text">Himalayan Trek</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Religion Tour Section -->
+  <section class="tour-section-banner" id="religion-tour">
+    <div class="section-title">
+      <h2>Religion Tour</h2>
+    </div>
+    <div class="banner-container">
+      <div class="banner" id="religion-tour-banner">
+        <a href="ReligionTour.html">
+          <img src="Images/Religioustour/religiousbanner.png" alt="Religion Tour">
+          <div class="banner-text">Religion Tour</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- banner section -->
+
+  <!-- Festival Tour Section -->
+  <section class="tour-section" id="festival-tour">
+    <h2>Festival Tour</h2>
+    <div class="tour-gallery">
+      <!-- Image 1 -->
+      
+
+      <!-- Video 1 -->
+      <div class="image-container">
+        <a href="diwali.html">
+          <video src="video/diwali.mp4" autoplay loop muted>
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">Festival 1: Diwali Celebration (Video)</div>
+        </a>
+      </div>
+
+    
+      <!-- Video 2 -->
+      <div class="image-container">
+        <a href="holi.html">
+          <video src="video/holi.mp4" autoplay loop muted>
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">Festival 2: Holi Colors (Video)</div>
+        </a>
+      </div>
+
+    
+
+      <!-- Video 3 -->
+      <div class="image-container">
+        <a href="durga-puja.html">
+          <video src="video/durga.mp4" autoplay loop muted>
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">Festival 3: Durga Puja (Video)</div>
+        </a>
+      </div>
+
+      
+
+      <!-- Video 4 -->
+      <div class="image-container">
+        <a href="ganesh-chaturthi.html">
+          <video src="video/ganpati.mp4" autoplay loop muted>
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">Festival 4: Ganesh Chaturthi (Video)</div>
+        </a>
+      </div>
+    </div>
+</section>
+
+  
+  <!-- Himalayan Trek Section -->
+  <!-- Himalayan Trek Section -->
+<section class="tour-section" id="himalayan-trek">
+    <h2>Himalayan Trek</h2>
+    <div class="tour-gallery">
+      <div class="image-container">
+        <a href="everest-base-camp.html">
+          <img src="Images/UttraKhand/Trek2.jpg" alt="Himalayan Trek 1">
+          <div class="overlay">Everest Base Camp</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="kashmir-great-lakes.html">
+          <img src="Images/UttraKhand/kedarnathtrek (5).jpg" alt="Himalayan Trek 2">
+          <div class="overlay">Kashmir Great Lakes Trek</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="roopkund-trek.html">
+          <img src="Images/UttraKhand/Chandratallake trek (6).jpg" alt="Himalayan Trek 3">
+          <div class="overlay">Roopkund Trek</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="kedarkantha-trek.html">
+          <img src="Images/UttraKhand/kedarnathtrek (3).jpg" alt="Himalayan Trek 4">
+          <div class="overlay">Kedarkantha Trek</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Religion Tour Section
+  <section class="tour-section" id="religion-tour">
+    <h2>Religious Tour</h2>
+    <div class="tour-gallery">
+      <div class="image-container">
+        <a href="#">
+          <img src="Images/UttraKhand/Kn.jpg" alt="Temple 1">
+          <div class="overlay">Kedarnath</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="kashi-vishwanath.html">
+          <img src="Images/UP/varansi (13).jpg" alt="Temple 2">
+          <div class="overlay">Kashi Vishwanath - Varanasi</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="meenakshi-temple.html">
+          <img src="Images/UP/varansi (11).jpg" alt="Temple 3">
+          <div class="overlay">Meenakshi Temple - Dwarka</div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="tour-section" id="religious-tour">
+    <h2>Religious Tour</h2>
+    <div class="tour-gallery">
+      
+      <!-- Ujjain -->
+      <div class="image-container">
+        <a href="ujjain.html">
+          <div class="image-wrapper">
+            <!-- <img src="Images/MP/Mahakaleshwar  (5).jpg" alt="Ujjain"> -->
+            <video src="video/ujjain.mp4" class="overlay-video" autoplay loop muted></video>
+          </div>
+          <div class="overlay">Ujjain: Mahakaleshwar Temple</div>
+        </a>
+      </div>
+
+      <!-- Varanasi -->
+      <div class="image-container">
+        <a href="varanasi.html">
+          <div class="image-wrapper">
+            <!-- <img src="Images/UP/varansi (11).jpg" alt="Varanasi"> -->
+            <video src="video/banarasv.mp4" class="overlay-video" autoplay loop muted></video>
+          </div>
+          <div class="overlay">Varanasi: Ganges Aarti</div>
+        </a>
+      </div>
+
+      <!-- Kedarnath -->
+      <div class="image-container">
+        <a href="kedarnath.html">
+          <div class="image-wrapper">
+            <!-- <img src="Images/UttraKhand/Kn.jpg" alt="Kedarnath"> -->
+            <video src="video/Kedarnathv.mp4" class="overlay-video" autoplay loop muted></video>
+          </div>
+          <div class="overlay">Kedarnath: Kedarnath Temple</div>
+        </a>
+      </div>
+
+      <!-- Ayodhya -->
+      <div class="image-container">
+        <a href="ayodhya.html">
+          <div class="image-wrapper">
+            <!-- <img src="Images/UP/ShreeRam.jpg" alt="Ayodhya"> -->
+            <video src="video/ayodhya.mp4" class="overlay-video"autoplay loop muted></video>
+          </div>
+          <div class="overlay">Ayodhya: Ram Janmabhoomi</div>
+        </a>
+      </div>
+
+    </div>
+</section>
+
+  
+
+  
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+ </body>
+ </html>
+ 

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <title> SafarNama | ReligionTour</title>
+  <link rel="icon" href="Images/titlelogo.png" type="image/png" >
+  <link rel="stylesheet" href="css/Style.css">
+  <link rel="stylesheet" href="css/ReligionTour.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="Index.html">
+          <img src="Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Destinations.html"> Destinations</a></li>
+          <li><a href="Packages.html"> Packages</a></li>
+          <li>
+            <a href="Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="FestivalTour.html">Festival Tour</a></li>
+              <li><a href="HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+  <div class="hero-section">
+    <img src="Images/Banner/AKBanner.jpg" alt="Sacred Journeys">
+  </div>
+  
+  <section id="religious-highlights" class="religious-highlights-section">
+    <div class="container">
+      <h2 class="section-title">Embark on a Sacred Journey</h2>
+      <p class="section-subtitle">
+        Discover the spiritual essence of India through its divine temples, serene monasteries, and holy rivers. Perfect for pilgrims and seekers alike.
+      </p>
+      
+      <div class="religious-cards">
+        <div class="religious-card">
+          <img src="Images/UttraKhand/Kedarnath.jpg" alt="Kedarnath Temple">
+          <h3>Kedarnath Temple</h3>
+          <h6>One of the 12 Jyotirlingas of Lord Shiva</h6>
+          <div class="religious-info">
+            <p><strong>Location:</strong> Uttarakhand</p>
+            <p><strong>Best Time to Visit:</strong> May - October</p>
+          </div>
+          <a href="north/UttaraKhand.html" class="card-cta">Learn More</a>
+        </div>
+        
+        <div class="religious-card">
+          <img src="Images/Amritsar/goldanpunjab.jpg" alt="Golden Temple">
+          <h3>Golden Temple</h3>
+          <h6>A Symbol of Universal Brotherhood</h6>
+          <div class="religious-info">
+            <p><strong>Location:</strong> Amritsar, Punjab</p>
+            <p><strong>Best Time to Visit:</strong> October - March</p>
+          </div>
+          <a href="north/Amritsar.html" class="card-cta">Learn More</a>
+        </div>
+        
+        <div class="religious-card">
+          <img src="Images/UP/varanasi1.jpg" alt="Kashi Vishwanath Temple">
+          <h3>Kashi Vishwanath Temple</h3>
+          <h6>The Spiritual Capital of India</h6>
+          <div class="religious-info">
+            <p><strong>Location:</strong> Varanasi, Uttar Pradesh</p>
+            <p><strong>Best Time to Visit:</strong> November - February</p>
+          </div>
+          <a href="north/Uttar-Pradesh.html" class="card-cta">Learn More</a>
+        </div>
+      </div>
+  
+      <div class="religious-cards">
+        <div class="religious-card">
+          <img src="Images/Tamilnadu/Rameshwaram  (1).jpg" alt="Rameshwaram Temple">
+          <h3>Rameshwaram Temple</h3>
+          <h6>Part of the Char Dham Pilgrimage</h6>
+          <div class="religious-info">
+            <p><strong>Location:</strong> Tamil Nadu</p>
+            <p><strong>Best Time to Visit:</strong> October - April</p>
+          </div>
+          <a href="/south/Tamilnadu.html" class="card-cta">Learn More</a>
+        </div>
+        
+        <div class="religious-card">
+          <img src="Images/Gujarat/Dwarka (1).jpg" alt="Mahabodhi Temple">
+          <h3>Mahabodhi Temple</h3>
+          <h6>A Sacred Site of Buddha's Enlightenment</h6>
+          <div class="religious-info">
+            <p><strong>Location:</strong> Bodh Gaya, Bihar</p>
+            <p><strong>Best Time to Visit:</strong> October - March</p>
+          </div>
+          <a href="east/Gujarat.html" class="card-cta">Learn More</a>
+        </div>
+        
+        <div class="religious-card">
+          <img src="Images/Gujarat/Somnath  (1).jpg" alt="Somnath Temple">
+          <h3>Somnath Temple</h3>
+          <h6>The First Among the 12 Jyotirlingas</h6>
+          <div class="religious-info">
+            <p><strong>Location:</strong> Gujarat</p>
+            <p><strong>Best Time to Visit:</strong> November - February</p>
+          </div>
+          <a href="east/Gujarat.html" class="card-cta">Learn More</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+ </body>
+ </html>
+ 

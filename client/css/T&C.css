@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('../Images/Activities/scubadiving.jpg');
+    background-size: cover;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  /* Header Section */
+  .terms-header {
+    background: #3fa9ff;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .terms-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .terms-tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  
+  /* Terms Container */
+  .terms-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Styling */
+  .terms-section {
+    margin-bottom: 2rem;
+  }
+  
+  .terms-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #0078aa;
+    padding-bottom: 0.3rem;
+    color: #2225ec;
+    font-weight: bold;
+  }
+  
+  .terms-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-list {
+    margin-left: 1.5rem;
+    list-style: disc;
+  }
+  
+  .terms-list-item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Links */
+  a {
+    color: #0078aa;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .terms-header {
+      padding: 1.5rem 1rem;
+    }
+  
+    .terms-title {
+      font-size: 2rem;
+    }
+  
+    .terms-container {
+      padding: 1rem;
+    }
+  
+    .terms-heading {
+      font-size: 1.3rem;
+    }
+  
+    .terms-text,
+    .terms-list-item {
+      font-size: 0.95rem;
+    }
+  }
+  

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Tamil Naidu</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: fill;
+      height: 70vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Banner/STBanner.jpg');">
+    <h1>Explore TamilNadu Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <div id="overview" class="package-overview">
+        <!-- Temples of Tamil Nadu Tour -->
+        <div class="package-card">
+            <img src="https://i.natgeofe.com/n/b9e9b8d1-fa08-4b90-96bb-310cace03847/meenakshi-amman-temple-india.jpg" alt="Temples of Tamil Nadu Tour">
+            <h3>Temples of Tamil Nadu Tour</h3>
+            <p>Explore the grandeur of ancient temples, including the iconic Meenakshi Temple, Brihadeeswarar Temple, and more.</p>
+            <a href="/south/TamilNadu.html?category=Package1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Southern Beaches & Serenity -->
+        <div class="package-card">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/kanyakumari-1656091428_cf69d9a9dbec82018046.jpg" alt="Southern Beaches & Serenity">
+            <h3>Southern Beaches & Serenity</h3>
+            <p>Relax on the pristine beaches of Kanyakumari, Mahabalipuram, and Rameswaram, and discover the spiritual aura of these coastal towns.</p>
+            <a href="/south/TamilNadu.html?category=Package2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Hill Station Escape: Ooty & Kodaikanal -->
+        <div class="package-card">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/kodaikanal-lake-1657265233_ea496c49625350b53847.webp" alt="Hill Station Escape: Ooty & Kodaikanal">
+            <h3>Hill Station Escape: Ooty & Kodaikanal</h3>
+            <p>Escape to the lush greenery and cool climate of Ooty and Kodaikanal, perfect for nature lovers and adventure enthusiasts.</p>
+            <a href="/south/TamilNadu.html?category=Package3" class="btn-view">View Details</a>
+        </div>
+    
+        <div class="hexagon-title">
+            <h4>Top 10 Places in Tamil Nadu</h4>
+        </div>
+        <section class="hexagon-gallery">
+            <div class="hex">
+                <img src="https://i.natgeofe.com/n/b9e9b8d1-fa08-4b90-96bb-310cace03847/meenakshi-amman-temple-india.jpg" alt="Meenakshi Temple">
+                <h3>Meenakshi Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://temple.yatradham.org/public/Product/temple/temple_864NnMll_202408101833430.webp" alt="Kanyakumari">
+                <h3>Kanyakumari</h3>
+            </div>
+            <div class="hex">
+                <img src="https://s3.india.com/wp-content/uploads/2024/04/Feature-Image_-Ooty-1.jpg" alt="Ooty">
+                <h3>Ooty</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/rameswaram-temple-1656167436_f2c551193bb7d4bc6f70.webp" alt="Rameswaram">
+                <h3>Rameswaram</h3>
+            </div>
+            <div class="hex">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6a/e5/a7/thanjavur-brihadeeshwara.jpg?w=1200&h=-1&s=1" alt="Brihadeeswarar Temple">
+                <h3>Brihadeeswarar Temple</h3>
+            </div>
+            <div class="hex">
+                <img src="https://thrillingtravel.in/wp-content/uploads/2020/04/Maadamaaligai-bell-tower-Thanjavur-palace.jpg" alt="Thanjavur Palace">
+                <h3>Thanjavur Palace</h3>
+            </div>
+            <div class="hex">
+                <img src="https://i0.wp.com/travelshoebum.com/wp-content/uploads/2017/10/dsc_9362.jpg?fit=4928%2C3264&ssl=1" alt="Mahabalipuram">
+                <h3>Mahabalipuram</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.abhibus.com/blog/wp-content/uploads/2023/04/Tourist-Places-in-Kodaikanal-.jpg" alt="Kodaikanal">
+                <h3>Kodaikanal</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.trodly.com/pictures/destination/x43.jpg.pagespeed.ic.p5BvjaRT_n.jpg" alt="Ariyakulam Lake">
+                <h3>Ariyakulam Lake</h3>
+            </div>
+            <div class="hex">
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/thanjavur-1654770546_1a4fa1c088b5a3e91c74.webp" alt="Tanjore">
+                <h3>Tanjore</h3>
+            </div>
+        </section>
+    </div>
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="Package1" class="package-detail">
+    <div class="package-header">
+        <h2>Tamil Nadu: 3-Day Meenakshi, Rameshwaram, and Chennai Tour</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://static.wixstatic.com/media/nsplsh_3e5ac7e95e7646df91a113063a0c61ae~mv2.jpg/v1/fill/w_560,h_406,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/nsplsh_3e5ac7e95e7646df91a113063a0c61ae~mv2.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+            <p><strong>Type of Trip:</strong> Spiritual, Cultural, and Heritage Exploration</p>
+            <p><strong>Start City:</strong> Chennai</p>
+            <p><strong>End City:</strong> Chennai</p>
+        </div>
+    </div>
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://static.toiimg.com/thumb/105500428/Colourful-temples.jpg?width=1200&height=900" alt="Day 1 - Arrival in Madurai and Meenakshi Temple">
+            <p><strong>Day 1:</strong> Arrive in Chennai and take a domestic flight or train to Madurai. Visit the iconic **Meenakshi Amman Temple**, famous for its stunning Dravidian architecture and intricate sculptures. Explore the vibrant local markets and enjoy authentic South Indian cuisine. Overnight stay in Madurai.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.savaari.com/blog/wp-content/uploads/2024/01/rameswaram-temple-1656167436_f2c551193bb7d4bc6f70-1-1.webp" alt="Day 2 - Rameshwaram and Dhanushkodi">
+            <p><strong>Day 2:</strong> Early morning drive to Rameshwaram. Visit the sacred **Ramanathaswamy Temple**, known for its long corridors and holy wells. Proceed to **Dhanushkodi**, the ghost town at the southern tip of India, and enjoy the serene beaches. Return to Madurai for an overnight stay.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/0b/e8/33/kapaleeshwar-temple.jpg?w=900&h=500&s=1" alt="Day 3 - Chennai Exploration and Departure">
+            <p><strong>Day 3:</strong> Travel back to Chennai. Visit **Kapaleeshwarar Temple**, dedicated to Lord Shiva, and explore **Santhome Basilica** and Marina Beach. Enjoy some last-minute shopping in T. Nagar before your departure from Chennai.</p>
+        </div>
+    </div>  
+      <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Tamil Naidu Package</h3>
+  <p><strong>Starting at:</strong> ₹25,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(25000, 'Tamil Naidu')">Book Now</button>
+</div>
+</div>
+
+<div id="Package2" class="package-detail">
+  <div class="package-header">
+      <h2>Bengaluru to Rameshwaram: 3-Day Spiritual Temple Tour</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://shirdisaiholidays.com/wp-content/uploads/2022/02/Madurai-Meenakshi-Temple-1024x576.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Spiritual and Temple Exploration</p>
+          <p><strong>Start City:</strong> Bengaluru</p>
+          <p><strong>End City:</strong> Bengaluru</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.phurr.in/uploaded_files/prodimages/gallery_1e6c86b.jpeg" alt="Day 1 - Travel to Rameshwaram">
+          <p><strong>Day 1:</strong> Board an overnight train or early morning flight from Bengaluru to Rameshwaram. Upon arrival, check in to your hotel. Begin your spiritual journey by visiting the **Ramanathaswamy Temple**, renowned for its stunning corridors and 22 sacred wells for purification rituals. Spend the evening at leisure exploring the local markets. Overnight stay in Rameshwaram.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://uniquetimes.org/wp-content/uploads/2024/05/t69oU1R5.jpg" alt="Day 2 - Dhanushkodi and Spiritual Sites">
+          <p><strong>Day 2:</strong> Visit **Dhanushkodi**, the ghost town at the tip of India, known for its breathtaking views and spiritual significance. Proceed to **Agni Theertham**, a sacred beach for holy dips. Explore the **Panchmukhi Hanuman Temple** and **Adam’s Bridge** (Ram Setu viewpoint). In the evening, enjoy a tranquil sunset at Pamban Bridge. Overnight stay in Rameshwaram.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://amitabhagupta.wordpress.com/wp-content/uploads/2014/09/rumtek.jpg?w=723&h=483" alt="Day 3 - Departure from Rameshwaram">
+          <p><strong>Day 3:</strong> Begin your day with a temple visit for early morning prayers. After breakfast, check out from the hotel and proceed to the railway station or airport for your return journey to Bengaluru, carrying blessings and cherished memories of a spiritual journey.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Tamil Naidu Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Tamil Naidu')">Book Now</button>
+  </div>
+</div>
+
+<div id="Package3" class="package-detail">
+  <div class="package-header">
+      <h2>Tamil Nadu: 3-Day Ooty and Kodaikanal Hill Stations Tour</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://tripnhalt.com/wp-content/uploads/2018/07/ooty-post.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+          <p><strong>Type of Trip:</strong> Scenic, Nature Exploration, and Relaxation</p>
+          <p><strong>Start City:</strong> Coimbatore</p>
+          <p><strong>End City:</strong> Coimbatore</p>
+      </div>
+  </div>
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.tripplannersindia.com/assets/images/page/Kodaikanal2.webp" alt="Day 1 - Ooty Exploration">
+          <p><strong>Day 1:</strong> Arrive at Coimbatore and drive to Ooty, the "Queen of Hill Stations." Visit the **Botanical Gardens**, **Ooty Lake**, and **Doddabetta Peak** for panoramic views. Enjoy a leisurely evening exploring local markets. Overnight stay in Ooty.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.internationaltravelhouse.in/images/Ooty-with-Kodaikanal-banner.jpg" alt="Day 2 - Journey to Kodaikanal">
+          <p><strong>Day 2:</strong> After breakfast, drive to Kodaikanal, the "Princess of Hill Stations." En route, enjoy scenic views of the Nilgiri hills. In Kodaikanal, visit **Coaker’s Walk**, **Bryant Park**, and **Silver Cascade Falls**. Overnight stay in Kodaikanal.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.stayvista.com/blog/wp-content/uploads/2024/11/Pillar_Rocks_of_Kodaikanal_Tamil_Nadu_India.jpg" alt="Day 3 - Kodaikanal Sightseeing and Departure">
+          <p><strong>Day 3:</strong> Start the day with a serene walk at **Kodai Lake**. Visit **Pillar Rocks**, **Green Valley View**, and **Pine Forests**. Later, drive back to Coimbatore for your departure with memories of the charming hill stations.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Tamil Naidu Package</h3>
+    <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(45000, 'Tamil Naidu')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

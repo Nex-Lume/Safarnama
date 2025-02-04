@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Ladakh</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+    <div class="hero-goa" style="background-image: url('../Images/Banner/LadakhBanner.jpg');">
+      <h1>Explore Ladakh Packages</h1>
+  </div>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <!-- Adventure in Ladakh -->
+      <div class="package-card">
+        <img src="https://dr7f10k1l6bnm.cloudfront.net/wp-content/uploads/2023/05/ladakh-nubra-valley-min.jpg" alt="Adventure Package">
+        <h3>Adventure in Ladakh</h3>
+        <p>Explore the rugged landscapes, high-altitude treks, and thrilling biking routes in the mesmerizing Ladakh region.</p>
+        <a href="/north/ladakh.html?category=ladakh-adventure" class="btn-view">View Details</a>
+      </div>
+    
+      <!-- Spiritual Retreat -->
+      <div class="package-card">
+        <img src="https://images.squarespace-cdn.com/content/v1/5c20578d2714e52ee46e9985/94c4e6ec-a532-4ab7-b147-f4d255c62a65/Sankalparaja-Yoga-Pranayama" alt="Spiritual Retreat Package">
+        <h3>Spiritual Retreat</h3>
+        <p>Find peace and tranquility in the monasteries, experience meditative sessions, and immerse in Ladakh’s spiritual heritage.</p>
+        <a href="/north/ladakh.html?category=ladakh-spiritual-retreat" class="btn-view">View Details</a>
+      </div>
+    
+      <!-- Romantic Escape -->
+      <div class="package-card">
+        <img src="https://thrillophilia-ladakh-reviews.com/content/images/2024/11/f5aq7pre5hkgw2c4kruhc3sa3ywp_IMG.jpg" alt="Romantic Package">
+        <h3>Romantic Escape</h3>
+        <p>Enjoy intimate moments in the breathtaking landscapes of Ladakh, with serene lakes and stunning mountain views.</p>
+        <a href="/north/ladakh.html?category=ladakh-romantic-escape" class="btn-view">View Details</a>
+      </div>
+  
+      <div class="hexagon-title">
+        <h4>Top 10 Ladakh Attractions</h4>
+      </div>
+      <section class="hexagon-gallery">
+      
+        <div class="hex">
+          <img src="https://www.tourmyindia.com/socialimg/pangong-lake-ladakh.jpg" alt="some">
+          <h3>Pangong Lake</h3>
+        </div>
+        <div class="hex">
+          <img src="https://bhagyashritravels.com/wp-content/uploads/2020/02/Feature-4.jpg" alt="some">
+          <h3>Leh Palace</h3>
+        </div>
+        <div class="hex">
+          <img src="https://static.toiimg.com/thumb/110126020/Magnetic-Hill.jpg?width=1200&height=900" alt="some">
+          <h3>Magnetic Hill</h3>
+        </div>
+        <div class="hex">
+          <img src="https://hikerwolf.com/wp-content/uploads/2021/03/Tso-Moriri.jpg.webp" alt="some">
+          <h3>Tso Moriri Lake</h3>
+        </div>
+        <div class="hex">
+          <img src="https://discoverlehladakh.in/wp-content/uploads/2020/06/Hemis-monastery-1022x530.jpeg" alt="some">
+          <h3>Hemis Monastery</h3>
+        </div>
+        <div class="hex">
+          <img src="https://peopleoftheplanet.com/wp-content/uploads/2018/10/the-highest-road-in-the-world-snow.png" alt="some">
+          <h3>Khardung La Pass</h3>
+        </div>
+        <div class="hex">
+          <img src="https://discoverlehladakh.in/wp-content/uploads/2020/06/Shanti-Stupa-Leh-Ladakh.jpg" alt="some">
+          <h3>Shanti Stupa</h3>
+        </div>
+        <div class="hex">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/b9/e6/1c/nubra-valley.jpg?w=1200&h=-1&s=1" alt="some">
+          <h3>Nubra Valley</h3>
+        </div>
+        <div class="hex">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/53/db/4b/getlstd-property-photo.jpg?w=1200&h=1200&s=1" alt="some">
+          <h3>Leh Market</h3>
+        </div>
+        <div class="hex">
+          <img src="https://static.toiimg.com/photo/49409286.cms" alt="some">
+          <h3>Thiksey Monastery</h3>
+        </div>
+      </section>
+      
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="ladakh-adventure" class="package-detail">
+    <div class="package-header">
+      <h2>Ladakh 4-Day Adventure</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/7f/91/51.jpg');">
+      <div class="info-box">
+        <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+        <p><strong>Type of Trip:</strong> High-altitude Adventure</p>
+        <p><strong>Start City:</strong> Leh</p>
+        <p><strong>End City:</strong> Leh</p>
+      </div>
+    </div>
+  
+    <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+        <img src="https://discoverwithdheeraj.com/wp-content/uploads/2014/10/234.jpg" alt="Day 1 - Arrival in Leh">
+        <p><strong>Day 1:</strong> Arrive in Leh. Acclimatize to the altitude and explore Leh town. Visit Leh Palace and Shanti Stupa.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://discoverwithdheeraj.com/wp-content/uploads/2014/10/67.jpg" alt="Day 2 - Nubra Valley">
+        <p><strong>Day 2:</strong> Journey to Nubra Valley via the famous Khardung La Pass. Explore the sand dunes and visit the Diskit Monastery.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://ladakhsharedtaxi.com/wp-content/uploads/2023/08/Pangong_Lake_233022883.jpeg" alt="Day 3 - Pangong Lake">
+        <p><strong>Day 3:</strong> Visit Pangong Lake, a stunning blue water lake surrounded by mountains. Enjoy the breathtaking views and return to Leh in the evening.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://discoverwithdheeraj.com/wp-content/uploads/2018/12/Hemis_Monastery_Leh_Ladakh_9.jpg" alt="Day 4 - Leh Monasteries">
+        <p><strong>Day 4:</strong> Visit the famous monasteries of Leh such as Hemis, Thiksey, and Shey Monastery. Explore the local market before heading to the airport for departure.</p>
+      </div>
+    </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+        <li><i class="fas fa-casino"></i> Try your luck at Goa's famous casinos.</li>
+        <li><i class="fas fa-candle-holder"></i> Enjoy a candlelight dinner by the beach.</li>
+        <li><i class="fas fa-music"></i> Attend a beachside party with live music.</li>
+        <li><i class="fas fa-fish"></i> Go dolphin watching on a boat tour.</li>
+        <li><i class="fas fa-walking"></i> Explore Panjim's Latin Quarter on a heritage walk.</li>
+      </ul>
+    </div>
+    
+    <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in luxury hotels/resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> All transfers and sightseeing in a private vehicle.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours to major attractions.</li>
+        <li><i class="fas fa-water"></i> Water sports and adventure activities (as per itinerary).</li>
+      </ul>
+    </div>
+    <div class="package-price">
+      <h3>Ladakh Package</h3>
+      <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+      <button class="book-now-btn" onclick="redirectToBooking(45000, 'Ladakh')">Book Now</button>
+    </div>
+    
+    
+</div>
+  
+
+<!-- Detailed Package Section -->
+<div id="ladakh-spiritual-retreat" class="package-detail">
+  <div class="package-header">
+    <h2>Mumbai to Ladakh Adventure</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://www.drvijaymalik.com/wp-content/uploads/2020/09/Leh-Ladakh-Solo-Bike-Trip-baralachala-top-Copy.jpg');">
+    <div class="info-box">
+      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+      <p><strong>Type of Trip:</strong> High-altitude Adventure</p>
+      <p><strong>Start City:</strong> Mumbai</p>
+      <p><strong>End City:</strong> Leh</p>
+    </div>
+    <p class="package-description">
+      Embark on a thrilling 3-day adventure from Mumbai to the breathtaking landscapes of Ladakh. From high mountain passes to crystal-clear lakes, discover the awe-inspiring beauty of Ladakh while enjoying cultural insights and adventure activities.
+    </p>
+  </div>
+
+  <div class="itinerary">
+    <h3>Itinerary</h3>
+    <div class="itinerary-item">
+      <img src="https://ekaxp.in/wp-content/uploads/2023/02/Leh-Palace-and-Old-City_Ladakh-Leisure-Tour_Eka-Experiences.jpg" alt="Day 1 - Arrival in Leh">
+      <p><strong>Day 1:</strong> Arrive in Leh, the capital of Ladakh. Acclimatize to the high altitude and explore Leh Market. Visit Leh Palace and Shanti Stupa for a panoramic view of the city.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://www.lchangnang.com/blog/wp-content/uploads/2023/02/Khardung-La-Pass-To-Nubra-Valley-scaled.jpg" alt="Day 2 - Nubra Valley">
+      <p><strong>Day 2:</strong> Visit the spectacular Nubra Valley, crossing the Khardung La Pass (one of the highest motorable roads in the world). Explore the desert dunes and visit Diskit Monastery. Overnight stay in Nubra Valley.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://www.ladakh-tourism.net/wp-content/uploads/2021/01/aaron-thomas-0aNUp-RV-Pk-unsplash-1024x683.jpg" alt="Day 3 - Pangong Lake">
+      <p><strong>Day 3:</strong> Journey to the famous Pangong Lake, known for its mesmerizing blue waters. Enjoy the breathtaking views and take some time to relax by the lake. Return to Leh in the evening for departure.</p>
+    </div>
+  </div>
+  <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+      <li><i class="bi bi-sun"></i> Enjoy a sunset cruise along the Mandovi River.</li>
+      <li><i class="bi bi-cup-straw"></i> Sip on refreshing cocktails at beachside bars.</li>
+      <li><i class="bi bi-music-note-beamed"></i> Dance at one of Goa’s famous beach parties.</li>
+      <li><i class="bi bi-camera"></i> Capture the vibrant colors of Goa’s street art and architecture.</li>
+      <li><i class="bi bi-hospital"></i> Visit the renowned spice plantations of Goa.</li>
+    </ul>
+  </div>
+
+  <div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+      <li><i class="bi bi-house-door"></i> Accommodation in beach resorts and hotels.</li>
+      <li><i class="bi bi-egg-fried"></i> Daily breakfast and select meals.</li>
+      <li><i class="bi bi-car-front"></i> All transfers and sightseeing in a private vehicle.</li>
+      <li><i class="bi bi-binoculars"></i> Guided tours to famous attractions.</li>
+      <li><i class="bi bi-life-preserver"></i> Water sports activities such as jet skiing and parasailing.</li>
+    </ul>
+  </div>
+  <div class="package-price">
+    <h3>Ladakh Package</h3>
+    <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(45000, 'Ladakh')">Book Now</button>
+  </div>
+</div>
+
+<!-- Romantic Goa Package Section -->
+<div id="ladakh-romantic-escape" class="package-detail">
+  <div class="package-header">
+    <h2>Romantic Ladakh Getaway for Couples</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://discoverlehladakh.in/wp-content/uploads/2023/05/Ladakh-Honeymoon-Packages-for-couples-1140x530.jpg');">
+    <div class="info-box">
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <p><strong>Type of Trip:</strong> Romantic Adventure</p>
+      <p><strong>Start City:</strong> Leh</p>
+      <p><strong>End City:</strong> Leh</p>
+    </div>
+    <p class="package-description">
+      Escape to the stunning landscapes of Ladakh for a romantic getaway. Explore high-altitude lakes, ancient monasteries, and enjoy peaceful moments amidst the serene beauty of the Himalayas.
+    </p>
+  </div>
+
+  <div class="itinerary">
+    <h3>Itinerary</h3>
+    <div class="itinerary-item">
+      <img src="https://pix10.agoda.net/hotelImages/487/487282/487282_16080212280045121522.jpg?ca=6&ce=1&s=414x232&ar=16x9" alt="Day 1 - Arrival in Leh">
+      <p><strong>Day 1:</strong> Arrive in Leh and check-in to a cozy hotel. Spend the day relaxing, enjoy a romantic dinner with a view of the mountains.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://www.bharatbooking.com/admin/webroot/img/uploads/holiday-package-gallery/1709554437_791697-leh-with-khardung-la-pass-package-slider-image.webp" alt="Day 2 - Nubra Valley Adventure">
+      <p><strong>Day 2:</strong> Drive to Nubra Valley via Khardung La Pass. Explore the serene landscapes, enjoy a camel ride in the desert dunes, and visit Diskit Monastery. Overnight in Nubra.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://media1.thrillophilia.com/filestore/7cs9t7yqwajouehwpv2z1g73f57v_shutterstock_583745923.jpg" alt="Day 3 - Pangong Lake">
+      <p><strong>Day 3:</strong> Journey to Pangong Lake, one of the most beautiful lakes in the world. Enjoy a peaceful evening by the lake with your partner. Return to Leh for an overnight stay.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/ab/ac/e2.jpg" alt="Day 4 - Explore Leh Monasteries">
+      <p><strong>Day 4:</strong> Visit the famous monasteries of Leh such as Hemis and Thiksey. Enjoy a romantic stroll around the Leh Market and have a traditional Ladakhi meal. Return to your hotel.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://himalayantrekkers.com/_next/image?url=https%3A%2F%2Fserver-production-fefe.up.railway.app%2Fapi%2Ffile-upload%2Ftrips%252FMarch2021%252Fbreakfast-at-everest-helicopter-tour.jpg&w=3840&q=75" alt="Day 5 - Farewell to Ladakh">
+      <p><strong>Day 5:</strong> Enjoy a farewell breakfast with panoramic views of the mountains before heading to the airport for your return journey.</p>
+    </div>
+  </div>
+  <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+      <li><i class="bi bi-heart"></i> Romantic candlelight dinner by the sea.</li>
+      <li><i class="bi bi-spa"></i> Couples’ spa experience.</li>
+      <li><i class="bi bi-camera"></i> Capture beautiful moments at scenic beaches.</li>
+      <li><i class="bi bi-gift"></i> Complimentary welcome cake and room decor.</li>
+    </ul>
+  </div>
+
+  <div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+      <li><i class="bi bi-house-door"></i> Luxurious beachfront accommodations.</li>
+      <li><i class="bi bi-egg-fried"></i> Daily breakfast and one romantic dinner.</li>
+      <li><i class="bi bi-car-front"></i> Private vehicle for all sightseeing.</li>
+      <li><i class="bi bi-binoculars"></i> Guided tours for couples.</li>
+      <li><i class="bi bi-life-preserver"></i> Watersports activities for couples.</li>
+    </ul>
+  </div>
+
+  <div class="package-price">
+    <h3>Ladakh Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Ladakh')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

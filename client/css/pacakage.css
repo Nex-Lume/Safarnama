@@ -1,0 +1,235 @@
+
+
+.container-filters {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+  width: 90%;
+  margin: 20px auto;
+  gap: 25px;
+  background: linear-gradient(145deg, #f0efef, #f7f7f7);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.204);
+  padding: 20px;
+}
+
+.filters {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filters:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.filters h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filters .filter-group {
+  margin-bottom: 20px;
+}
+.filters .filter-group .hidden-destinations{
+  display: none;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+.filters input[type="range"] {
+  width: 100%;
+  accent-color: #28a745;
+}
+
+.filters .filter-types {
+  margin-top: 20px;
+}
+
+.packages {
+  flex: 2; /* Occupies more space compared to the filters */
+}
+
+.packages h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 80%;
+  gap: 25px;
+}
+
+.package-item {
+  height: 425px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.package-item img {
+  width: 100%;
+  height: 40%;
+  display: block;
+}
+
+.package-content {
+  padding: 20px;
+}
+
+.package-content h4 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.package-content p {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.icon-text {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.price-section .discount {
+  color: #de1c15;
+  font-weight: bold;
+}
+
+.price-section .current-price {
+  color: #28a745;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price-section .original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.travel-dates {
+  margin-top: 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Buttons (if needed) */
+.package-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #28a745, #1e8e3e);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.package-content a:hover {
+  background: linear-gradient(90deg, #1e8e3e, #28a745);
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .container-filters {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .filters {
+    flex: none;
+    width: 100%;
+  }
+
+  .packages {
+    flex: none;
+    width: 100%;
+  }
+
+  .package-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  .filters {
+    padding: 15px;
+  }
+
+  .filters h3 {
+    font-size: 18px;
+  }
+
+  .filters label {
+    font-size: 14px;
+  }
+
+  .packages h3 {
+    font-size: 20px;
+  }
+
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-content {
+    padding: 15px;
+  }
+
+  .package-content h4 {
+    font-size: 16px;
+  }
+
+  .package-content p {
+    font-size: 12px;
+  }
+
+  .package-content .price {
+    font-size: 14px;
+  }
+
+  .package-content a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+

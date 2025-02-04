@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Himachal</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-goa" style="background-image: url('/Images/Banner/HPBanner.jpg');">
+    <h1>Explore Himachal Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+    <div id="overview" class="package-overview">
+      <!-- Adventure Enthusiast's Paradise -->
+      <div class="package-card">
+          <img src="https://himachaltourexpert.in/wp-content/uploads/2024/09/5-best-visit-place-in-manali.jpg" alt="Adventure Package">
+          <h3>Adventure Enthusiast's Paradise</h3>
+          <p>Experience the thrill of paragliding in Solang Valley, trekking to Hampta Pass, and river rafting in Kullu-Manali.</p>
+          <a href="/north/Himachal.html?category=HimachalPackage1" class="btn-view">View Details</a>
+      </div>
+  
+      <!-- Customized Mountain Escape -->
+      <div class="package-card">
+          <img src="https://2.imimg.com/data2/GB/DG/MY-3041121/himachal-pradesh-500x500.jpg" alt="Customizable Package">
+          <h3>Customized Mountain Escape</h3>
+          <p>Create your dream Himachal getaway, from exploring Shimla's colonial charm to discovering serene mountain villages.</p>
+          <a href="/north/Himachal.html?category=HimachalPackage2" class="btn-view">View Details</a>
+      </div>
+  
+      <!-- Romantic Alpine Getaway -->
+      <div class="package-card">
+          <img src="https://img.cdn.zostel.com/blog_photo/valentine_blog.jpg" alt="Couples Package">
+          <h3>Romantic Alpine Getaway</h3>
+          <p>Escape with your loved one to the idyllic valleys of Himachal, featuring cozy cottages, serene lakes, and breathtaking views.</p>
+          <a href="/north/Himachal.html?category=HimachalPackage3" class="btn-view">View Details</a>
+      </div>    
+      <div class="hexagon-title">
+        <h4>Top 10 Himachal Pradesh Places</h4>
+    </div>
+    <section class="hexagon-gallery">
+        <div class="hex">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/cityscape-of-shimla-himachal-pradesh-city-1-hero?qlt=82&ts=1726730693575" alt="Shimla">
+            <h3>Shimla</h3>
+        </div>
+        <div class="hex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Manali_City.jpg" alt="Manali">
+            <h3>Manali</h3>
+        </div>
+        <div class="hex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/McLeod_Ganj_Dharamkot_Dharmsala_Himachal_Pradesh_India_April_2014.jpg" alt="McLeod Ganj">
+            <h3>McLeod Ganj</h3>
+        </div>
+        <div class="hex">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/02/18172501/Kaza.jpg" alt="Spiti Valley">
+            <h3>Spiti Valley</h3>
+        </div>
+        <div class="hex">
+            <img src="https://www.hptourtravel.com/wp-content/uploads/2022/03/travel-dglobe.webp" alt="Dharamshala">
+            <h3>Dharamshala</h3>
+        </div>
+        <div class="hex">
+            <img src="https://www.sotc.in/blog/wp-content/uploads/2022/11/kasol.jpg" alt="Kasol">
+            <h3>Kasol</h3>
+        </div>
+        <div class="hex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Kufri_hills.jpg" alt="Kufri">
+            <h3>Kufri</h3>
+        </div>
+        <div class="hex">
+            <img src="https://static.toiimg.com/photo/73667509.cms" alt="Khajjiar">
+            <h3>Khajjiar</h3>
+        </div>
+        <div class="hex">
+            <img src="https://himachaltourism.gov.in/wp-content/uploads/2018/03/Shanghar-Sainj-Valley-Kullu.jpg" alt="Kullu">
+            <h3>Kullu</h3>
+        </div>
+        <div class="hex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Solang_Valley_%2CManali%2C_Himachal_Pardes%2C_India.JPG" alt="Solang Valley">
+            <h3>Solang Valley</h3>
+        </div>
+        </section>
+    </div>
+
+
+
+    <section class="slide-packages">
+      <h2>Explore Our India Tour Packages</h2>
+      <div class="package-gallery">
+        <div class="package">
+          <a href="/details/luxury-baga-package.html">
+            <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+          </a>
+            <div class="package-info-slider">
+              <h3>Luxury Baga Package</h3>
+              <p>3 Nights / 4 Days - ₹15,999</p>
+            </div>
+        </div>
+        <div class="package">
+          <a href="/details/adventure-calangute-package.html">
+            <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+          </a>
+            <div class="package-info-slider">
+              <h3>Adventure Calangute Package</h3>
+              <p>4 Nights / 5 Days - ₹19,999</p>
+            </div>
+        </div>
+        <div class="package">
+          <a href="/details/romantic-palolem-getaway.html">
+            <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+          </a>
+            <div class="package-info-slider">
+              <h3>Romantic Palolem Getaway</h3>
+              <p>2 Nights / 3 Days - ₹13,999</p>
+            </div>
+        </div>
+        <div class="package">
+          <a href="/details/serene-agonda-retreat.html">
+            <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+          </a>
+            <div class="package-info-slider">
+              <h3>Serene Agonda Retreat</h3>
+              <p>5 Nights / 6 Days - ₹25,999</p>
+            </div>
+        </div>
+        <!-- Additional Packages -->
+        <div class="package">
+          <a href="/details/exotic-colva-escape.html">
+            <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+          </a>
+            <div class="package-info-slider">
+              <h3>Exotic Colva Escape</h3>
+              <p>3 Nights / 4 Days - ₹17,999</p>
+            </div>
+        </div>
+        <div class="package">
+          <a href="/details/tranquil-ashwem-experience.html">
+            <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+          </a>
+            <div class="package-info-slider">
+              <h3>Tranquil Ashwem Experience</h3>
+              <p>4 Nights / 5 Days - ₹20,999</p>
+            </div>
+        </div>
+        <div class="package">
+          <a href="/details/family-fun-cavelossim.html">
+            <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+          </a>
+            <div class="package-info-slider">
+              <h3>Family Fun at Cavelossim</h3>
+              <p>5 Nights / 6 Days - ₹23,999</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </div>
+</div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="HimachalPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Himachal Wonders: Scenic Hills and Adventures</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://hblimg.mmtcdn.com/content/hubble/img/manali/mmt/destination/m_Landscape_l_400_640.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 6 Nights / 7 Days</p>
+            <p><strong>Type of Trip:</strong> Scenic, Adventure, and Cultural</p>
+            <p><strong>Start City:</strong> Mumbai</p>
+            <p><strong>End City:</strong> Mumbai</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://tourtripmart.com/images/Stunning-veiw-of-Solang-Nala,Manali_ravxaxnc.webp" alt="Day 1 - Arrival in Shimla">
+            <p><strong>Day 1:</strong> Fly from Mumbai to Chandigarh, followed by a scenic drive to Shimla. Check into your hotel and enjoy a leisurely evening at Mall Road. Overnight stay in Shimla.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://media1.thrillophilia.com/filestore/kwzbo9xe9jsgf26svaddayri3l3z_image.png" alt="Day 2 - Kufri Excursion">
+            <p><strong>Day 2:</strong> Visit Kufri, known for its panoramic views and adventure activities. Explore the Himalayan Nature Park and return to Shimla for sightseeing. Overnight stay in Shimla.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://7seasfly.com/wp-content/uploads/2024/01/iftekhar-nibir-iSPNRjiI-WA-unsplash-scaled.jpg" alt="Day 3 - Manali">
+            <p><strong>Day 3:</strong> Drive to Manali (approx. 7 hours). En route, enjoy views of Kullu Valley. Upon arrival, check into your hotel and relax. Overnight stay in Manali.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_633164246_20190904103856_20190904103926.jpg" alt="Day 4 - Solang Valley Adventure">
+            <p><strong>Day 4:</strong> Explore Solang Valley, famous for paragliding, skiing (seasonal), and other adventure sports. In the evening, visit Old Manali for cafes and culture. Overnight stay in Manali.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://oneday.travel/wp-content/uploads/one-day-manali-to-rohtang-pass-sightseeing-tour-package-private-cab-header.jpg" alt="Day 5 - Rohtang Pass">
+            <p><strong>Day 5:</strong> Enjoy a day trip to Rohtang Pass (subject to permit availability). Experience the snow-capped landscapes and enjoy activities like sledding. Return to Manali. Overnight stay in Manali.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2024/06/maclond-ganj-1.jpg?fit=1024%2C576&ssl=1" alt="Day 6 - Dharamshala">
+            <p><strong>Day 6:</strong> Drive to Dharamshala (approx. 7 hours). Explore McLeod Ganj, visit the Dalai Lama Temple, and enjoy the serene surroundings. Overnight stay in Dharamshala.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://thrillingtravel.in/wp-content/uploads/2020/02/Kangra-fort-tour.jpg" alt="Day 7 - Kangra and Departure">
+            <p><strong>Day 7:</strong> Visit Kangra Fort and enjoy views of the Dhauladhar Range. Drive to Chandigarh for your return flight to Mumbai with beautiful memories of Himachal.</p>
+        </div>
+    </div>
+<div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Himachal Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Himachal')">Book Now</button>
+</div>
+</div>
+<div id="HimachalPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Himalayan Majesty: Himachal Discovery</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*4YAyr5Yj1RKs-z5xHWOlXw.jpeg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 7 Nights / 8 Days</p>
+          <p><strong>Type of Trip:</strong> Scenic, Adventure, and Cultural</p>
+          <p><strong>Start City:</strong> Chandigarh</p>
+          <p><strong>End City:</strong> Chandigarh</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://www.pelago.com/img/products/IN-India/chandigarh-to-shimla-hill-station-4-days-private-tour/b4a35c80-1853-4747-b4cf-f4cb1acbfa72_chandigarh-to-shimla-hill-station-4-days-private-tour.jpg" alt="Day 1 - Chandigarh to Shimla">
+          <p><strong>Day 1:</strong> Arrive in Chandigarh and take a scenic drive to Shimla (approx. 3 hours). Check-in and relax. Stroll along Mall Road and enjoy local delicacies. Overnight stay in Shimla.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://tripxl.com/blog/wp-content/uploads/2024/07/Christ-Church-in-Shimla-min.jpg" alt="Day 2 - Shimla and Kufri">
+          <p><strong>Day 2:</strong> Explore Shimla’s colonial charm, including **The Ridge**, **Christ Church**, and **Jakhoo Temple**. Proceed to Kufri for its stunning landscapes and activities like horse riding. Overnight stay in Shimla.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://7seasfly.com/wp-content/uploads/2024/01/iftekhar-nibir-iSPNRjiI-WA-unsplash-scaled.jpg" alt="Day 3 - Manali">
+          <p><strong>Day 3:</strong> Drive to Manali (approx. 7 hours). En route, visit **Pandoh Dam** and **Kullu Valley**. Upon arrival, unwind and explore the local market. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media2.thrillophilia.com/uploads/photos/000/021/391/original/1612644662_image_0?attachment_model=Upload&attachment_name=photo" alt="Day 4 - Solang Valley and Rohtang Pass">
+          <p><strong>Day 4:</strong> Experience adventure at **Solang Valley**, including paragliding and zorbing. If weather permits, take a day trip to **Rohtang Pass** for its snow-filled landscapes. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://rishikeshdaytour.com/blog/wp-content/uploads/2024/05/Mcleodganjs-Temples-Dharamshala-India.jpg" alt="Day 5 - Dharamshala">
+          <p><strong>Day 5:</strong> Drive to Dharamshala (approx. 7 hours). Visit **McLeod Ganj**, the **Dalai Lama Temple**, and Bhagsu Waterfalls. Overnight stay in Dharamshala.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.tusktravel.com/blog/wp-content/uploads/2022/07/khajjiar-Himachal3.jpg" alt="Day 6 - Dalhousie and Khajjiar">
+          <p><strong>Day 6:</strong> Proceed to Dalhousie (approx. 6 hours). Explore **Khajjiar**, also known as "Mini Switzerland of India," and enjoy its lush meadows. Overnight stay in Dalhousie.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/8d/c2/66.jpg" alt="Day 7 - Kangra Valley">
+          <p><strong>Day 7:</strong> Visit **Kangra Valley**, including **Kangra Fort** and **Masroor Rock Temples**. Enjoy panoramic views of the Dhauladhar Range. Overnight stay in Dharamshala.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.hiddenhimachal.com/wp-content/uploads/2024/11/HiddenHimachal-2-1.jpg" alt="Day 8 - Departure from Chandigarh">
+          <p><strong>Day 8:</strong> Return to Chandigarh (approx. 7 hours) for your onward journey, carrying back memories of Himachal’s breathtaking beauty.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Himachal Package</h3>
+    <p><strong>Starting at:</strong> ₹25,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(25000, 'Himachal')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="HimachalPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Himachal Getaway: Nature and Tranquility</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://www.india.com/wp-content/uploads/2024/12/Dharamkot-and-Triund.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+          <p><strong>Type of Trip:</strong> Scenic, Adventure, and Culture</p>
+          <p><strong>Start City:</strong> Delhi</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://chalotravellers.com/wp-content/uploads/2024/07/mall-road.jpg" alt="Day 1 - Delhi to Shimla">
+          <p><strong>Day 1:</strong> Start early in the morning from Delhi and drive to **Shimla** (approx. 8 hours). Arrive by evening, stroll along **Mall Road**, and enjoy views from **The Ridge**. Overnight stay in Shimla.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.sterlingholidays.com/activities/kurfi/mustsee/bannerimage/kufri-jakhoo-temple.jpg.imgw.1280.1280.jpeg" alt="Day 2 - Kufri and Shimla">
+          <p><strong>Day 2:</strong> Visit **Kufri** for panoramic views and activities like horse riding and ziplining. In Shimla, explore **Jakhoo Temple**, **Christ Church**, and the **Viceregal Lodge**. Overnight stay in Shimla.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/17/8b/45/manu-temple.jpg" alt="Day 3 - Manali">
+          <p><strong>Day 3:</strong> Drive to **Manali** (approx. 8 hours). Enjoy scenic views of the valleys and rivers along the way. Spend the evening at leisure exploring **Old Manali** and **Manu Temple**. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://discoverkullumanali.in/wp-content/uploads/2020/11/Solang-valley-in-Manali-1089x530.jpg" alt="Day 4 - Solang Valley and Rohtang Pass">
+          <p><strong>Day 4:</strong> Spend the day at **Solang Valley**, enjoying activities like paragliding, skiing (seasonal), and ATV rides. Visit **Rohtang Pass** (subject to permit availability) for snow-clad landscapes. Overnight stay in Manali.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/d0/bd/e1.jpg" alt="Day 5 - Dharamshala">
+          <p><strong>Day 5:</strong> Travel to **Dharamshala** (approx. 7 hours). Visit the **Dalai Lama Temple**, **Bhagsu Waterfalls**, and **McLeod Ganj Market**. Enjoy Tibetan cuisine and an overnight stay in Dharamshala.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/58/62/87/screenshot-20180317-024859.jpg" alt="Day 6 - Return to Delhi">
+          <p><strong>Day 6:</strong> Morning drive to **Naddi Viewpoint** for a serene experience. Later, drive back to Delhi (approx. 10 hours) with unforgettable memories of Himachal Pradesh.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Himachal Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Himachal')">Book Now</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

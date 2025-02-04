@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Delhi</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Banner/HTDBanner.jpg');">
+    <h1>Explore Delhi Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <!-- Heritage Explorer -->
+      <div class="package-card">
+          <img src="https://res.cloudinary.com/https-www-isango-com/image/upload/f_auto/v7682/South%20Asia/India/Delhi/43050.jpg" alt="Heritage Explorer">
+          <h3>Heritage Explorer</h3>
+          <p>Unravel the grandeur of Delhi with visits to iconic monuments like the Red Fort, Qutub Minar, and Humayun's Tomb.</p>
+          <a href="/north/delhi.html?category=DelhiPackage1" class="btn-view">View Details</a>
+      </div>
+  
+      <!-- Food & Culture Tour -->
+      <div class="package-card">
+          <img src="https://images.hindustantimes.com/img/2021/09/12/1600x900/89d4980c-13f6-11ec-8f84-d3748427d977_1631471245193.jpg" alt="Food and Culture">
+          <h3>Food & Culture Tour</h3>
+          <p>Delve into Delhi’s vibrant food scene and cultural hotspots with a tour of Chandni Chowk, India Gate, and Dilli Haat.</p>
+          <a href="/north/delhi.html?category=DelhiPackage2" class="btn-view">View Details</a>
+      </div>
+  
+      <!-- Romantic Delhi Sojourn -->
+      <div class="package-card">
+          <img src="https://cdn.britannica.com/37/189837-050-F0AF383E/New-Delhi-India-War-Memorial-arch-Sir.jpg" alt="Romantic Getaway">
+          <h3>Romantic Delhi Sojourn</h3>
+          <p>Perfect for couples! Enjoy serene evenings at Lodhi Garden, Hauz Khas Village, and indulge in fine dining experiences.</p>
+          <a href="/north/delhi.html?category=DelhiPackage3" class="btn-view">View Details</a>
+      </div>
+  
+      <div class="hexagon-title">
+          <h4>Top 10 Delhi Places</h4>
+      </div>
+      <section class="hexagon-gallery">
+          <div class="hex">
+              <img src="https://cdn.britannica.com/20/189820-050-D650A54D/Red-Fort-Old-Delhi-India.jpg" alt="Red Fort">
+              <h3>Red Fort</h3>
+          </div>
+          <div class="hex">
+              <img src="https://res.cloudinary.com/https-www-isango-com/image/upload/f_auto/v7682/South%20Asia/India/Delhi/43050.jpg" alt="Qutub Minar">
+              <h3>Qutub Minar</h3>
+          </div>
+          <div class="hex">
+              <img src="https://www.trawell.in/admin/images/upload/078212929Delhi_India_Gate_Main.jpg" alt="India Gate">
+              <h3>India Gate</h3>
+          </div>
+          <div class="hex">
+              <img src="https://cdn.britannica.com/54/156454-050-4E72CEE0/Humayuns-Tomb-Hamidah-Banu-Begam-Delhi-India-1569.jpg" alt="Humayun's Tomb">
+              <h3>Humayun's Tomb</h3>
+          </div>
+          <div class="hex">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Jama_Masjid_-_In_the_Noon.jpg/1200px-Jama_Masjid_-_In_the_Noon.jpg" alt="Jama Masjid">
+              <h3>Jama Masjid</h3>
+          </div>
+          <div class="hex">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/640px-LotusDelhi.jpg" alt="Lotus Temple">
+              <h3>Lotus Temple</h3>
+          </div>
+          <div class="hex">
+              <img src="https://rashtrapatibhavan.gov.in/sites/default/files/2023-07/vg5_4402_0.jpg" alt="Rashtrapati Bhavan">
+              <h3>Rashtrapati Bhavan</h3>
+          </div>
+          <div class="hex">
+              <img src="https://img.etimg.com/thumb/msid-110233283,width-640,height-480,imgsize-162680,resizemode-4/unknown-facts.jpg" alt="Connaught Place">
+              <h3>Connaught Place</h3>
+          </div>
+          <div class="hex">
+              <img src="https://static.wanderon.in/wp-content/uploads/2024/03/hauz-khas-village.jpg" alt="Hauz Khas Village">
+              <h3>Hauz Khas Village</h3>
+          </div>
+          <div class="hex">
+              <img src="https://akshardham.com/newdelhi/wp-content/uploads/2015/06/akshardham_facts_and_figure_banner.jpg" alt="Akshardham Temple">
+              <h3>Akshardham Temple</h3>
+          </div>
+      </section>
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+<div id="DelhiPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Explore Delhi from Mumbai</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1297/Agra-Fort.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+            <p><strong>Type of Trip:</strong> Cultural, Historical, and Shopping</p>
+            <p><strong>Start City:</strong> Mumbai</p>
+            <p><strong>End City:</strong> Delhi</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbkH4z22-pkk2SOat5oz-OaIXLerqc1d_dw&s" alt="Day 1 - Arrival in Delhi">
+            <p><strong>Day 1:</strong> Fly from Mumbai to Delhi. Arrive in Delhi and explore **Qutub Minar** and **Humayun's Tomb**. End the day with a visit to **India Gate** and enjoy the evening at **Connaught Place**. Overnight stay in Delhi.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://cdn.getyourguide.com/img/tour/e8ffd8b47c18b15035f9066680656d8a1bd04921230d448a506438c7b1360ecc.jpeg/146.jpg" alt="Day 2 - Delhi Exploration">
+            <p><strong>Day 2:</strong> Visit **Jama Masjid** and explore the bustling lanes of **Chandni Chowk**. Take a rickshaw ride through the lanes, and shop for handicrafts and spices. Visit **Raj Ghat**, the memorial of Mahatma Gandhi. In the evening, visit the **Lotus Temple** and **Lodhi Gardens** for a romantic stroll. Overnight stay in Delhi.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/03/30172433/shutterstock_2022930776-min-scaled.jpg" alt="Day 3 - Shopping and Sightseeing">
+            <p><strong>Day 3:</strong> Explore the best shopping hubs in Delhi such as **Dilli Haat** and **Khan Market** for traditional crafts and souvenirs. In the evening, visit **Jantar Mantar** and **Rashtrapati Bhavan**. Enjoy dinner at a rooftop restaurant with a view of the city. Overnight stay in Delhi.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://tripxl.com/blog/wp-content/uploads/2024/09/Jama-Masjid-12.jpg" alt="Day 4 - Red Fort and Museum Visits">
+            <p><strong>Day 4:</strong> Visit **Red Fort**, a UNESCO World Heritage site, and explore **Jama Masjid**. Later, visit **National Museum** and **India Habitat Centre** for some culture and history. Enjoy a relaxing evening at **India Habitat Centre**. Overnight stay in Delhi.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://i0.wp.com/stampedmoments.com/wp-content/uploads/2023/09/hauz-khas-village-monument-2.jpg" alt="Day 5 - Cultural Day">
+            <p><strong>Day 5:</strong> Visit **Kingdom of Dreams** or attend a live performance. Take a walk around **Hauz Khas Village** for vibrant cafés and art galleries. Explore **Agrasen ki Baoli** and spend the evening at **Dilli Haat** for local handicrafts and food. Overnight stay in Delhi.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://s3.india.com/wp-content/uploads/2025/01/7-Best-Shopping-Streets-And-Bargain-Markets-In-Mumbai.jpg" alt="Day 6 - Departure">
+            <p><strong>Day 6:</strong> Explore the local markets for souvenirs and enjoy a final meal in Delhi before heading to the airport for your flight back to Mumbai.</p>
+        </div>
+    </div>
+<div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Delhi Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Delhi')">Book Now</button>
+</div>
+</div>
+
+<div id="DelhiPackage2" class="package-detail">
+  <div class="package-header">
+      <h2>Romantic Escape to Delhi</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://res.cloudinary.com/simplotel/image/upload/x_0,y_1165,w_3024,h_1702,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/themis-mudhouse---a-natures-retreat-resort-wellness/IMG_9437_jpg_yb8vuo?1737244800043');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+          <p><strong>Type of Trip:</strong> Honeymoon Special</p>
+          <p><strong>Start City:</strong> Delhi</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/3c/0b/43.jpg" alt="Day 1 - Arrival in Delhi">
+          <p><strong>Day 1:</strong> Arrive in Delhi. Start with a visit to **Qutub Minar** and **Humayun's Tomb**. End the evening with a romantic dinner at **India Gate**, followed by a peaceful boat ride in **Yamuna River**. Overnight stay in a luxury hotel.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://cdn.getyourguide.com/img/location/5a086d41ceb1d.jpeg/99.jpg" alt="Day 2 - Delhi Sightseeing">
+          <p><strong>Day 2:</strong> Visit the serene **Lotus Temple** and **Lodhi Gardens** for a peaceful morning walk. In the afternoon, explore **Chandni Chowk** and enjoy the bustling streets with your partner. Visit **Jama Masjid** in the evening and end your day with a candlelight dinner at **Connaught Place**. Overnight stay in Delhi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.travelworldplanet.com/wp-content/uploads/2022/02/India-Gate.jpg" alt="Day 3 - Explore the History">
+          <p><strong>Day 3:</strong> Visit the **Red Fort** and explore the majestic **Rashtrapati Bhavan**. Enjoy a couple’s walk at **India Gate** and spend quality time in the **Lodi Gardens**. In the evening, explore **Hauz Khas Village**, known for its romantic ambiance and cafés. Overnight stay in Delhi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e4/c8/e3.jpg" alt="Day 4 - Romantic Experiences">
+          <p><strong>Day 4:</strong> Start your day with a visit to the artistic **Kingdom of Dreams** or enjoy a day trip to **Neemrana Fort Palace** for a royal experience. In the evening, attend a live performance or cultural show for an unforgettable evening. Overnight stay in Delhi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://delhitourism.travel/images/places-to-visit/headers/dilli-haat-delhi-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Day 5 - Departure">
+          <p><strong>Day 5:</strong> Explore the famous **Dilli Haat** for handicrafts and souvenirs. Enjoy a romantic shopping spree before departure. Head to the airport with beautiful memories of your romantic Delhi escape.</p>
+      </div>
+  </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Delhi Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(45000, 'Delhi')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="DelhiPackage3" class="package-detail">
+  <div class="package-header">
+      <h2>Explore Delhi in 3 Days</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://i0.wp.com/stampedmoments.com/wp-content/uploads/2023/04/north-block-delhi.jpg');">
+      <div class="info-box">
+          <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+          <p><strong>Type of Trip:</strong> Cultural, Heritage, and Exploration</p>
+          <p><strong>Start City:</strong> Uttar Pradesh</p>
+          <p><strong>End City:</strong> Delhi</p>
+      </div>
+  </div>
+
+  <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+          <img src="https://cdn.getyourguide.com/img/tour/0f2488798b09d19cd5870eacb0f95ff0a28dcba46f88249a7b05a3a5f1b29495.png/99.jpg" alt="Day 1 - Arrival in Delhi">
+          <p><strong>Day 1:</strong> Arrive in Delhi. Start with a visit to **India Gate** and **Rashtrapati Bhavan**. Explore **Raj Ghat**, the memorial of Mahatma Gandhi. End the day with shopping and dining at **Connaught Place**. Overnight stay in Delhi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.travel-love.in/wp-content/uploads/2022/07/humayuns-tomb-e1663919399426.jpeg.webp" alt="Day 2 - Delhi Sightseeing">
+          <p><strong>Day 2:</strong> Visit the UNESCO World Heritage Site, **Qutub Minar**, and explore the **Lotus Temple**. Head to **Humayun's Tomb** and **Lodhi Gardens**. Enjoy a shopping spree at **Chandni Chowk** and **Jama Masjid**. Overnight stay in Delhi.</p>
+      </div>
+      <div class="itinerary-item">
+          <img src="https://www.indiachinainstitute.org/wp-content/uploads/2014/08/DSC_0042.jpg" alt="Day 3 - Delhi Heritage Tour">
+          <p><strong>Day 3:</strong> Start the day with a visit to the iconic **Red Fort**. Explore the **Jantar Mantar** and enjoy a peaceful boat ride at **Yamuna River**. Visit **Dilli Haat** for handicrafts and souvenirs. Depart from Delhi with fond memories.</p>
+      </div>
+  
+    </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Delhi Package</h3>
+    <p><strong>Starting at:</strong> ₹55,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(55000, 'Delhi')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+
+    // Booking logic
+    function redirectToBooking(price, destination) {
+      const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+      window.location.href = url;
+  }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+  </script>
+  
+ </body>
+ </html>
+ 

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | GOA</title>
+  <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 74vh;
+        }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa">
+    <h1>Explore Goa Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+      <!-- Thrill-Seeker's Adventure -->
+      <div class="package-card">
+        <img src="/Images/Goa/goa (2).jpg" alt="Boys Package">
+        <h3>Thrill-Seeker's Adventure</h3>
+        <p>High-octane adventures, water sports, and electrifying nightlife crafted for boys who love the adrenaline rush.</p>
+        <a href="/east/goa.html?category=mumbai-goa" class="btn-view">View Details</a>
+      </div>
+      
+      <!-- Customizable Escape -->
+      <div class="package-card">
+        <img src="/Images/Goa/goa2.jpg" alt="Customizable Package">
+        <h3>Customizable Escape</h3>
+        <p>Design your dream vacation! Perfect for travelers who want tailored experiences, from spas to cultural tours.</p>
+        <a href="/east/goa.html?category=goa-beach-retreat" class="btn-view">View Details</a>
+      </div>
+      
+      <!-- Romantic Getaway -->
+      <div class="package-card">
+        <img src="/Images/Goa/Goa11.jpg" alt="Couples Package">
+        <h3>Romantic Getaway</h3>
+        <p>Explore serene beaches, enjoy candlelight dinners, and celebrate love with exclusive couple experiences.</p>
+        <a href="/east/goa.html?category=romantic-goa-getaway" class="btn-view">View Details</a>
+      </div>
+      
+      <!-- Family Fun Package -->
+      <!-- <div class="package-card">
+        <img src="https://media1.thrillophilia.com/filestore/jezkw1hz3yrpmiqlbobdguc5f54m_shutterstock_1938178192.jpg?w=400&dpr=2" alt="Family Package">
+        <h3>Family Fun</h3>
+        <p>A perfect vacation for families with children, featuring kid-friendly activities, beach outings, and cultural experiences.</p>
+        <a href="/east/goa.html?category=delhi-goa" class="btn-view">View Details</a>
+      </div> -->
+  
+      <!-- Solo Traveler's Retreat -->
+      <!-- <div class="package-card">
+        <img src="https://bookretreats.com/cdn-cgi/image/width=1200,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/40k/40770/p_1591781/1000_1668501895.jpg" alt="Solo Traveler Package">
+        <h3>Solo Traveler's Retreat</h3>
+        <p>A peaceful getaway for solo travelers seeking solitude, mindfulness, and adventure in a beautiful setting.</p>
+        <a href="/east/goa.html?category=solo-goa" class="btn-view">View Details</a>
+      </div> -->
+  
+      <!-- Luxury Beach Escape -->
+      <!-- <div class="package-card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/326125465.jpg?k=31cd3804b04b1382bd68f8f5896321f3d032facad38dc3ce63e8332d73126073&o=&hp=1" alt="Luxury Package">
+        <h3>Luxury Beach Escape</h3>
+        <p>Indulge in a lavish beach holiday with private villas, world-class amenities, and spa treatments on the shore.</p>
+        <a href="/east/goa.html?category=luxury-goa" class="btn-view">View Details</a>
+      </div>
+   -->
+      <div class="hexagon-title">
+        <h4>Top 10 Goa beaches</h4>
+      </div>
+      <section class="hexagon-gallery">
+        
+       
+        <div class="hex">
+          <img src="/Images/Goa/goa (10).jpg" alt="some">
+          <h3>Calangute Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa (1).jpg" alt="some">
+          <h3>Baga Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa (2).jpg" alt="some">
+          <h3>Anjuna Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa (3).jpg" alt="some">
+          <h3>Palolem Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa5.jpg" alt="some">
+          <h3>Candolim Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa6.jpg" alt="some">
+          <h3>Colva Beach </h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa7.jpg" alt="some">
+          <h3>Vagator Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa8.jpg" alt="some">
+          <h3>Morjim Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa9.jpg" alt="some">
+          <h3>Agonda Beach</h3>
+        </div>
+        <div class="hex">
+          <img src="/Images/Goa/goa (6).jpg" alt="some">
+          <h3>Arambol Beach</h3>
+        </div>
+      </section>
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="mumbai-goa" class="package-detail">
+    <div class="package-header">
+      <h2>Mumbai to Goa Coastal Adventure</h2>
+      
+    </div>
+    <div class="package-info" style="  background-image: url('../Images/Goa/goa\ \(6\).jpg');">
+      <div class="info-box">
+        <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+        <p><strong>Type of Trip:</strong> Scenic Coastal Adventure</p>
+        <p><strong>Start City:</strong> Mumbai</p>
+        <p><strong>End City:</strong> Goa</p>
+      </div>
+    </div>
+  
+    <div class="itinerary">
+      <h3>Itinerary</h3>
+      <div class="itinerary-item">
+        <img src="https://hblimg.mmtcdn.com/content/hubble/img/mumbai/mmt/activities/m_activities_mumbai_gateway_of_india_l_472_766.jpg?im=Resize=(288,162)" alt="Day 1 - Mumbai">
+        <p><strong>Day 1:</strong> Welcome to Mumbai! Explore iconic landmarks like the Gateway of India and Marine Drive. Overnight in Mumbai.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://plus.unsplash.com/premium_photo-1697730348607-38bab9f149bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlcGhhbnRhJTIwY2F2ZXN8ZW58MHx8MHx8fDA%3D" alt="Day 2 - Elephanta Caves">
+        <p><strong>Day 2:</strong> Visit Elephanta Caves. Travel to Goa and relax at a beachside resort.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://northgoawatersports.com/wp-content/uploads/2021/12/water-sports-jetski.jpg" alt="Day 3 - North Goa">
+        <p><strong>Day 3:</strong> Explore North Goa beaches and enjoy thrilling water sports.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://images.pexels.com/photos/26753044/pexels-photo-26753044/free-photo-of-museum-old-fort-at-goa.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Day 4 - South Goa">
+        <p><strong>Day 4:</strong> Discover South Goa's cultural and historical landmarks.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Day 5 - Leisure in Goa">
+        <p><strong>Day 5:</strong> Indulge in leisure activities like yoga, spa, and local shopping.</p>
+      </div>
+      <div class="itinerary-item">
+        <img src="https://media.istockphoto.com/id/1129078125/photo/the-girl-travels-by-train-to-beautiful-places-beautiful-girl-traveling-by-train-among.jpg?s=612x612&w=0&k=20&c=HCHXlPWt7QQ1rfwGrVZ3_AV37U8YVmQ_7HXYja-dOEY=" alt="Day 6 - Farewell Goa">
+        <p><strong>Day 6:</strong> Farewell Goa. Return to Mumbai with unforgettable memories.</p>
+      </div>
+    </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+    <div class="package-price">
+      <h3>Goa Package</h3>
+      <p><strong>Starting at:</strong> ₹15,000/- per couple (inclusive of taxes)</p>
+      <button class="book-now-btn" onclick="redirectToBooking(15000, 'Goa')">Book Now</button>
+    </div>
+    
+    
+</div>
+  
+
+<!-- Detailed Package Section -->
+<div id="goa-beach-retreat" class="package-detail">
+  <div class="package-header">
+    <h2>Goa Beach Retreat</h2>
+  </div>
+  <div class="package-info" style="  background-image: url('../Images/Goa/goa6.jpg');">
+    <div class="info-box">
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <p><strong>Type of Trip:</strong> Beach & Leisure</p>
+      <p><strong>Start City:</strong> Goa</p>
+      <p><strong>End City:</strong> Goa</p>
+    </div>
+    <p class="package-description">
+      Immerse yourself in the laid-back vibe of Goa’s world-famous beaches. From lounging on sandy shores to indulging in local seafood and exploring vibrant markets, this package offers a perfect blend of relaxation, adventure, and cultural discovery.
+    </p>
+  </div>
+
+  <div class="itinerary">
+    <h3>Itinerary</h3>
+    <div class="itinerary-item">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/b0/c2/4f/private-beach-hotels.jpg?w=1200&h=-1&s=1" alt="Day 1 - Arrival in Goa">
+      <p><strong>Day 1:</strong> Arrive in Goa and check-in at your beachside resort. Spend the evening relaxing by the beach.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://thewandertherapy.com/wp-content/uploads/2024/03/4.beaches-goa.jpg" alt="Day 2 - North Goa Exploration">
+      <p><strong>Day 2:</strong> Visit North Goa’s famous beaches like Calangute and Anjuna. Enjoy watersports and beachside dining.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://roamaround.app/api/getDestinationPicture?placeName=South%20Goa" alt="Day 3 - South Goa Relaxation">
+      <p><strong>Day 3:</strong> Head to South Goa for a peaceful day at quieter beaches like Palolem. Indulge in local seafood and relax.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://www.thomascook.in/blog/wp-content/uploads/2019/04/the-flea-market.jpg" alt="Day 4 - Explore Goa's Markets">
+      <p><strong>Day 4:</strong> Explore the local markets of Goa, including Mapusa and Panjim. Enjoy the vibrant street markets and shopping.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ab/77/f9/img-20190525-192344-01.jpg?w=900&h=-1&s=1" alt="Day 5 - Departure">
+      <p><strong>Day 5:</strong> Spend your last morning at the beach before heading to the airport for your return journey.</p>
+    </div>
+  </div>
+
+  <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+  <div class="package-price">
+    <h3>Goa Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Goa')">Book Now</button>
+  </div>
+</div>
+
+<!-- Romantic Goa Package Section -->
+<div id="romantic-goa-getaway" class="package-detail">
+  <div class="package-header">
+    <h2>Romantic Goa Beach Getaway for Couples</h2>
+  </div>
+  <div class="package-info" style="background-image: url('https://res.cloudinary.com/simplotel/image/upload/x_0,y_38,w_740,h_417,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/heritage-village-resort-spa-goa/couple-having-fun-seashore_1153-831_sa4pc5');">
+    <div class="info-box">
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <p><strong>Type of Trip:</strong> Romantic Beach Escape</p>
+      <p><strong>Start City:</strong> Goa</p>
+      <p><strong>End City:</strong> Goa</p>
+    </div>
+    <p class="package-description">
+      Rekindle your romance with a serene escape to Goa’s beautiful beaches. Enjoy luxury accommodations, beachside dinners, and activities designed for couples to make unforgettable memories.
+    </p>
+  </div>
+
+  <div class="itinerary">
+    <h3>Itinerary</h3>
+    <div class="itinerary-item">
+      <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/08/goa-beach-for-couple.png" alt="Day 1 - Romantic Arrival">
+      <p><strong>Day 1:</strong> Arrive in Goa and check-in to a luxury beach resort. Enjoy a romantic dinner by the beach.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://oneday.travel/wp-content/uploads/one-day-north-goa-local-sightseeing-tour-package-private-cab-header-1568x1045.jpg" alt="Day 2 - North Goa Adventures">
+      <p><strong>Day 2:</strong> Explore North Goa’s beaches, indulge in watersports, and sip cocktails while watching the sunset.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://www.incrediblegoa.org/wp-content/uploads/2023/08/Romantic-Experiences-in-Goa.jpg" alt="Day 3 - South Goa Relaxation">
+      <p><strong>Day 3:</strong> Relax at South Goa’s quieter beaches, experience a couples’ spa session, and explore heritage sites.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1709547547/bbj/jevd0cybo6vrnx2fpybp.jpg" alt="Day 4 - Sunset Cruise">
+      <p><strong>Day 4:</strong> Shop at vibrant markets and enjoy a romantic sunset cruise on the Mandovi River.</p>
+    </div>
+    <div class="itinerary-item">
+      <img src="https://xorooms.com/images/beach-dinners-goa.jpg" alt="Day 5 - Farewell Morning">
+      <p><strong>Day 5:</strong> Savor a romantic breakfast by the beach before departing.</p>
+    </div>
+  </div>
+
+  <div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+
+  <div class="package-price">
+    <h3>Goa Package</h3>
+    <p><strong>Starting at:</strong> ₹25,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(25000, 'Goa')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

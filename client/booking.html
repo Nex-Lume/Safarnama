@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+    <title>Safarnama | Booking Form</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/booking-style.css">
+</head>
+<body>
+
+
+    <div class="booking-form">
+        <h3>Booking Form</h3>
+        <form id="bookingForm">
+        <!-- Personal Details Section -->
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group-row">
+        <div class="half-width">
+            <label for="phone">Phone Number</label>
+            <i class="fas fa-phone"></i>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="half-width">
+            <label for="dates">Travel Dates</label>
+            <i class="fas fa-calendar"></i>
+            <input type="date" id="dates" name="dates" required>
+        </div>
+    </div>
+        <!-- Price and Destination Section -->
+        <div class="form-group-row">
+            <div class="half-width">
+                <label for="price">Price</label>
+                <i class="fas fa-tag"></i>
+                <input type="text" id="price" name="price" readonly>
+            </div>
+            <div class="half-width">
+                <label for="destination">Destination</label>
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="destination" name="destination" readonly>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="half-width">
+                <label for="country">Country</label>
+                <i class="fas fa-globe"></i>
+                <select id="country" name="country">
+                    <!-- Countries will be populated dynamically -->
+                </select>
+            </div>
+            <div class="half-width">
+                <label for="city">City</label>
+                <i class="fas fa-city"></i>
+                <select id="city" name="city">
+                    <!-- Cities will be populated dynamically based on the selected country -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <div class="half-width">
+                <label for="num_adults">Adults</label>
+                <i class="fas fa-user"></i>
+                <input type="number" id="num_adults" name="num_adults" placeholder="Number of adults" min="1">
+            </div>
+            <div class="half-width">
+                <label for="num_kids">Kids</label>
+                <i class="fas fa-child"></i>
+                <input type="number" id="num_kids" name="num_kids" placeholder="Number of kids" min="0">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <i class="fas fa-comment"></i>
+            <textarea id="message" name="message" placeholder="Enter any special requests or messages"></textarea>
+        </div>
+    
+        <button type="button" class="submit-btn" onclick="submitBooking()">Submit Booking</button>
+    </form>
+    </div>
+    
+    <script>
+        // Your JavaScript to populate countries and cities, as in previous code...
+    
+        // Function to submit the form and pass data to the next page
+        function submitBooking() {
+            // Define the formData object with values from the form inputs
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                dates: document.getElementById('dates').value,
+                price: document.getElementById('price').value,
+                destination: document.getElementById('destination').value,
+                country: document.getElementById('country').value,
+                city: document.getElementById('city').value,
+                num_adults: document.getElementById('num_adults').value,
+                num_kids: document.getElementById('num_kids').value,
+                message: document.getElementById('message').value
+            };
+        
+            // Use fetch to send data as POST request
+            fetch("http://localhost:5005/api/booking", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)  // Send formData as the body
+            })
+            .then(response => response.json()) // Handle the response
+            .then(data => {
+                alert(data.message); // Show success message
+            })
+            .catch(error => {
+                alert("Error: " + error); // Handle errors
+            });
+        }
+        
+
+
+    // Extract parameters from URL
+    const queryParams = new URLSearchParams(window.location.search);
+    const price = queryParams.get('price');
+    const destination = queryParams.get('destination');
+
+    // Populate form fields
+    document.getElementById('price').value = price ? `₹${price}` : '';
+    document.getElementById('destination').value = destination || '';
+    var country_arr = [
+    "Afghanistan", "Albania", "Algeria", "Australia", "Austria", "Belgium", "Brazil", "Canada", 
+    "India", "USA", "United Kingdom"
+];
+
+var city_arr = {
+    "Afghanistan": ["Kabul", "Herat", "Mazar-i-Sharif"],
+    "Albania": ["Tirana", "Durrës", "Vlorë"],
+    "Algeria": ["Algiers", "Oran", "Constantine"],
+    "Australia": ["Sydney", "Melbourne", "Brisbane"],
+    "Austria": ["Vienna", "Salzburg", "Innsbruck"],
+    "Belgium": ["Brussels", "Antwerp", "Ghent"],
+    "Brazil": ["Rio de Janeiro", "São Paulo", "Brasília"],
+    "Canada": ["Toronto", "Vancouver", "Montreal"],
+   "India": [
+        "New Delhi", "Mumbai", "Bangalore", "Kolkata", "Chennai", "Hyderabad", "Pune", "Ahmedabad", "Jaipur", 
+        "Surat", "Lucknow", "Kanpur", "Nagpur", "Indore", "Patna", "Vadodara", "Bhopal", "Visakhapatnam", 
+        "Chandigarh", "Ludhiana", "Agra", "Nashik", "Faridabad", "Rajkot", "Meerut", "Varanasi", "Srinagar", 
+        "Kochi", "Madurai", "Coimbatore", "Aurangabad", "Dhanbad", "Jodhpur", "Ranchi", "Amritsar", "Guwahati", 
+        "Mysore", "Allahabad", "Gwalior", "Bhubaneswar", "Solapur", "Chandrapur", "Durgapur", "Tiruchirappalli", 
+        "Jabalpur", "Kozhikode", "Vijayawada", "Navi Mumbai", "Thane", "Dehradun", "Noida", "Udaipur", 
+        "Bikaner", "Jammu", "Agartala", "Mangalore", "Raipur", "Belgaum", "Shillong", "Kollam", "Cuttack",
+        "Gurgaon", "Dibrugarh", "Karnal", "Jamshedpur", "Tirunelveli", "Haridwar", "Kochi", "Rourkela", "Panipat"
+    ],
+    "USA": ["New York", "Los Angeles", "Chicago"],
+    "United Kingdom": ["London", "Manchester", "Edinburgh"]
+};
+
+function populateCountries(countryElementId, cityElementId) {
+    var countryElement = document.getElementById(countryElementId);
+    countryElement.length = 0; // Clear existing options
+    countryElement.options[0] = new Option('Select Country', '-1'); // Default option
+    countryElement.selectedIndex = 0;
+
+    for (var i = 0; i < country_arr.length; i++) {
+        countryElement.options[countryElement.length] = new Option(country_arr[i], country_arr[i]);
+    }
+
+    // When the country changes, update the cities
+    countryElement.onchange = function() {
+        populateCities(cityElementId, countryElement.value);
+    };
+}
+
+function populateCities(cityElementId, selectedCountry) {
+    var cityElement = document.getElementById(cityElementId);
+    cityElement.length = 0; // Clear existing options
+    cityElement.options[0] = new Option('Select City', ''); // Default option
+
+    if (selectedCountry !== '-1' && city_arr[selectedCountry]) {
+        var cities = city_arr[selectedCountry];
+        for (var i = 0; i < cities.length; i++) {
+            cityElement.options[cityElement.length] = new Option(cities[i], cities[i]);
+        }
+    }
+}
+
+// Call the function to populate the country dropdown initially
+populateCountries("country", "city");
+
+</script>
+</body>
+</html>

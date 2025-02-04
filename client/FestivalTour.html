@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Images/Logo/logo.png" type="image/png" >
+    <title>Safarnama | FestivalTour</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/festivaltour.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/Gulmarg.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">
+          <a href="Index.html">
+            <img src="Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+          </a>
+        </h1>
+      
+        <nav>
+          <ul class="menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Destinations.html"> Destinations</a></li>
+            <li><a href="Packages.html"> Packages</a></li>
+            <li>
+              <a href="Tours.html">Tours</a>
+              <ul class="tour-list">
+                <li><a href="FestivalTour.html">Festival Tour</a></li>
+                <li><a href="/north/HimalayanTrek.html">Himalayan Trek</a></li>
+                <li><a href="ReligionTour.html">Religious Tour</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="contact.html"> Contact</a></li>
+          </ul>
+         
+          <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div class="search-container">
+          
+          <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+          <i class="fas fa-search" id="search-icon"></i>
+          <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+          <div id="search-results" class="results-container"></div>
+        </div>
+        
+      </div>
+      </div>
+    </header>
+  
+    
+
+    <!-- Header Section End  -->
+
+    <section class="intro">
+      <div class="container">
+        <h2>Discover India's Rich Cultural Heritage</h2>
+        <p>
+          Join us on a journey through India’s most vibrant festivals. From the
+          colorful streets of Holi to the spiritual glow of Diwali, immerse
+          yourself in the culture, traditions, and celebrations.
+        </p>
+      </div>
+    </section>
+
+    <section class="festivals">
+      <div class="festival" id="diwali">
+        <div class="festival-content">
+          <h3>Diwali-Festival of Lights</h3>
+          <img src="Images/Festivaltour/diwali.jpg" alt="Diwali Festival" class="festival-image" />
+          <p>
+            Celebrate Diwali, the Festival of Lights, with fireworks, sweets,
+            and beautiful decorations. Enjoy the spirit of giving and family
+            bonding.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+       
+      </div>
+
+      <div class="festival" id="holi">
+        <div class="festival-content">
+          <h3>Holi-Festival of Colors</h3>
+          <img src="Images/Festivaltour/holi.jpg" alt="Holi Festival" class="festival-image" />
+          <p>
+            Celebrate the festival of colors with vibrant powders and joyous
+            celebrations. Experience the fun and excitement as people throw
+            colorful powders at each other.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+       
+      </div>
+
+      <div class="festival" id="rath_yatra">
+        <div class="festival-content">
+          <h3>Rath Yatra-The Chariot Festival</h3>
+          <img
+          src="Images/Festivaltour/rathyatra.jpg"
+          alt="Rath Yatra Festival"
+          class="festival-image"
+        />
+          <p>
+            Rath Yatra, celebrated in Puri, Odisha, involves grand processions
+            of deities in massive chariots. This vibrant festival is filled with
+            devotion, music, and dance, attracting millions of devotees from
+            across the world.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        
+      </div>
+      <div class="festival" id="ganpati_festival">
+        <div class="festival-content">
+          <h3>Ganesh Chaturthi</h3>
+          <img
+          src="Images/Festivaltour/ganpati.jpg"
+          alt="Ganesh Chaturthi Festival"
+          class="festival-image"
+        />
+          <p>
+            Ganesh Chaturthi is a festival dedicated to the worship of Lord
+            Ganesha, the remover of obstacles. Celebrated with grand
+            processions, music, dance, and prayers, it is a time for families to
+            come together and honor the beloved elephant-headed god.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        
+      </div>
+
+      <div class="festival" id="makar_sankranti_festival">
+        <div class="festival-content">
+          <h3>Makar Sankranti</h3>
+          <img
+          src="https://cdn.britannica.com/49/254949-050-3020F275/Kite-flying-rooftops-Ahmedabad-Makar-Sankranti-Uttarayana-Hindu-festival-India.jpg"
+          alt="Makar Sankranti Festival"
+          class="festival-image"
+        />
+          <p>
+            Makar Sankranti marks the sun's entry into Capricorn, signaling the
+            end of winter. The festival is celebrated with kite flying,
+            bonfires, and traditional sweets like tilgul. It is especially
+            popular in Gujarat and Maharashtra.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        
+      </div>
+
+      <!-- Add more festivals -->
+      <div class="festival" id="durga-puja">
+        <div class="festival-content">
+          <h3>Durga Puja-Celebration of Power</h3>
+          <img
+          src="/Images/Festivaltour/durgapuja.jpg"
+          alt="Durga Puja Festival"
+          class="festival-image"
+        />
+          <p>
+            Join the grand Durga Puja celebrations in Kolkata, where artistic
+            idols, cultural events, and religious rituals blend in a vibrant
+            atmosphere.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+       
+      </div>
+    </section>
+
+    <div class="c-heroImageGrid">
+      <div class="container">
+        <div class="column"></div>
+        <div class="column">
+          <div class="row"></div>
+          <div class="row">
+            <div>
+              <div class="text">
+                <h6>
+                  India celebrates vibrant festivals<br />
+                  like Diwali and Holi.
+                </h6>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="intro-section">
+      <h2>Unique Festivals of India</h2>
+      <p>
+        India is a land of diverse cultures, where every region has its own
+        unique festival. These festivals hold deep cultural significance, and
+        celebrate the country's rich traditions, mythology, and values. Let's
+        explore a few of these vibrant celebrations.
+      </p>
+    </section>
+
+    <!-- New Boxed Section with Unique Class Names -->
+    <section class="festival-grid">
+      <div class="festival-item">
+        <h3>Lohri-The Harvest Festival</h3>
+        <img
+          src="https://c.ndtvimg.com/2022-01/5gv0a03o_lohri_625x300_12_January_22.jpg?downsize=545:307"
+          alt="Lohri Festival"
+          class="festival-image"
+        />
+        <p>
+          Lohri marks the end of winter and the beginning of the harvest season,
+          especially in Punjab. The festival is celebrated with bonfires,
+          singing, dancing, and feasting.
+        </p>
+      </div>
+
+      <div class="festival-item">
+        <h3>Vasant Panchami-Welcoming Spring</h3>
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5717690827d4bd264f40f4be/1521762299948-6OB9UPAL8AZEP6LNME6H/1-933.jpg?format=1000w"
+          alt="Vasant Panchami Festival"
+          class="festival-image"
+        />
+        <p>
+          Vasant Panchami marks the arrival of spring and honors Goddess
+          Saraswati. It's a day for worship, feasts, and yellow-themed
+          decorations.
+        </p>
+      </div>
+
+      <div class="festival-item">
+        <h3>Bhai Dooj-Bond Between Siblings</h3>
+        <img
+          src="https://s7ap1.scene7.com/is/image/incredibleindia/bhai-dooj-fes-hero?qlt=82&ts=1726639246217"
+          alt="Bhai Dooj Festival"
+          class="festival-image"
+        />
+        <p>
+          Bhai Dooj celebrates the beautiful bond between brothers and sisters,
+          with rituals that show love, care, and protection.
+        </p>
+      </div>
+
+      <div class="festival-item">
+        <h3>Makar Sankranti - The Sun's Journey</h3>
+        <img
+          src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202501/g-105834540-16x9_0.jpg?VersionId=k4gPyLj.Ry6rYGgwhRZwrN.plzMkWTUg&size=690:388"
+          alt="Dahi Handi Festival"
+          class="festival-image"
+        />
+        <p>
+          Makar Sankranti marks the transition of the sun into Capricorn. It's
+          celebrated with kite flying, bonfires, and traditional foods like
+          tilgul (sesame sweets).
+        </p>
+      </div>
+    </section>
+
+    
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+ </body>
+ </html>
+ 

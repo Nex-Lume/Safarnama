@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama | Kashmir</title>
+  <link rel="icon" href="/Images/logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="/css/Style.css">
+  <link rel="stylesheet" href="/css/goa.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-goa{
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="/Index.html">
+          <img src="/Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="/Destinations.html"> Destinations</a></li>
+          <li><a href="/Packages.html"> Packages</a></li>
+          <li>
+            <a href="/Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="/FestivalTour.html">Festival Tour</a></li>
+              <li><a href="/HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="/ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+
+   <!-- Hero Section -->
+   <div class="hero-goa" style="background-image: url('/Images/Kashmir/srinagar\ \(2\).jpg');">
+    <h1>Explore Kashmir Packages</h1>
+  </div>
+<!-- Content Section -->
+<section>
+  <div class="Goa-content">
+    <!-- Default Overview Section -->
+    <div id="overview" class="package-overview">
+        <!-- Thrill-Seeker's Adventure -->
+        <div class="package-card">
+            <img src="https://www.tourmyindia.com/states/jammu-kashmir/image/attracion-slider3.jpg" alt="Boys Package">
+            <h3>Thrill-Seeker's Adventure</h3>
+            <p>High-octane adventures, water sports, and electrifying nightlife crafted for boys who love the adrenaline rush.</p>
+            <a href="/north/kashmir.html?category=KashmirPackage1" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Customizable Escape -->
+        <div class="package-card">
+            <img src="https://www.khyberhotels.com/blog/wp-content/uploads/2023/10/winter-kashmir-1024x562.jpg" alt="Customizable Package">
+            <h3>Customizable Escape</h3>
+            <p>Design your dream vacation! Perfect for travelers who want tailored experiences, from spas to cultural tours.</p>
+            <a href="/north/Kashmir.html?category=KashmirPackage2" class="btn-view">View Details</a>
+        </div>
+    
+        <!-- Romantic Getaway -->
+        <div class="package-card">
+            <img src="https://www.bharatbooking.com/admin/webroot/img/uploads/holiday-package-gallery/1702104456_779219-romantic-kashmir-honeymoon-package-slider-image.webp" alt="Couples Package">
+            <h3>Romantic Getaway</h3>
+            <p>Explore serene beaches, enjoy candlelight dinners, and celebrate love with exclusive couple experiences.</p>
+            <a href="/north/Kashmir.html?category=KashmirPackage3" class="btn-view">View Details</a>
+        </div>
+  
+        <div class="hexagon-title">
+            <h4>Top 10 Kashmir Places</h4>
+        </div>
+        <section class="hexagon-gallery">
+            <div class="hex">
+                <img src="https://vargiskhan.com/log/wp-content/uploads/2022/03/places-to-visit-in-gulmarg-1.jpg" alt="some">
+                <h3>Gulmarg</h3>
+            </div>
+            <div class="hex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Pahalgam_views_13.JPG" alt="some">
+                <h3>Pahalgam</h3>
+            </div>
+            <div class="hex">
+                <img src="https://tripxl.com/blog/wp-content/uploads/2024/07/View-Of-The-Snowy-Landscape-Of-Sonmarg-Cover-Photo-840x425.jpg" alt="some">
+                <h3>Sonmarg</h3>
+            </div>
+            <div class="hex">
+                <img src="https://static.toiimg.com/thumb/113548438/Srinagar.jpg?width=1200&height=900" alt="some">
+                <h3>Srinagar</h3>
+            </div>
+            <div class="hex">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/71/3f/53/betaab-valley.jpg?w=1200&h=-1&s=1" alt="some">
+                <h3>Betaab Valley</h3>
+            </div>
+            <div class="hex">
+                <img src="https://roadsndreams.com/wp-content/uploads/2020/09/img_3465.jpg?w=1200" alt="some">
+                <h3>Aru Valley</h3>
+            </div>
+            <div class="hex">
+                <img src="https://gulmargriders.com/wp-content/uploads/2020/11/Doodhpathri.jpg" alt="some">
+                <h3>Doodhpathri</h3>
+            </div>
+            <div class="hex">
+                <img src="https://theroamingshoes.com/wp-content/uploads/2023/08/DSC_0631.jpg" alt="some">
+                <h3>Yusmarg</h3>
+            </div>
+            <div class="hex">
+                <img src="https://plus.unsplash.com/premium_photo-1671974489983-083171c0215e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHVsaXAlMjBnYXJkZW58ZW58MHx8MHx8fDA%3D" alt="some">
+                <h3>Tulip Garden</h3>
+            </div>
+            <div class="hex">
+                <img src="https://static.wanderon.in/wp-content/uploads/2024/03/shankaracharya-temple.jpg" alt="some">
+                <h3>Shankaracharya Temple</h3>
+            </div>
+        </section>
+
+      <section class="slide-packages">
+        <h2>Explore Our India Tour Packages</h2>
+        <div class="package-gallery">
+          <div class="package">
+            <a href="/details/luxury-baga-package.html">
+              <img src="/Images/UttraKhand/Badrinath-Kedarnath-Yatra-5.jpg" alt="Luxury Baga Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Luxury Baga Package</h3>
+                <p>3 Nights / 4 Days - ₹15,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/adventure-calangute-package.html">
+              <img src="/Images/UP/varanasi.jpg" alt="Adventure Calangute Package">
+            </a>
+              <div class="package-info-slider">
+                <h3>Adventure Calangute Package</h3>
+                <p>4 Nights / 5 Days - ₹19,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/romantic-palolem-getaway.html">
+              <img src="/Images/Rajasthan/jaipuhero.jpg" alt="Romantic Palolem Getaway">
+            </a>
+              <div class="package-info-slider">
+                <h3>Romantic Palolem Getaway</h3>
+                <p>2 Nights / 3 Days - ₹13,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/serene-agonda-retreat.html">
+              <img src="/Images/Maharashtra/mumbai2.jpg" alt="Serene Agonda Retreat">
+            </a>
+              <div class="package-info-slider">
+                <h3>Serene Agonda Retreat</h3>
+                <p>5 Nights / 6 Days - ₹25,999</p>
+              </div>
+          </div>
+          <!-- Additional Packages -->
+          <div class="package">
+            <a href="/details/exotic-colva-escape.html">
+              <img src="/Images/Rajasthan/Udaipur-Rajasthan-1.jpg" alt="Exotic Colva Escape">
+            </a>
+              <div class="package-info-slider">
+                <h3>Exotic Colva Escape</h3>
+                <p>3 Nights / 4 Days - ₹17,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/tranquil-ashwem-experience.html">
+              <img src="/Images/Kashmir/gulmarg (4).jpg" alt="Tranquil Ashwem Experience">
+            </a>
+              <div class="package-info-slider">
+                <h3>Tranquil Ashwem Experience</h3>
+                <p>4 Nights / 5 Days - ₹20,999</p>
+              </div>
+          </div>
+          <div class="package">
+            <a href="/details/family-fun-cavelossim.html">
+              <img src="/Images/Kerala/Kerala (1).jpg" alt="Family Fun at Cavelossim">
+            </a>
+              <div class="package-info-slider">
+                <h3>Family Fun at Cavelossim</h3>
+                <p>5 Nights / 6 Days - ₹23,999</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+ <!-- Default Overview Section -->
+
+
+
+                          <!-- Package Section view  -->
+
+<!-- Content Section -->
+<div class="Goa-content">
+  <!-- Detailed Package Section -->
+  <div id="KashmirPackage1" class="package-detail">
+    <div class="package-header">
+        <h2>Mesmerizing Kashmir Retreat</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://www.dewanholidays.com/wp-content/uploads/2022/08/Tour-images-10.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+            <p><strong>Type of Trip:</strong> Scenic Adventure</p>
+            <p><strong>Start City:</strong> Srinagar</p>
+            <p><strong>End City:</strong> Srinagar</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://cdn.getyourguide.com/img/tour/5443ea22229709f2390b4d121f979e39885b44d3e712d16204edbf9696b88ecf.jpg/146.jpg" alt="Day 1 - Srinagar">
+            <p><strong>Day 1:</strong> Arrival in Srinagar. Shikara ride on Dal Lake and a visit to Mughal Gardens. Overnight stay at a houseboat.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.vibrantfootsteps.com/wp-content/uploads/2023/08/DSC_3426-PS-scaled.jpg" alt="Day 2 - Gulmarg">
+            <p><strong>Day 2:</strong> Day trip to Gulmarg. Enjoy gondola rides and skiing. Return to Srinagar for the night.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/ec/dc/15/aru-city.jpg?w=1200&h=1200&s=1" alt="Day 3 - Pahalgam">
+            <p><strong>Day 3:</strong> Drive to Pahalgam. Explore Betaab Valley and Aru Valley. Overnight stay in Pahalgam.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://storage.googleapis.com/thrilleasy-prod-web/images%2F1039%2F1039_img_5b1e9df6-61da-4031-b6b4-9a227dc63bfc.jpg?generation=1640368622417043&alt=media" alt="Day 4 - Pahalgam">
+            <p><strong>Day 4:</strong> Enjoy leisure activities like horse riding and hiking. Return to Srinagar in the evening.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.vibrantfootsteps.com/wp-content/uploads/2023/08/DSC_3195-PS-scaled.jpg" alt="Day 5 - Sonmarg">
+            <p><strong>Day 5:</strong> Day trip to Sonmarg. Visit Thajiwas Glacier. Return to Srinagar for overnight stay.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.kashmirhills.com/wp-content/uploads/2024/03/Badshah-Chowk-Market.jpg" alt="Day 6 - Departure">
+            <p><strong>Day 6:</strong> Visit local markets for shopping and depart from Srinagar with unforgettable memories.</p>
+        </div>
+    </div>
+<div class="additional-highlights">
+    <h3>Additional Highlights</h3>
+    <ul>
+        <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+        <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+        <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+        <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+    </ul>
+</div>
+
+<div class="package-inclusions">
+    <h3>Package Inclusions</h3>
+    <ul>
+        <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+        <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+        <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+        <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+        <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+    </ul>
+</div>
+<div class="package-price">
+  <h3>Kashmir Package</h3>
+  <p><strong>Starting at:</strong> ₹45,000/- per couple (inclusive of taxes)</p>
+  <button class="book-now-btn" onclick="redirectToBooking(45000, 'Kashmir')">Book Now</button>
+</div>
+</div>
+
+<div id="KashmirPackage2" class="package-detail">
+    <div class="package-header">
+        <h2>Romantic Kashmir Escape</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://media.holidify.com/images/cmsuploads/compressed/Untitleddesign16_20240401171353.png');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+            <p><strong>Type of Trip:</strong> Honeymoon Special</p>
+            <p><strong>Start City:</strong> Srinagar</p>
+            <p><strong>End City:</strong> Srinagar</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://tourmykashmir.com/wp-content/uploads/2023/10/floating-market-in-dal-lake-960x565.jpg" alt="Day 1 - Srinagar">
+            <p><strong>Day 1:</strong> Arrival in Srinagar. Romantic Shikara ride and candlelight dinner on Dal Lake.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://d2qa7a8q0vuocm.cloudfront.net/images/37577920220120073156.png" alt="Day 2 - Gulmarg">
+            <p><strong>Day 2:</strong> Day trip to Gulmarg. Enjoy gondola rides and picnic amidst snow-capped peaks.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/8a/81/1b/caption.jpg" alt="Day 3 - Pahalgam">
+            <p><strong>Day 3:</strong> Drive to Pahalgam. Enjoy walks along the Lidder River and a couple’s massage at the resort.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/7e/e7/e1/welcomheritage-gurkha.jpg" alt="Day 4 - Srinagar">
+            <p><strong>Day 4:</strong> Visit Nishat and Shalimar gardens. Stay at a luxury houseboat for a romantic experience.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.holidaytravelzone.com/bootstrap/images/package/uploads/original/Shikara_Ride_Houseboat_in_srinagar.jpg" alt="Day 5 - Departure">
+            <p><strong>Day 5:</strong> Departure from Srinagar after a memorable honeymoon.</p>
+        </div>
+    </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Kashmir Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Kashmir')">Book Now</button>
+  </div>
+</div>
+
+
+<div id="KashmirPackage3" class="package-detail">
+    <div class="package-header">
+        <h2>Family Fun in Kashmir</h2>
+    </div>
+    <div class="package-info" style="background-image: url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/9e/7d/93.jpg');">
+        <div class="info-box">
+            <p><strong>Duration:</strong> 6 Nights / 7 Days</p>
+            <p><strong>Type of Trip:</strong> Family Adventure</p>
+            <p><strong>Start City:</strong> Srinagar</p>
+            <p><strong>End City:</strong> Srinagar</p>
+        </div>
+    </div>
+
+    <div class="itinerary">
+        <h3>Itinerary</h3>
+        <div class="itinerary-item">
+            <img src="https://tripmore.in/wp-content/uploads/2023/08/Untitled-design-3.jpg" alt="Day 1 - Srinagar">
+            <p><strong>Day 1:</strong> Arrival in Srinagar. Enjoy local sightseeing and stay in a houseboat.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://vargiskhan.com/log/wp-content/uploads/2023/08/betaab-valley-and-aru-valley-4.jpg" alt="Day 2 - Pahalgam">
+            <p><strong>Day 2:</strong> Drive to Pahalgam. Family picnic at Betaab Valley and Aru Valley.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.kashmirhills.com/wp-content/uploads/2024/07/Horse-Riding-in-pahalgam-in-Kashmirhills.com-2.jpg" alt="Day 3 - Pahalgam">
+            <p><strong>Day 3:</strong> Leisure day in Pahalgam for outdoor activities like pony rides and hiking.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://i0.wp.com/www.manjulikapramod.com/wp-content/uploads/2023/03/Welcome-to-Sonamarg.jpg" alt="Day 4 - Sonmarg">
+            <p><strong>Day 4:</strong> Visit Sonmarg for sightseeing and Thajiwas Glacier activities.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://i.ytimg.com/vi/fXVdS7Rt6Kg/sddefault.jpg" alt="Day 5 - Gulmarg">
+            <p><strong>Day 5:</strong> Explore Gulmarg. Kids will enjoy playing in the snow and sledging.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://s3.india.com/wp-content/uploads/2024/09/family-vication-in-srinagar.jpg##image/jpg" alt="Day 6 - Srinagar">
+            <p><strong>Day 6:</strong> Relax in Srinagar with a visit to local gardens and markets.</p>
+        </div>
+        <div class="itinerary-item">
+            <img src="https://www.valleytripplanner.in/wp-content/uploads/2023/09/Kashmir-Family-Packages-From-Chennaimin.jpg" alt="Day 7 - Departure">
+            <p><strong>Day 7:</strong> Departure with cherished family memories.</p>
+        </div>
+    </div>
+    <div class="additional-highlights">
+      <h3>Additional Highlights</h3>
+      <ul>
+          <li><i class="fas fa-tree"></i> Enjoy an Ayurvedic massage in Munnar or Kovalam.</li>
+          <li><i class="fas fa-spa"></i> Stay in a luxurious houseboat on Alleppey's backwaters.</li>
+          <li><i class="fas fa-water"></i> Experience sunset at Kovalam Beach.</li>
+          <li><i class="fas fa-hiking"></i> Trek through lush green tea gardens and spice plantations.</li>
+      </ul>
+  </div>
+
+  <div class="package-inclusions">
+      <h3>Package Inclusions</h3>
+      <ul>
+          <li><i class="fas fa-hotel"></i> Accommodation in premium hotels and resorts.</li>
+          <li><i class="fas fa-utensils"></i> Daily breakfast and select meals.</li>
+          <li><i class="fas fa-car"></i> Private transfers and sightseeing.</li>
+          <li><i class="fas fa-map-marked-alt"></i> Guided tours at all destinations.</li>
+          <li><i class="fas fa-ship"></i> Houseboat cruise in Alleppey.</li>
+      </ul>
+  </div>
+  <div class="package-price">
+    <h3>Kashmir Package</h3>
+    <p><strong>Starting at:</strong> ₹35,000/- per couple (inclusive of taxes)</p>
+    <button class="book-now-btn" onclick="redirectToBooking(35000, 'Kashmir')">Book Now</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+  <!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick link</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="/Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="/contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="/Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="/Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="/T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="/AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="/#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="/#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="/#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="/#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="/#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="/#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="/#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="/#"><i class="fab fa-whatsapp"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+   <script>
+    // Function to get the query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Handle page content display
+    document.addEventListener("DOMContentLoaded", () => {
+      const category = getQueryParam('category');
+      const overviewSection = document.getElementById('overview');
+      const packageDetailSections = document.querySelectorAll('.package-detail');
+
+      if (category) {
+        // Hide overview and show the selected package detail
+        overviewSection.style.display = 'none';
+        const packageElement = document.getElementById(category);
+        if (packageElement) {
+          packageElement.style.display = 'block';
+        } else {
+          document.body.innerHTML += '<p>Invalid category selected.</p>';
+        }
+      } else {
+        // Show the overview section
+        overviewSection.style.display = 'flex';
+      }
+    });
+
+
+    // JavaScript for horizontal scroll using mouse wheel
+const packageGallery = document.querySelector('.package-gallery');
+
+packageGallery.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();  // Prevent default vertical scroll behavior
+    packageGallery.scrollBy({
+      left: e.deltaY > 0 ? 100 : -100,  // Adjust horizontal scroll speed
+      behavior: 'smooth',  // Smooth scroll behavior
+    });
+  }
+});
+
+// Booking logic
+function redirectToBooking(price, destination) {
+  const url = `/booking.html?price=${price}&destination=${encodeURIComponent(destination)}`;
+  window.location.href = url;
+}
+
+  </script>
+  
+ </body>
+ </html>
+ 

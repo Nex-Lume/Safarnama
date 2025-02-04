@@ -1,0 +1,101 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.hero-section img{
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+}
+.trek-highlights-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .trek-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  .trek-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+  
+  .trek-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .trek-card h3 {
+    font-size: 1.5rem;
+    margin: 0rem 1rem 0rem;
+  }
+  
+  .trek-card h6 {
+    font-size: 0.755rem; /* Smaller font size for the description text */
+    margin: 0.5rem 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .trek-info {
+    font-size:1.1rem;
+    margin: 1.5rem 1rem 1rem;
+  }
+  
+  .trek-info p {
+    margin: 0.25rem 0;
+    color: #555;
+  }
+  
+  .card-cta {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    margin: 1rem;
+    background: #1d76fb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .card-cta:hover {
+    background: #1c5eaa;
+  }
+  
+  .trek-card:hover {
+    transform: scale(1.05);
+  }
+  

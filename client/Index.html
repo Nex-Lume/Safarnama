@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SafarNama.com</title>
+  <link rel="icon" href="Images/Logo/logo.png" type="image/png" >
+  <link rel="stylesheet" href="css/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <a href="Index.html">
+          <img src="Images/Logo/Safarnama-logo.png" alt="SafarNama" class="logo-img">
+        </a>
+      </h1>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Destinations.html"> Destinations</a></li>
+          <li><a href="Packages.html"> Packages</a></li>
+          <li class="tourlist">
+            <a href="Tours.html">Tours</a>
+            <ul class="tour-list">
+              <li><a href="FestivalTour.html">Festival Tour</a></li>
+              <li><a href="HimalayanTrek.html">Himalayan Trek</a></li>
+              <li><a href="ReligionTour.html">Religious Tour</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="contact.html"> Contact</a></li>
+        </ul>
+       
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="search-container">
+        
+        <input type="text" id="search-input" placeholder="Search places..." autocomplete="off">
+        <i class="fas fa-search" id="search-icon"></i>
+        <!-- <button id="search-btn"><i class="fas fa-search"></i></button> -->
+        <div id="search-results" class="results-container"></div>
+      </div>
+      
+    </div>
+    </div>
+  </header>
+  
+
+
+
+ <section class="home">
+  <div class="swiper home-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide" id="swiper-slide1" style="background-image: url('Images/Goa/Goa11.jpg');">
+        <div class="content">
+          <span><strong>Explore,Discover, Travel</strong></span>
+          <h3><strong>around the india</strong></h3>
+          <a href="Packages.html" class="btn">Discover More</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide " id="swiper-slide2" style="background-image: url('Images/Hero/main1.jpg');">
+        <div class="content">
+          <span><strong>Explore, Discover, Travel</strong></span>
+          <h3><strong>make your tour worthwhile</strong></h3>
+          <a href="Packages.html" class="btn">Discover More</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide" id="swiper-slide3" style="background-image: url('Images/Hero/MountainAdventures.jpg');">
+        <div class="content">
+          <span><strong>Explore, Discover, Travel</strong></span>
+          <h3><strong>discover the new places</strong></h3>
+          <a href="Packages.html" class="btn">Discover More</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+ </section>
+  
+
+
+ <section id="features" class="features">
+  <h2>Explore Our Travel Packages</h2>
+  <div class="feature-grid">
+      <div class="feature feature-beach" style=" background-image: url('Images/Hero/BeachGetaways.jpg');">
+          <a href="/east/Goa.html" ><h3>Beach Getaways</h3></a>
+      </div>
+      <div class="feature feature-mountain" style="background-image: url('Images/Hero/MountainAdventures.jpg');">
+          <a href="maldives.html" ><h3>Mountain Adventures</h3></a>
+      </div>
+      <div class="feature feature-city" style=" background-image: url('Images/Hero/CityBreak.jpg');">
+          <a href="/east/Mumbai.html" ><h3>City Breaks</h3></a>
+      </div>
+      <div class="feature feature-desert" style=" background-image: url('Images/Hero/DesertSafaris.jpg');">
+          <a href="/north/Jaipur.html"><h3>Desert Safaris</h3></a>
+      </div>
+  </div>
+</section>
+
+  
+  <!-- Destinations Section -->
+  
+  <section id="packages" class="packages-section">
+    <h2>Featured Travel Packages</h2>
+    <div class="package-container">
+      
+      <!-- Package 1 -->
+      <div class="package-box">
+        <div class="package-image">
+          <img src="Images/Agra/taj.jpg" alt="agra">
+        </div>
+        <div class="package-details">
+          <h3>Agra Tour</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Agra</p>
+          <p class="rating">⭐⭐⭐⭐ - <span>9.0/10 Excellent (500 reviews)</span></p>
+          <p class="flight-details"><i class="fas fa-plane"></i> Delhi (DEL) → Agra (AGR)</p>
+          <p class="discount">₹5,000 off</p>
+          <p class="price"><del>₹15,000</del> <strong>₹10,000</strong> per traveller</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> Fri, 10 Jan - Sun, 12 Jan (2 nights)</p>
+          <a href="/north/Agra.html" class="btn">More Information</a>
+        </div>
+      </div>
+      
+      <!-- Package 2 -->
+      <div class="package-box">
+        <div class="package-image">
+          <img src="Images/Himachal/manali1.jpg"  loading="eager" alt="Manali">
+        </div>
+        <div class="package-details">
+          <h3>Manali Adventure</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Manali</p>
+          <p class="rating">⭐⭐⭐ - <span>9.2/10 Exceptional (700 reviews)</span></p>
+          <p class="flight-details"><i class="fas fa-plane"></i> Delhi (DEL) → Manali (KUU)</p>
+          <p class="discount">₹7,000 off</p>
+          <p class="price"><del>₹20,000</del> <strong>₹13,000</strong> per traveller</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> Mon, 15 Jan - Fri, 19 Jan (4 nights)</p>
+          <a href="/north/Manali.html" class="btn">More Information</a>
+        </div>
+      </div>
+      
+      <!-- Package 3 -->
+      <div class="package-box">
+        <div class="package-image">
+          <img src="Images/Goa/goa2.jpg" loading="eager" alt="Goa">
+        </div>
+        <div class="package-details">
+          <h3>Goa</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Goa</p>
+          <p class="rating">⭐⭐⭐⭐⭐ - <span>9.5/10 Superb (1,200 reviews)</span></p>
+          <p class="flight-details"><i class="fas fa-plane"></i> Mumbai (BOM) → Goa ()</p>
+          <p class="discount">₹10,000 off</p>
+          <p class="price"><del>₹20,000</del> <strong>₹10,000</strong> per traveller</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> Tue, 20 Jan - Mon, 26 Jan (6 nights)</p>
+          <a href="/east/Goa.html" class="btn">More Information</a>
+        </div>
+      </div>
+  
+      <!-- Package 4 -->
+      <div class="package-box">
+        <div class="package-image">
+          <img src="Images/Rajasthan/jaipuhero.jpg" loading="eager" alt="Jaipur">
+        </div>
+        <div class="package-details">
+          <h3>Jaipur </h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Jaipur</p>
+          <p class="rating">⭐⭐⭐⭐ - <span>9.4/10 Exceptional (1,001 reviews)</span></p>
+          <p class="flight-details"><i class="fas fa-plane"></i> Mumbai (BOM) → Jaipur (TPE)</p>
+          <p class="discount">₹6,495 off</p>
+          <p class="price"><del>₹14,569</del> <strong>₹8,074</strong> per traveller</p>
+          <p class="dates"><i class="fas fa-calendar-alt"></i> Sun, 5 Jan - Sat, 11 Jan (6 nights)</p>
+          <a href="/north/Jaipur.html" class="btn">More Information</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+  <section id="home" class="hero">
+    <video poster="Images/UttraKhand/kd (1).jpg" autoplay muted loop class="hero-video">
+      <source src="video/hero1.mp4"  type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h2>Your Adventure Awaits</h2>
+      <p>Discover breathtaking destinations and unforgettable experiences.</p>
+      <a href="#packages" class="btn">Explore Packages</a>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"TravelEase made our trip unforgettable! Everything was perfectly arranged."</p>
+      <h4>- Sarah Williams</h4>
+    </div>
+    <div class="testimonial">
+      <p>"The best travel experience ever! Highly recommend TravelEase."</p>
+      <h4>- John Smith</h4>
+    </div>
+  </section>
+
+
+  <!-- <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+        <div class="w-full sm:p-4 px-4 mb-6">
+          <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Moon hashtag pop-up try-hard offal truffaut</h1>
+          <div class="leading-relaxed">Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter.</div>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">9.7K</h2>
+          <p class="leading-relaxed">Customers</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">1.8K</h2>
+          <p class="leading-relaxed">Trips</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
+          <p class="leading-relaxed">Places</p>
+        </div>
+       
+      </div>
+      <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+        <img class="object-cover object-center w-full h-full" src="Images/Himachal/manali3.jpg " alt="stats">
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+  <section id="why-choose-us" class="why-choose-section">
+    <h2>Why Choose Safarnama?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <i class="fas fa-globe"></i>
+        <h3>Global Destinations</h3>
+        <p>Explore a wide range of destinations worldwide for your dream vacation.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-handshake"></i>
+        <h3>Best Deals</h3>
+        <p>Get exclusive deals and packages tailored to your preferences.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>We are here to assist you anytime, anywhere.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-plane"></i>
+        <h3>Easy Booking</h3>
+        <p>Simple and fast booking process for flights, hotels, and packages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="popular-destinations" class="popular-destinations-section">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <a href="/north/Kashmir.html" target="_blank">
+          <img src="images/Kashmir/gulmarg3.jpg"   alt="Gulmarg">
+        </a>
+        <h3>Gulmarg</h3>
+      </div>
+      
+      <div class="destination-card">
+        <a href="/north/Ladakh.html" target="_blank">
+          <img src="images/Ladakh/ladakh1.jpg"  alt="Ladakh">
+        </a>
+        <h3>Ladakh</h3>
+      </div>
+  
+      <div class="destination-card">
+        <a href="/east/Lonavala.html" target="_blank">
+          <img src="images/Maharashtra/lonavala1.jpg"  alt="Lonavala">
+        </a>
+        <h3>Lonavala</h3>
+      </div>
+  
+      <div class="destination-card">
+        <a href="/north/Uttar-Pradesh.html" target="_blank">
+          <img src="images/UP/varanasi.jpg"  alt="varanasi">
+        </a>
+        <h3>Varanasi</h3>
+      </div>
+    </div>
+  </section>
+  
+    
+
+  <section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I book a package?</h3>
+      <p>You can book directly through our website or contact our support team for assistance.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What payment methods do you accept?</h3>
+      <p>We accept credit cards, debit cards, PayPal, and other secure payment options.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I cancel or modify my booking?</h3>
+      <p>Yes, cancellations and modifications are possible. Please review our cancellation policy for details.</p>
+    </div>
+  </section>
+
+
+  
+ <!-- Cookie Consent Banner -->
+ <div id="cookieConsent" class="cookie-banner">
+  <p>
+    We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.
+    <a href="PrivacyPolicy.html" target="_blank">Privacy Policy</a>
+  </p>
+  <button id="acceptCookies">Accept</button>
+</div>
+  
+ 
+  <!-- footer section  -->
+   <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Acess</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="Destinations.html"><i class="fas fa-angle-right"></i>Destinations</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="Package.html"><i class="fas fa-angle-right"></i>Package</a>
+      </div>
+
+      <div class="box">
+        <h3>Legal Policy</h3>
+        <a href="Index.html"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="Policy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+        <a href="T&C.html"><i class="fas fa-angle-right"></i>Terms & Condition</a>
+        <a href="AboutUs.html"><i class="fas fa-angle-right"></i>AboutUs</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-333 </a>
+        <a href="#"><i class="fas fa-envelope"></i>SafarnamaToursandTravel</a>
+        <a href="#"><i class="fas fa-map"></i>Mumbai, India-400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="https://wa.me/9699762939?text=Hi%20there!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+        </a>        
+      </div>
+    </div>
+    <div class="credit"> © 2024 Created by <span>NexLume</span> |   All Rights Reserved. </div>
+   </section>
+
+
+
+  
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+  <script>
+    var swiper = new Swiper(".home-slider", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const consentBanner = document.getElementById("cookieConsent");
+
+  // Helper function to get cookie
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+
+  // Check if user has already accepted cookies
+  if (!getCookie("cookieAccepted")) {
+    consentBanner.style.display = "block";
+  }
+
+  // Handle "Accept" button click
+  document.getElementById("acceptCookies").addEventListener("click", function () {
+    document.cookie = "cookieAccepted=true; path=/; max-age=31536000"; // 1 year
+    consentBanner.style.display = "none";
+  });
+});
+
+  </script>
+</body>
+</html>
