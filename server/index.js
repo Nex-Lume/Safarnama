@@ -7,8 +7,16 @@ const bodyParser = require('body-parser');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
 app.use(bodyParser.json());
+
+app.use(cors(
+  {
+    origin : ["https://safarnama-backend-xi.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+));
 
 // Import routes
 const bookingRoute = require('./routes/bookingRoutes');
